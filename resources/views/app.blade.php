@@ -8,13 +8,21 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+        <!-- Styles -->
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <!-- Scripts -->
         @routes
-        @vite('resources/js/app.js')
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
+        
+        <script src="{{ mix('js/app.js') }}"></script>
+        <script src="{{ mix('js/theme.js') }}"></script>
+        @env ('local')
+            {{-- <script src="http://localhost:8080/js/bundle.js"></script> --}}
+            <script src="http://localhost:3000/browser-sync/browser-sync-client.js"></script>
+        @endenv
     </body>
 </html>
