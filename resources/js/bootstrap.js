@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap"
 import _ from 'lodash';
 window._ = _;
 

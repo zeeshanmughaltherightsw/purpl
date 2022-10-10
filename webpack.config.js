@@ -7,4 +7,5 @@ module.exports = {
             ziggy: path.resolve('vendor/tightenco/ziggy/src/js'),
         },
     },
+    
 };
