@@ -30,6 +30,11 @@
     },
     "dependencies": {
         "@popperjs/core": "^2.11.6",
-        "bootstrap": "^5.2.2"
+        "bootstrap": "^4.6.1",
+        "bootstrap-datepicker": "^1.9.0",
+        "jquery": "^3.6.0",
+        "popper.js": "^1.16.1",
+        "sweetalert2": "^9.17.1",
+        "toastr": "^2.1.4"
     }
 }
