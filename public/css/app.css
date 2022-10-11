@@ -16210,3 +16210,7 @@ body.dark-mode.ui-shady, body.dark-mode.ui-clean, body.dark-mode.bg-lighter, .du
 
 /*! END @iO */
 
+
+.nk-header-brand img{
+    max-width: 44px;
+}
