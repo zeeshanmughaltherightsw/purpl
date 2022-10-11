@@ -23919,25 +23919,19 @@ var _hoisted_5 = {
 var _hoisted_6 = {
   "class": "nk-menu"
 };
-var _hoisted_7 = {
-  "class": "nk-menu-item"
-};
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "nk-menu-icon"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("em", {
   "class": "icon ni ni-dashboard"
 })], -1 /* HOISTED */);
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "nk-menu-text"
 }, "Dashboard", -1 /* HOISTED */);
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item\"><a href=\"html/lms/index.html\" class=\"nk-menu-link\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-user-c\"></em></span><span class=\"nk-menu-text\">Profile</span></a></li>", 1);
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item has-sub\"><a href=\"#\" class=\"nk-menu-link nk-menu-toggle\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-toolbar\"></em></span><span class=\"nk-menu-text\">Pins</span></a><ul class=\"nk-menu-sub\"><li class=\"nk-menu-item\"><a href=\"html/project-card.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Pins Info</span></a></li></ul><!-- .nk-menu-sub --></li>", 1);
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item has-sub\"><a href=\"#\" class=\"nk-menu-link nk-menu-toggle\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-row-view1\"></em></span><span class=\"nk-menu-text\">Purchase</span></a><ul class=\"nk-menu-sub\"><li class=\"nk-menu-item\"><a href=\"html/user-list-default.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Upgrade Membership</span></a></li><li class=\"nk-menu-item\"><a href=\"html/user-list-regular.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Staking Pack</span></a></li><li class=\"nk-menu-item\"><a href=\"html/user-list-compact.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Master Node Pack</span></a></li><li class=\"nk-menu-item\"><a href=\"html/user-details-regular.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Shared Master Node Packs</span></a></li></ul><!-- .nk-menu-sub --></li>", 1);
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item has-sub\"><a href=\"#\" class=\"nk-menu-link nk-menu-toggle\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-sign-mxn-alt\"></em></span><span class=\"nk-menu-text\">Transactions</span></a><ul class=\"nk-menu-sub\"><li class=\"nk-menu-item\"><a href=\"html/orders-default.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Transactions</span></a></li><li class=\"nk-menu-item\"><a href=\"html/orders-regular.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Invoices</span></a></li><li class=\"nk-menu-item\"><a href=\"html/orders-sales.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Withdraw</span></a></li></ul><!-- .nk-menu-sub --></li>", 1);
-var _hoisted_14 = {
-  "class": "nk-menu-item has-sub"
-};
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item\"><a href=\"html/lms/index.html\" class=\"nk-menu-link\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-user-c\"></em></span><span class=\"nk-menu-text\">Profile</span></a></li>", 1);
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item has-sub\"><a href=\"#\" class=\"nk-menu-link nk-menu-toggle\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-toolbar\"></em></span><span class=\"nk-menu-text\">Pins</span></a><ul class=\"nk-menu-sub\"><li class=\"nk-menu-item\"><a href=\"html/project-card.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Pins Info</span></a></li></ul><!-- .nk-menu-sub --></li>", 1);
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item has-sub\"><a href=\"#\" class=\"nk-menu-link nk-menu-toggle\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-row-view1\"></em></span><span class=\"nk-menu-text\">Purchase</span></a><ul class=\"nk-menu-sub\"><li class=\"nk-menu-item\"><a href=\"html/user-list-default.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Upgrade Membership</span></a></li><li class=\"nk-menu-item\"><a href=\"html/user-list-regular.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Staking Pack</span></a></li><li class=\"nk-menu-item\"><a href=\"html/user-list-compact.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Master Node Pack</span></a></li><li class=\"nk-menu-item\"><a href=\"html/user-details-regular.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Shared Master Node Packs</span></a></li></ul><!-- .nk-menu-sub --></li>", 1);
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item has-sub\"><a href=\"#\" class=\"nk-menu-link nk-menu-toggle\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-sign-mxn-alt\"></em></span><span class=\"nk-menu-text\">Transactions</span></a><ul class=\"nk-menu-sub\"><li class=\"nk-menu-item\"><a href=\"html/orders-default.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Transactions</span></a></li><li class=\"nk-menu-item\"><a href=\"html/orders-regular.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Invoices</span></a></li><li class=\"nk-menu-item\"><a href=\"html/orders-sales.html\" class=\"nk-menu-link\"><span class=\"nk-menu-text\">Withdraw</span></a></li></ul><!-- .nk-menu-sub --></li>", 1);
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "#",
   "class": "nk-menu-link nk-menu-toggle"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
@@ -23947,16 +23941,13 @@ var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "nk-menu-text"
 }, "Network")], -1 /* HOISTED */);
-var _hoisted_16 = {
+var _hoisted_14 = {
   "class": "nk-menu-sub"
 };
-var _hoisted_17 = {
-  "class": "nk-menu-item"
-};
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "nk-menu-text"
 }, "Direct Referrals", -1 /* HOISTED */);
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
   "class": "nk-menu-item"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "html/apps-inbox.html",
@@ -23964,40 +23955,53 @@ var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "nk-menu-text"
 }, "UniLevel Tree")])], -1 /* HOISTED */);
-var _hoisted_20 = {
-  "class": "nk-menu-item"
-};
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "nk-menu-text"
 }, "Referral link", -1 /* HOISTED */);
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item\"><a href=\"html/pricing-table.html\" class=\"nk-menu-link\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-view-col\"></em></span><span class=\"nk-menu-text\">Achievement</span></a></li>", 1);
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"nk-menu-item\"><a href=\"html/pricing-table.html\" class=\"nk-menu-link\"><span class=\"nk-menu-icon\"><em class=\"icon ni ni-view-col\"></em></span><span class=\"nk-menu-text\">Achievement</span></a></li>", 1);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-sidebar-element "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-sidebar-element "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nk-menu-item", {
+      'active current-page': _ctx.route().current('dashboard')
+    }])
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: _ctx.route('dashboard'),
     "class": "nk-menu-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_8, _hoisted_9];
+      return [_hoisted_7, _hoisted_8];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+  }, 8 /* PROPS */, ["href"])], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nk-menu-item has-sub", {
+      'active current-page': _ctx.route().current('direct-referrals') || _ctx.route().current('referral-link')
+    }])
+  }, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nk-menu-item", {
+      'active current-page': _ctx.route().current('direct-referrals')
+    }])
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: _ctx.route('direct-referrals'),
     "class": "nk-menu-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_18];
+      return [_hoisted_15];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["href"])]), _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+  }, 8 /* PROPS */, ["href"])], 2 /* CLASS */), _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["nk-menu-item", {
+      'active current-page': _ctx.route().current('referral-link')
+    }])
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: _ctx.route('referral-link'),
     "class": "nk-menu-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_21];
+      return [_hoisted_17];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["href"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-sub ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_22]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-sidebar-menu ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-sidebar-content ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-sidebar-element ")]);
+  }, 8 /* PROPS */, ["href"])], 2 /* CLASS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-sub ")], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu-item "), _hoisted_18]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-menu ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-sidebar-menu ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-sidebar-content ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-sidebar-element ")]);
 }
 
 /***/ }),
