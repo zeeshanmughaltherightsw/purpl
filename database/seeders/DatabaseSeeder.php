@@ -15,14 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::create([
-            'name' => 'admin',
-            'password' => Hash::make('12345678'),
-            'email' => 'admin@admin.com'
-        ]);
 
-        \App\Models\User::factory()->create([
-            'password' => Hash::make('12345678'),
+        $this->call([
+            UserSeeder::class,
+            TransactionSeeder::class,
+
         ]);
     }
 }

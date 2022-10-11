@@ -17,6 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->integer('account_no')->nullable();
+            $table->integer('ref_by')->nullable();
+            $table->string('username')->nullable();
+            $table->integer('plan_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
