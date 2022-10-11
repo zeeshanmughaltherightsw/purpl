@@ -24946,14 +24946,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         }),
         _: 1 /* STABLE */
       })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
-        href: "#",
+        href: _ctx.route('referral-link'),
         "class": "btn btn-primary bg-azure"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [_hoisted_19, _hoisted_20];
         }),
         _: 1 /* STABLE */
-      })])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-block-head-content ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-block-between ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-block-head "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" XLT PRICE "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Alert"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["DashboardCard"], {
+      }, 8 /* PROPS */, ["href"])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-block-head-content ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-block-between ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .nk-block-head "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" XLT PRICE "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Alert"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["DashboardCard"], {
         title: "XLT Gift balance",
         content: "00000000",
         buttonText: "XLT Gift Balance"
