@@ -22494,9 +22494,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Header.vue */ "./resources/js/Layouts/Header.vue");
 /* harmony import */ var _Footer_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Footer.vue */ "./resources/js/Layouts/Footer.vue");
 var __default__ = {
-  mounted: function mounted() {
-    // window.NioApp.BS.init()
-    // window.NioApp.TGL.init()
+  created: function created() {
+    // window.NioApp.init()
   }
 };
 
@@ -23910,14 +23909,16 @@ var _hoisted_3 = {
   "class": "nk-sidebar-element"
 };
 var _hoisted_4 = {
-  "class": "nk-sidebar-content"
+  "class": "nk-sidebar-content",
+  "scroll-region": ""
 };
 var _hoisted_5 = {
   "class": "nk-sidebar-menu",
   "data-simplebar": ""
 };
 var _hoisted_6 = {
-  "class": "nk-menu"
+  "class": "nk-menu",
+  "scroll-region": ""
 };
 var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "nk-menu-icon"
@@ -23966,6 +23967,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       'active current-page': _ctx.route().current('dashboard')
     }])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "preserve-scroll": "",
     href: _ctx.route('dashboard'),
     "class": "nk-menu-link"
   }, {
@@ -23982,6 +23984,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       'active current-page': _ctx.route().current('direct-referrals')
     }])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "preserve-scroll": "",
     href: _ctx.route('direct-referrals'),
     "class": "nk-menu-link"
   }, {
@@ -23994,6 +23997,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       'active current-page': _ctx.route().current('referral-link')
     }])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "preserve-scroll": "",
     href: _ctx.route('referral-link'),
     "class": "nk-menu-link"
   }, {

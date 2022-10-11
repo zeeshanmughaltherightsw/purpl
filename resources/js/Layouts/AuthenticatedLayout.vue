@@ -34,9 +34,8 @@ const showingNavigationDropdown = ref(false);
 </template>
 <script>
 export default{
-    mounted(){
-        // window.NioApp.BS.init()
-        // window.NioApp.TGL.init()
-    }
+  created(){
+    // window.NioApp.init()
+  }
 }
 </script>

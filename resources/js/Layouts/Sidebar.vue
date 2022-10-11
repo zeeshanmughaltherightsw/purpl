@@ -34,11 +34,11 @@
     </div>
     <!-- .nk-sidebar-element -->
     <div class="nk-sidebar-element">
-      <div class="nk-sidebar-content">
-        <div class="nk-sidebar-menu" data-simplebar>
-          <ul class="nk-menu">
+      <div class="nk-sidebar-content" scroll-region>
+        <div class="nk-sidebar-menu" data-simplebar >
+          <ul class="nk-menu" scroll-region>
             <li class="nk-menu-item" :class="{ 'active current-page' : route().current('dashboard')}">
-              <Link :href="route('dashboard')" class="nk-menu-link">
+              <Link preserve-scroll :href="route('dashboard')" class="nk-menu-link">
                 <span class="nk-menu-icon"
                   ><em class="icon ni ni-dashboard"></em
                 ></span>
@@ -143,7 +143,7 @@
               </a>
               <ul class="nk-menu-sub">
                 <li class="nk-menu-item" :class="{ 'active current-page' : route().current('direct-referrals')}">
-                  <Link :href="route('direct-referrals')" class="nk-menu-link">
+                  <Link preserve-scroll :href="route('direct-referrals')" class="nk-menu-link">
                     <span class="nk-menu-text">Direct Referrals</span>
                   </Link>
                 </li>
@@ -153,7 +153,7 @@
                   >
                 </li>
                 <li class="nk-menu-item" :class="{ 'active current-page' : route().current('referral-link')}">
-                  <Link :href="route('referral-link')" class="nk-menu-link"
+                  <Link preserve-scroll :href="route('referral-link')" class="nk-menu-link"
                     ><span class="nk-menu-text">Referral link</span></Link
                   >
                 </li>
