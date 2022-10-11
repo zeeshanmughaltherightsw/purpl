@@ -18,9 +18,25 @@ const showingNavigationDropdown = ref(false);
             <Sidebar />
             <div class="nk-wrap ">
                 <Header />
-                    <slot/>
+                <div class="nk-content ">
+                    <div   div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <slot/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <Footer/>
             </div>
         </div>
     </div>
 </template>
+<script>
+export default{
+    mounted(){
+        // window.NioApp.BS.init()
+        // window.NioApp.TGL.init()
+    }
+}
+</script>

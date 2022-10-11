@@ -19,8 +19,19 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function(){
+    Route::get('/dashboard', function () {
+        return Inertia::render('Dashboard');
+    })->name('dashboard');
+    Route::get('direct-referrals', function(){
+        return Inertia::render('Referral/DirectReferrals', [
+            'referrals' => auth()->user()->directReferrals
+        ]);
+    })->name('direct-referrals');
+    Route::get('referral-link', function(){
+        return Inertia::render('Referral/ReferralLink');
+    })->name('referral-link');
+});
+
 
 require __DIR__.'/auth.php';

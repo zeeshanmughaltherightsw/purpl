@@ -38,12 +38,12 @@
         <div class="nk-sidebar-menu" data-simplebar>
           <ul class="nk-menu">
             <li class="nk-menu-item">
-              <a href="html/ecommerce/index.html" class="nk-menu-link">
+              <Link :href="route('dashboard')" class="nk-menu-link">
                 <span class="nk-menu-icon"
                   ><em class="icon ni ni-dashboard"></em
                 ></span>
                 <span class="nk-menu-text">Dashboard</span>
-              </a>
+              </Link>
             </li>
             <!-- .nk-menu-item -->
             <li class="nk-menu-item">
@@ -143,9 +143,9 @@
               </a>
               <ul class="nk-menu-sub">
                 <li class="nk-menu-item">
-                  <a href="html/apps-messages.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Direct Referrals</span></a
-                  >
+                  <Link :href="route('direct-referrals')" class="nk-menu-link">
+                    <span class="nk-menu-text">Direct Referrals</span>
+                  </Link>
                 </li>
                 <li class="nk-menu-item">
                   <a href="html/apps-inbox.html" class="nk-menu-link"
@@ -153,8 +153,8 @@
                   >
                 </li>
                 <li class="nk-menu-item">
-                  <a href="html/apps-file-manager.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Referral link</span></a
+                  <Link :href="route('referral-link')" class="nk-menu-link"
+                    ><span class="nk-menu-text">Referral link</span></Link
                   >
                 </li>
               </ul>
@@ -169,47 +169,6 @@
                 <span class="nk-menu-text">Achievement</span>
               </a>
             </li>
-            <!-- .nk-menu-item -->
-            <li class="nk-menu-item has-sub">
-              <a href="#" class="nk-menu-link nk-menu-toggle">
-                <span class="nk-menu-icon"
-                  ><em class="icon ni ni-setting"></em
-                ></span>
-                <span class="nk-menu-text">Settings</span>
-              </a>
-              <ul class="nk-menu-sub">
-                <li class="nk-menu-item">
-                  <a href="html/invoice-list.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Privacy</span></a
-                  >
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/invoice-details.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Security</span></a
-                  >
-                </li>
-
-                <li class="nk-menu-item">
-                  <a href="html/invoice-details.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Chnage Password</span></a
-                  >
-                </li>
-
-                <li class="nk-menu-item">
-                  <a href="html/invoice-details.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Change Pin</span></a
-                  >
-                </li>
-
-                <li class="nk-menu-item">
-                  <a href="html/invoice-details.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Change Questions</span></a
-                  >
-                </li>
-              </ul>
-              <!-- .nk-menu-sub -->
-            </li>
-            <!-- .nk-menu-item -->
           </ul>
           <!-- .nk-menu -->
         </div>
@@ -220,3 +179,9 @@
     <!-- .nk-sidebar-element -->
   </div>
 </template>
+<script>
+import { Link } from '@inertiajs/inertia-vue3';
+export default {
+  components: {Link}
+}
+</script>

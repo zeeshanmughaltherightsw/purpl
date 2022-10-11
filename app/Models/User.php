@@ -21,6 +21,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'ref_by',
+        'account_no',
+        'username',
+        'plan_id',
+        'status',
     ];
 
     /**
@@ -41,4 +46,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function directReferrals()
+    {
+        return $this->hasMany(User::class, 'ref_by');
+    }
 }

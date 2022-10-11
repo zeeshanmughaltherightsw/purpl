@@ -22,17 +22,6 @@ const showingNavigationDropdown = ref(false);
             ><em class="icon ni ni-menu"></em
           ></a>
         </div>
-        <!-- <div class="nk-header-brand">
-                    <a href="html/index.html" class="logo-link">
-                        <img class="logo-light logo-img" src="/images/topbar Logo.png" srcset="/images/ltopbar Logo.png 2x"
-                            alt="logo">
-                        <img class="logo-dark logo-img" src="/images/topbar Logo.png"
-                            srcset="/images/topbar Logo.png 2x" alt="logo-dark">
-                    </a>
-                </div>.nk-header-brand -->
-        <!-- <div class="nk-header-search ml-3 ml-xl-0">
-                  <img src="/images/topbar Logo.png"> -->
-        <!-- </div>.nk-header-news -->
         <div class="nk-header-tools">
           <ul class="nk-quick-nav">
             <li class="dropdown language-dropdown d-none d-sm-block mr-n1">
@@ -41,15 +30,11 @@ const showingNavigationDropdown = ref(false);
                 class="dropdown-toggle nk-quick-nav-icon"
                 data-toggle="dropdown"
               >
-                <!-- <div class="quick-icon border border-light">
-                                    <img class="icon" src="/images/Time icon.png" alt="">
-                                    
-                                </div> -->
               </a>
             </li>
             <li>
               <span data-v-3c8ef2bc="" class="server-time"
-                >GMT : 11 Oct, 2022 07:13:40</span
+                >{{ currentDate }}</span
               >
             </li>
             <li class="dropdown chats-dropdown hide-mb-xs">
@@ -365,11 +350,11 @@ const showingNavigationDropdown = ref(false);
                 >
                   <div class="user-card">
                     <div class="user-avatar">
-                      <span>AB</span>
+                      <span>{{ $page.props.auth.user.name.match(/\b(\w)/g).join('') }}</span>
                     </div>
                     <div class="user-info">
-                      <span class="lead-text">Abu Bin Ishtiyak</span>
-                      <span class="sub-text">info@softnio.com</span>
+                      <span class="lead-text">{{ $page.props.auth.user.name }}</span>
+                      <span class="sub-text"> {{ $page.props.auth.user.email }} </span>
                     </div>
                   </div>
                 </div>
@@ -404,13 +389,14 @@ const showingNavigationDropdown = ref(false);
                 <div class="dropdown-inner">
                   <ul class="link-list">
                     <li>
-                      <ResponsiveNavLink
+                      <Link
+                        class="btn btn-danger"
                         :href="route('logout')"
                         method="post"
                         as="button"
                       >
                         Log Out
-                      </ResponsiveNavLink>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -426,5 +412,12 @@ const showingNavigationDropdown = ref(false);
   <!-- main header @e -->
 </template>
 <script>
-export default {};
+import moment from 'moment'
+export default {
+  computed:{
+    currentDate(){
+      return  moment().format("Do MMM YYYY hh:mm:ss");
+    }
+  },
+}
 </script>

@@ -17,14 +17,16 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->integer('account_no')->nullable();
-            $table->integer('ref_by')->nullable();
+            $table->string('account_no')->nullable();
+            $table->unsignedBigInteger('ref_by')->nullable();
             $table->string('username')->nullable();
-            $table->integer('plan_id')->nullable();
+            $table->unsignedBigInteger('plan_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->boolean('status')->default(true);
             $table->rememberToken();
             $table->timestamps();
+            $table->foreign('ref_by')->references('id')->on('users');
         });
     }
 

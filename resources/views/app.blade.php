@@ -18,8 +18,8 @@
     <body class="nk-body bg-lighter npc-default has-sidebar">
         @inertia
         
-        <script src="{{ mix('js/app.js') }}"></script>
         <script src="{{ mix('js/theme.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
         @env ('local')
             {{-- <script src="http://localhost:8080/js/bundle.js"></script> --}}
             <script src="http://localhost:3000/browser-sync/browser-sync-client.js"></script>

@@ -23,6 +23,7 @@ class UserSeeder extends Seeder
                 'email'           => 'admin@admin.com',
                 'account_no'      =>   3,
                 'ref_by'          =>   1,
+                'account_no'      => '12345678'
             ],
 
         ];
