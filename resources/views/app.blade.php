@@ -15,7 +15,7 @@
         @routes
         @inertiaHead
     </head>
-    <body class="font-sans antialiased">
+    <body class="nk-body bg-lighter npc-default has-sidebar">
         @inertia
         
         <script src="{{ mix('js/app.js') }}"></script>

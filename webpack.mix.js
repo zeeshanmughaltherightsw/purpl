@@ -17,10 +17,11 @@ mix.js('resources/js/app.js', 'public/js')
     .webpackConfig(require('./webpack.config'));
 
     mix.scripts([
-        // 'resources/theme/js/*.js',
+        'resources/theme/js/*.js',
     ], 'public/js/theme.js');
     
     mix.styles([
+        'resources/theme/css/*.css',
         'resources/css/app.css',
     ], 'public/css/app.css')
 
