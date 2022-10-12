@@ -1,5 +1,5 @@
 <template>
-    <div class="table-responsive-sm">
+    <div class="table-responsive">
         <table class="table">
             <thead class="text-muted">
                 <slot name="head"/>

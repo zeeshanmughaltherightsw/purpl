@@ -1,5 +1,5 @@
 <template>
-    <div class="table-responsive-sm">
+    <div class="table-responsive">
         <table class="table table-tranx">
             <thead>
                 <tr class="tb-tnx-head">
