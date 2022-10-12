@@ -35,10 +35,17 @@
     <!-- .nk-sidebar-element -->
     <div class="nk-sidebar-element">
       <div class="nk-sidebar-content" scroll-region>
-        <div class="nk-sidebar-menu" data-simplebar >
+        <div class="nk-sidebar-menu" data-simplebar>
           <ul class="nk-menu" scroll-region>
-            <li class="nk-menu-item" :class="{ 'active current-page' : route().current('dashboard')}">
-              <Link preserve-scroll :href="route('dashboard')" class="nk-menu-link">
+            <li
+              class="nk-menu-item"
+              :class="{ 'active current-page': route().current('dashboard') }"
+            >
+              <Link
+                preserve-scroll
+                :href="route('dashboard')"
+                class="nk-menu-link"
+              >
                 <span class="nk-menu-icon"
                   ><em class="icon ni ni-dashboard"></em
                 ></span>
@@ -46,13 +53,20 @@
               </Link>
             </li>
             <!-- .nk-menu-item -->
-            <li class="nk-menu-item">
-              <a href="html/lms/index.html" class="nk-menu-link">
+            <li
+              class="nk-menu-item"
+              :class="{ 'active current-page': route().current('profile') }"
+            >
+              <Link
+                preserve-scroll
+                :href="route('profile')"
+                class="nk-menu-link"
+              >
                 <span class="nk-menu-icon"
                   ><em class="icon ni ni-user-c"></em
                 ></span>
                 <span class="nk-menu-text">Profile</span>
-              </a>
+              </Link>
             </li>
             <!-- .nk-menu-item -->
 
@@ -134,7 +148,14 @@
               <!-- .nk-menu-sub -->
             </li>
             <!-- .nk-menu-item -->
-            <li class="nk-menu-item has-sub" :class="{ 'active current-page' : route().current('direct-referrals') || route().current('referral-link')}">
+            <li
+              class="nk-menu-item has-sub"
+              :class="{
+                'active current-page':
+                  route().current('direct-referrals') ||
+                  route().current('referral-link'),
+              }"
+            >
               <a href="#" class="nk-menu-link nk-menu-toggle">
                 <span class="nk-menu-icon"
                   ><em class="icon ni ni-wifi"></em
@@ -142,8 +163,17 @@
                 <span class="nk-menu-text">Network</span>
               </a>
               <ul class="nk-menu-sub">
-                <li class="nk-menu-item" :class="{ 'active current-page' : route().current('direct-referrals')}">
-                  <Link preserve-scroll :href="route('direct-referrals')" class="nk-menu-link">
+                <li
+                  class="nk-menu-item"
+                  :class="{
+                    'active current-page': route().current('direct-referrals'),
+                  }"
+                >
+                  <Link
+                    preserve-scroll
+                    :href="route('direct-referrals')"
+                    class="nk-menu-link"
+                  >
                     <span class="nk-menu-text">Direct Referrals</span>
                   </Link>
                 </li>
@@ -152,8 +182,16 @@
                     ><span class="nk-menu-text">UniLevel Tree</span></a
                   >
                 </li>
-                <li class="nk-menu-item" :class="{ 'active current-page' : route().current('referral-link')}">
-                  <Link preserve-scroll :href="route('referral-link')" class="nk-menu-link"
+                <li
+                  class="nk-menu-item"
+                  :class="{
+                    'active current-page': route().current('referral-link'),
+                  }"
+                >
+                  <Link
+                    preserve-scroll
+                    :href="route('referral-link')"
+                    class="nk-menu-link"
                     ><span class="nk-menu-text">Referral link</span></Link
                   >
                 </li>
@@ -180,8 +218,8 @@
   </div>
 </template>
 <script>
-import { Link } from '@inertiajs/inertia-vue3';
+import { Link } from "@inertiajs/inertia-vue3";
 export default {
-  components: {Link}
-}
+  components: { Link },
+};
 </script>
