@@ -1,14 +1,16 @@
 <template>
-  <table class="table table-tranx">
-    <thead>
-        <tr class="tb-tnx-head">
-            <slot name="head" />
-        </tr>
-    </thead>
-    <tbody>
-       <slot name="body"/>
-    </tbody>
-</table>
+    <div class="table-responsive-sm">
+        <table class="table table-tranx">
+            <thead>
+                <tr class="tb-tnx-head">
+                    <slot name="head" />
+                </tr>
+            </thead>
+            <tbody>
+                <slot name="body"/>
+            </tbody>
+        </table>
+    </div>
 </template>
 
 <script>
