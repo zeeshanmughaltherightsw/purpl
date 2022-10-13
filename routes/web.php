@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -31,7 +32,24 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('referral-link', function(){
         return Inertia::render('Referral/ReferralLink');
     })->name('referral-link');
+
+    Route::get('profile', function(){
+        User::all();
+        return Inertia::render('Profile/PersonalInformation');
+      })->name('profile');
+
+      Route::get('account-activity', function(){
+        User::all();
+        return Inertia::render('Profile/AccountActivity');
+      })->name('account-activity');
+
+      Route::get('security-setting', function(){
+        User::all();
+        return Inertia::render('Profile/SecuritySetting');
+      })->name('security-setting');
 });
+
+
 
 
 require __DIR__.'/auth.php';
