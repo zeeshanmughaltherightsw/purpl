@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\UserProfileController;
 use App\Models\User;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -33,13 +35,9 @@ Route::middleware(['auth', 'verified'])->group(function(){
         return Inertia::render('Referral/ReferralLink');
     })->name('referral-link');
 
-    Route::get('profile', function(){
-        User::all();
-        return Inertia::render('Profile/PersonalInformation');
-      })->name('profile');
+    Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
 
       Route::get('account-activity', function(){
-        User::all();
         return Inertia::render('Profile/AccountActivity');
       })->name('account-activity');
 
