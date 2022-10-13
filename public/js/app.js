@@ -74534,8 +74534,6 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_purpl_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_TextInput_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_TextInput_vue_vue_type_template_id_23a98e62__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/TextInput.vue"]])
-<<<<<<< HEAD
-=======
 /* hot reload */
 if (false) {}
 
@@ -74564,7 +74562,6 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_purpl_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_UserSidebar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_UserSidebar_vue_vue_type_template_id_09159396__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/UserSidebar.vue"]])
->>>>>>> 0b86bbaae3e7aa0b57a6ab69c4d90cdad97fa3ef
 /* hot reload */
 if (false) {}
 
@@ -74899,8 +74896,6 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_purpl_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Dashboard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Dashboard_vue_vue_type_template_id_097ba13b__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Dashboard.vue"]])
-<<<<<<< HEAD
-=======
 /* hot reload */
 if (false) {}
 
@@ -74985,7 +74980,6 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 const __exports__ = /*#__PURE__*/(0,D_xampp_htdocs_purpl_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SecuritySetting_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SecuritySetting_vue_vue_type_template_id_9852b05e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Profile/SecuritySetting.vue"]])
->>>>>>> 0b86bbaae3e7aa0b57a6ab69c4d90cdad97fa3ef
 /* hot reload */
 if (false) {}
 
