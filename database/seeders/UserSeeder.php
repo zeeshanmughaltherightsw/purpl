@@ -18,8 +18,8 @@ class UserSeeder extends Seeder
     {
         $users = [
             [
-                'name'            =>   "admin",
-                'full_name'       =>  'Ishtiyaq Ahmed',
+                'full_name'       =>  'admin',
+                'username'        =>  'admin',
                 'password'        =>   Hash::make('12345678'),
                 'email'           => 'admin@admin.com',
                 'account_no'      =>   3,
