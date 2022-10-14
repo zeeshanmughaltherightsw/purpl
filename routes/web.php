@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UserProfileController;
 use App\Models\User;
+use App\Models\UserLogin;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -38,7 +39,9 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
 
       Route::get('account-activity', function(){
-        return Inertia::render('Profile/AccountActivity');
+        return Inertia::render('Profile/AccountActivity', [
+            'details'  =>  UserLogin::all()
+        ]);
       })->name('account-activity');
 
       Route::get('security-setting', function(){

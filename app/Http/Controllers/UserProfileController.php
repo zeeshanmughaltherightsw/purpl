@@ -15,7 +15,7 @@ class UserProfileController extends Controller
     public function index()
     {
         return Inertia::render('Profile/PersonalInformation', [
-            'profile' => auth()->user()->personalInformations
+            'profiles' => auth()->user()
         ]);
     }
 

@@ -41,7 +41,7 @@
                         <div class="data-item" data-toggle="modal" data-target="#profile-edit">
                           <div class="data-col">
                             <span class="data-label">Full Name</span>
-                            <span class="data-value">Abu Bin Ishtiyak</span>
+                            <span class="data-value">{{ profiles ? profiles.name: '' }}</span>
                           </div>
                           <div class="data-col data-col-end">
                             <span class="data-more"><em class="icon ni ni-forward-ios"></em></span>
@@ -51,7 +51,7 @@
                         <div class="data-item" data-toggle="modal" data-target="#profile-edit">
                           <div class="data-col">
                             <span class="data-label">Display Name</span>
-                            <span class="data-value">Ishtiyak</span>
+                            <span class="data-value">{{ profiles ? profiles.username: '' }}</span>
                           </div>
                           <div class="data-col data-col-end">
                             <span class="data-more"><em class="icon ni ni-forward-ios"></em></span>
@@ -61,7 +61,7 @@
                         <div class="data-item">
                           <div class="data-col">
                             <span class="data-label">Email</span>
-                            <span class="data-value">info@softnio.com</span>
+                            <span class="data-value">{{ profiles ? profiles.email: '' }}</span>
                           </div>
                           <div class="data-col data-col-end">
                             <span class="data-more disable"><em class="icon ni ni-lock-alt"></em></span>
@@ -71,7 +71,7 @@
                         <div class="data-item" data-toggle="modal" data-target="#profile-edit">
                           <div class="data-col">
                             <span class="data-label">Phone Number</span>
-                            <span class="data-value text-soft">Not add yet</span>
+                            <span class="data-value text-soft">{{ profiles ? profiles.phone_no: '' }}</span>
                           </div>
                           <div class="data-col data-col-end">
                             <span class="data-more"><em class="icon ni ni-forward-ios"></em></span>
@@ -81,7 +81,7 @@
                         <div class="data-item" data-toggle="modal" data-target="#profile-edit">
                           <div class="data-col">
                             <span class="data-label">Date of Birth</span>
-                            <span class="data-value">29 Feb, 1986</span>
+                            <span class="data-value">{{ profiles ? profiles.date_of_birth: '' }}</span>
                           </div>
                           <div class="data-col data-col-end">
                             <span class="data-more"><em class="icon ni ni-forward-ios"></em></span>
@@ -92,7 +92,7 @@
                           data-tab-target="#address">
                           <div class="data-col">
                             <span class="data-label">Address</span>
-                            <span class="data-value">2337 Kildeer Drive,<br />Kentucky, Canada</span>
+                            <span class="data-value">{{ profiles ? profiles.address: '' }}</span>
                           </div>
                           <div class="data-col data-col-end">
                             <span class="data-more"><em class="icon ni ni-forward-ios"></em></span>
@@ -164,6 +164,7 @@ import BreadCrumb from "@/Components/BreadCrumb.vue";
 import { Head, Link } from "@inertiajs/inertia-vue3";
 import UserSidebar from "@/Components/UserSidebar.vue";
 export default {
+  props: ['profiles'],
   components: { AuthenticatedLayout, BreadCrumb, Head, Link, UserSidebar },
 };
 

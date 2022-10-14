@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
 use App\Http\Controllers\Controller;
+use App\Models\UserLogin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
@@ -55,9 +56,22 @@ class RegisteredUserController extends Controller
             'ref_by' => isset($ref) ? $ref->id : null
         ]);
 
+        
         event(new Registered($user));
-
+        
         Auth::login($user);
+
+        $userLogin = new UserLogin();
+        $userLogin->user_id = Auth::user()->id;
+        $userLogin->user_ip = 'asdfgh';
+        $userLogin->location = Auth::user()->address;
+        $userLogin->browser = 'Chrome';
+        $userLogin->os      = 'Window';
+        $userLogin->longitude = '30.1575° N';
+        $userLogin->latitude   = '71.5249° E';
+        $userLogin->country    = 'Pakistan';
+        $userLogin->country_code = '+92';
+        $userLogin->save();
 
         return redirect(RouteServiceProvider::HOME);
     }
