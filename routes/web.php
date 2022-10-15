@@ -20,8 +20,8 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return redirect()->route('login');
-});
+    return Inertia::render('Welcome');
+})->name('welcome');
 
 Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('/dashboard', function () {
