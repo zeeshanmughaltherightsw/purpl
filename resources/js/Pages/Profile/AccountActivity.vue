@@ -43,102 +43,17 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td class="tb-col-os">Chrome on Window</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">192.149.122.128</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">11:34 PM</span>
+                                                    <tr v-for="(detail, index) in details" :key="index">
+                                                        <td class="tb-col-os">{{ detail ? detail.browser: '' }}</td>
+                                                        <td class="tb-col-ip"><span class="sub-text">{{ detail ?
+                                                        detail.user_ip: '' }}</span></td>
+                                                        <td class="tb-col-time"><span class="sub-text">{{
+                                                        formatDate(detail ? detail.created_at: '') }}</span>
                                                         </td>
                                                         <td class="tb-col-action"></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="tb-col-os">Mozilla on Window</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">86.188.154.225</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">Nov 20, 2019
-                                                                <span class="d-none d-sm-inline-block">10:34
-                                                                    PM</span></span></td>
-                                                        <td class="tb-col-action"><a href="#"
-                                                                class="link-cross mr-sm-n1"><em
-                                                                    class="icon ni ni-cross"></em></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="tb-col-os">Chrome on iMac</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">192.149.122.128</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">Nov 12, 2019
-                                                                <span class="d-none d-sm-inline-block">08:56
-                                                                    PM</span></span></td>
-                                                        <td class="tb-col-action"><a href="#"
-                                                                class="link-cross mr-sm-n1"><em
-                                                                    class="icon ni ni-cross"></em></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="tb-col-os">Chrome on Window</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">192.149.122.128</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">Nov 03, 2019
-                                                                <span class="d-none d-sm-inline-block">04:29
-                                                                    PM</span></span></td>
-                                                        <td class="tb-col-action"><a href="#"
-                                                                class="link-cross mr-sm-n1"><em
-                                                                    class="icon ni ni-cross"></em></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="tb-col-os">Mozilla on Window</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">86.188.154.225</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">Oct 29, 2019
-                                                                <span class="d-none d-sm-inline-block">09:38
-                                                                    AM</span></span></td>
-                                                        <td class="tb-col-action"><a href="#"
-                                                                class="link-cross mr-sm-n1"><em
-                                                                    class="icon ni ni-cross"></em></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="tb-col-os">Chrome on iMac</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">192.149.122.128</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">Oct 23, 2019
-                                                                <span class="d-none d-sm-inline-block">04:16
-                                                                    PM</span></span></td>
-                                                        <td class="tb-col-action"><a href="#"
-                                                                class="link-cross mr-sm-n1"><em
-                                                                    class="icon ni ni-cross"></em></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="tb-col-os">Chrome on Window</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">192.149.122.128</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">Oct 15, 2019
-                                                                <span class="d-none d-sm-inline-block">11:41
-                                                                    PM</span></span></td>
-                                                        <td class="tb-col-action"><a href="#"
-                                                                class="link-cross mr-sm-n1"><em
-                                                                    class="icon ni ni-cross"></em></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="tb-col-os">Mozilla on Window</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">86.188.154.225</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">Oct 13, 2019
-                                                                <span class="d-none d-sm-inline-block">05:43
-                                                                    AM</span></span></td>
-                                                        <td class="tb-col-action"><a href="#"
-                                                                class="link-cross mr-sm-n1"><em
-                                                                    class="icon ni ni-cross"></em></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="tb-col-os">Chrome on iMac</td>
-                                                        <td class="tb-col-ip"><span
-                                                                class="sub-text">192.149.122.128</span></td>
-                                                        <td class="tb-col-time"><span class="sub-text">Oct 03, 2019
-                                                                <span class="d-none d-sm-inline-block">04:12
-                                                                    AM</span></span></td>
-                                                        <td class="tb-col-action"><a href="#"
-                                                                class="link-cross mr-sm-n1"><em
-                                                                    class="icon ni ni-cross"></em></a></td>
-                                                    </tr>
+
+
                                                 </tbody>
                                             </table>
                                         </div><!-- .nk-block-head -->
@@ -161,8 +76,11 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import BreadCrumb from "@/Components/BreadCrumb.vue";
 import { Head, Link } from "@inertiajs/inertia-vue3";
 import UserSidebar from "@/Components/UserSidebar.vue";
+import Helpers from '@/Mixins/Helpers';
 export default {
+    props: ['details'],
     components: { AuthenticatedLayout, BreadCrumb, Head, Link, UserSidebar },
+    mixins: [Helpers],
 };
 
 </script>

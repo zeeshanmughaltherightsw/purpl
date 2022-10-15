@@ -178,8 +178,11 @@
                   </Link>
                 </li>
                 <li class="nk-menu-item">
-                  <a href="html/apps-inbox.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">UniLevel Tree</span></a
+                  <Link 
+                  preserve-scroll
+                  :href="route('uni-level')" 
+                  class="nk-menu-link"
+                    ><span class="nk-menu-text">UniLevel Tree</span></Link
                   >
                 </li>
                 <li

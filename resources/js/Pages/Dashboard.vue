@@ -36,7 +36,7 @@ import DashboardCard from '../Components/DashboardCard.vue';
                                                 </Link>
                                             </li>
                                             <li class="nk-block-tools-opt">
-                                                <Link href="#" class="btn btn-primary bg-azure">
+                                                <Link :href="route('referral-link')" class="btn btn-primary bg-azure">
                                                     <em class="icon ni ni-reports"></em><span>Referral link</span>
                                                 </Link>
                                             </li>
