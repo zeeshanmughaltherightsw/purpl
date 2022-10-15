@@ -8,6 +8,9 @@ import { Head, Link, useForm } from "@inertiajs/inertia-vue3";
 
 const form = useForm({
   name: "",
+  username: "",
+  address:"",
+  phone_no: "",
   email: "",
   password: "",
   password_confirmation: "",
@@ -73,6 +76,25 @@ const submit = () => {
 
               <div class="form-group">
                 <div class="form-label-group">
+                  <label class="form-label" for="default-01">Username</label>
+                </div>
+                <div class="form-control-wrap">
+
+                  <TextInput
+                    id="name"
+                    type="text"
+                    class="mt-1 block w-full form-control form-control-lg"
+                    v-model="form.username"
+                    required
+                    autofocus
+                    autocomplete="username"
+                  />
+                  <InputError class="mt-2" :message="form.errors.username" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-label-group">
                   <label class="form-label" for="default-01">Email</label>
                 </div>
                 <div class="form-control-wrap">
@@ -83,11 +105,52 @@ const submit = () => {
                     class="mt-1 block w-full form-control form-control-lg"
                     v-model="form.email"
                     required
-                    autocomplete="username"
+                    autocomplete="email"
                   />
                   <InputError class="mt-2" :message="form.errors.email" />
                 </div>
               </div>
+
+              
+              <div class="form-group">
+                <div class="form-label-group">
+                  <label class="form-label" for="default-01">Address</label>
+                </div>
+                <div class="form-control-wrap">
+
+                  <TextInput
+                    id="name"
+                    type="text"
+                    class="mt-1 block w-full form-control form-control-lg"
+                    v-model="form.address"
+                    required
+                    autofocus
+                    autocomplete="address"
+                  />
+                  <InputError class="mt-2" :message="form.errors.address" />
+                </div>
+              </div>
+
+                
+              <div class="form-group">
+                <div class="form-label-group">
+                  <label class="form-label" for="default-01">Phone</label>
+                </div>
+                <div class="form-control-wrap">
+
+                  <TextInput
+                    id="name"
+                    type="text"
+                    class="mt-1 block w-full form-control form-control-lg"
+                    v-model="form.phone_no"
+                    required
+                    autofocus
+                    autocomplete="phone"
+                  />
+                  <InputError class="mt-2" :message="form.errors.phone_no" />
+                </div>
+              </div>
+              
               <div class="form-group">
                 <div class="form-label-group">
                   <label class="form-label" for="password">Password</label>
