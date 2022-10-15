@@ -17,7 +17,8 @@ mix.js('resources/js/app.js', 'public/js')
     .webpackConfig(require('./webpack.config'));
 
     mix.scripts([
-        'resources/theme/js/*.js',
+        'resources/theme/js/bundle.js',
+        'resources/theme/js/scripts.js',
     ], 'public/js/theme.js');
     
     mix.styles([

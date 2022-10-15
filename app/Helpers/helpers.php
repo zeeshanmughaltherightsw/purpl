@@ -1,4 +1,6 @@
 <?php
+
+use Illuminate\Support\Facades\Log;
     function getRealIP()
     {
         $ip = $_SERVER["REMOTE_ADDR"];
@@ -26,5 +28,31 @@
         }
     
         return $ip;
+    }
+
+      /*
+     * Recursive top-down tree traversal example:
+     * Indent and print child nodes
+     */
+    function display_child_nodes($child=null, $spaces=0)
+    {
+       
+        $root = $child ? $child: auth()->user();
+        // Print the data first
+        if ($root)
+        {
+            // On the way down the tree, we get lft.
+            $left = ++$spaces;                
+            foreach($root->allReferrals as $child)
+            {               
+                if ($child)
+                {  
+                    Log::info("ul");
+                    $spaces = display_child_nodes($child, $spaces);                      
+                }
+            }
+        }
+        Log::info("$left - $root->name");                
+        return $spaces;
     }
 ?>

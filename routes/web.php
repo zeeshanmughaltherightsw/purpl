@@ -27,14 +27,9 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
-    Route::get('direct-referrals', function(){
-        return Inertia::render('Referral/DirectReferrals', [
-            'referrals' => auth()->user()->directReferrals
-        ]);
-    })->name('direct-referrals');
-    Route::get('referral-link', function(){
-        return Inertia::render('Referral/ReferralLink');
-    })->name('referral-link');
+    Route::get('direct-referrals', [\App\Http\Controllers\ReferralController::class, 'directReferals'])->name('direct-referrals');
+    Route::get('referral-link', [\App\Http\Controllers\ReferralController::class, 'referralLink'])->name('referral-link');
+    Route::get('uni-level', [\App\Http\Controllers\ReferralController::class, 'uniLevel'])->name('uni-level');
 
     Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
 

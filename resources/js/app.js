@@ -4,7 +4,6 @@ import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
 
-
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 createInertiaApp({
@@ -13,8 +12,8 @@ createInertiaApp({
     setup({ el, app, props, plugin }) {
         const appVue = createApp({ render: () => h(app, props) })
             .use(plugin)
-            .mixin({ methods: { route } })
-            .mount(el);
+            .mixin({ methods: { route } });
+            appVue.mount(el);
         return appVue;
     },
 });

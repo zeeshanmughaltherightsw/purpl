@@ -51,4 +51,18 @@ class User extends Authenticatable
     {
         return $this->hasMany(User::class, 'ref_by');
     }
+
+    public function parentRef()
+    {
+        return $this->belongsTo(User::class, 'ref_by');
+    }
+
+    public function scopeAsNodes($query)
+    {
+        $query->select(['name as label', 'id', 'ref_by']);
+    }
+
+    public function nodes() {
+        return $this->directReferrals()->with(['nodes' => function($q){$q->asNodes();}]);
+    }
 }
