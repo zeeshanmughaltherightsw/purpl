@@ -24,6 +24,8 @@ class User extends Authenticatable
         'ref_by',
         'account_no',
         'username',
+        'address',
+        'phone_no',
         'plan_id',
         'status',
     ];
