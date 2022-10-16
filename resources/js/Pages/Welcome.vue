@@ -4,7 +4,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 </script>
 
 <template>
-    <Head title="Welcome" />
+    <Head title="Home" />
 
     <GuestLayout>
         <img class="w-100" src="https://www.prpal.com/images/app-img/Banner.png" alt="Image"/>
