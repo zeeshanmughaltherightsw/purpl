@@ -97,8 +97,7 @@ const submit = () => {
                   <div class="form-group">
                     <div class="form-label-group">
                       <label class="form-label" for="password">Password</label>
-                      <a class="link link-primary link-sm" href="html/pages/auths/auth-reset-v2.html">Forgot Password?</a>
-                    </div>
+                     </div>
                     <div class="form-control-wrap">
                       <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password">
                         <em class="passcode-icon icon-show icon ni ni-eye"></em>

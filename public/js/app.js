@@ -24867,10 +24867,7 @@ var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "form-label",
   "for": "password"
-}, "Password"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "link link-primary link-sm",
-  href: "html/pages/auths/auth-reset-v2.html"
-}, "Forgot Password?")], -1 /* HOISTED */);
+}, "Password")], -1 /* HOISTED */);
 var _hoisted_27 = {
   "class": "form-control-wrap"
 };
