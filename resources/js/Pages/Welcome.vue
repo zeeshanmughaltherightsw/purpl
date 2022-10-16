@@ -11,7 +11,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
         <div class="carousel-caption row">
 
             <div class="justify-content-left row-cols-3">
-                <h3 class="display-2 text-white mb-5 animated slideInDown">Pr Pal
+                <h3 class="display-2 text-white mb-5 animated slideInDown">Stonearn
                 </h3>
                 <p>
                     We provide an efficient platform for the crypto lovers for trading and making investments in

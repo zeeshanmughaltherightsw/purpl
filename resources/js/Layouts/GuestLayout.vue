@@ -5,20 +5,22 @@ import { Link } from '@inertiajs/inertia-vue3';
 
 <template>
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow">
-        <a href="#" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">Pr Pal</h1>
-        </a>
+        <Link :href="route('welcome')" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="/logo.png" style="width: 200px; height: 58px;"/>
+        </Link>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse countainer">
-            <Link :href="route('welcome')" class="nav-item nav-link" :class="{ 'active' : route().current('welcome')}">Home</Link>
-            <Link :href="route('contact')" class="nav-item nav-link" :class="{ 'active' : route().current('contact')}">Contact us</Link>
-            <Link :href="route('about')" class="nav-item nav-link" :class="{ 'active' : route().current('about')}">About us</Link>
+            <Link :href="route('welcome')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('welcome')}">Home</Link>
+            <Link :href="route('contact')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('contact')}">Contact us</Link>
+            <Link :href="route('about')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('about')}">About us</Link>
         </div>
-        <Link as="button" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4">
+
+        <Link as="button" v-if="$page.props.auth.user.username" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4">
         Sign in</Link>
-        <Link as="button" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Sign up</Link>
+        <Link as="button" v-if="$page.props.auth.user.username" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Sign up</Link>
+        <Link as="button" v-else :href="route('dashboard')" class="btn btn-primary sign mr-3 px-4">Dashboard</Link>
     </nav>
 
     <slot />
