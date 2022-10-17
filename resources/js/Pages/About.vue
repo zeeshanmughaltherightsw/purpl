@@ -1,57 +1,44 @@
 <template>
     <guest-layout>
        <!-- Quote Start -->
-       <div class="container-fluid quote" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
-          <div class="container py-5">
-              <div class="row justify-content-center">
-                  <div class="col-lg-7">
-                      <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                          <h1 class="display-5 text-center mb-5">Contact us</h1>
-                          <div class="row g-3">
-                              <div class="col-sm-6">
-                                  <div class="form-floating">
-                                      <input type="text" class="form-control bg-light border-0" id="gname"
-                                          placeholder="Your name">
-                                      <label for="gname">Your Name</label>
-                                  </div>
-                              </div>
-                              <div class="col-sm-6">
-                                  <div class="form-floating">
-                                      <input type="email" class="form-control bg-light border-0" id="gmail"
-                                          placeholder="Your Email">
-                                      <label for="gmail">Your Email</label>
-                                  </div>
-                              </div>
-                              <div class="col-sm-6">
-                                  <div class="form-floating">
-                                      <input type="text" class="form-control bg-light border-0" id="cname"
-                                          placeholder="Your Mobile">
-                                      <label for="cname">Your Mobile</label>
-                                  </div>
-                              </div>
-                              <div class="col-sm-6">
-                                  <div class="form-floating">
-                                      <input type="text" class="form-control bg-light border-0" id="cage"
-                                          placeholder="Service type">
-                                      <label for="cage">Service Type</label>
-                                  </div>
-                              </div>
-                              <div class="col-12">
-                                  <div class="form-floating">
-                                      <textarea class="form-control bg-light border-0" placeholder="Leave a message here"
-                                          id="message" style="height: 100px"></textarea>
-                                      <label for="message">Message</label>
-                                  </div>
-                              </div>
-                              <div class="col-12 text-center">
-                                  <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg" height="">
+                </div>
+                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-1 mb-0">25</h1>
+                    <p class="text-primary mb-4">Year of Experience</p>
+                    <h1 class="display-5 mb-4">About Us </h1>
+                    <p class="mb-4">Indeed, Jewellery is something that  Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. 
+                        Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. 
+                        Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive.
+                        Stonearn brand allows you the facility of custom designs and helps you to fix all gem jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry that are made of stones. Stone jewelry creates a shining charm to your personality.
+                        </p>
+                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                </div>
+                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-5">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Award Winning</h4>
+                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Dedicated Team</h4>
+                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       <!-- Quote End -->
   
     </guest-layout>
