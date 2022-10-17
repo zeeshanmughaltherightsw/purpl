@@ -218,5 +218,8 @@
 import { Link } from "@inertiajs/inertia-vue3";
 export default {
   components: { Link },
+  mounted(){
+    NioApp.TGL.init()
+  },
 };
 </script>

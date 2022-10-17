@@ -192,7 +192,7 @@
       toggleCurrent = this;
       NioApp.Toggle.trigger($(this).data('target'), attr);
       e.preventDefault();
-    });
+    }, { once: true });
     $doc.on('mouseup', function (e) {
       if (toggleCurrent) {
         var $toggleCurrent = $(toggleCurrent),
@@ -229,7 +229,7 @@
     $(toggle).on('click', function (e) {
       NioApp.Toggle.trigger($(this).data('target'), attr);
       e.preventDefault();
-    });
+    }, { once: true });
   }; // Dropdown Menu @v1.0
 
 
@@ -930,6 +930,6 @@
     NioApp.coms.winLoad.push(NioApp.ModeSwitch);
   };
 
-  NioApp.init();
+  // NioApp.init();
   return NioApp;
 }(NioApp, jQuery);
