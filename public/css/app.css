@@ -16916,3 +16916,9 @@ h6,
 .nk-header-brand img{
     max-width: 44px;
 }
+
+@media only screen and (min-width: 1000px)  {
+    #navbarSupportedContent{
+        margin-left: 35%;
+    }
+}

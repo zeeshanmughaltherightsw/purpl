@@ -24075,7 +24075,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow"
+  "class": "navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow",
+  "data-content": "sidebarMenu"
 };
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   src: "/logo.png",
@@ -24085,16 +24086,20 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   }
 }, null, -1 /* HOISTED */);
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": "navbar-toggler",
   type: "button",
-  "class": "navbar-toggler me-4",
-  "data-bs-toggle": "collapse",
-  "data-bs-target": "#navbarCollapse"
+  "data-toggle": "collapse",
+  "data-target": "#navbarSupportedContent",
+  "aria-controls": "navbarSupportedContent",
+  "aria-expanded": "false",
+  "aria-label": "Toggle navigation"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "navbar-toggler-icon"
 })], -1 /* HOISTED */);
 var _hoisted_4 = {
   "class": "collapse navbar-collapse",
-  id: "navbarCollapse countainer"
+  id: "navbarSupportedContent",
+  style: {}
 };
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn\" data-wow-delay=\"0.1s\"><div class=\"container py-5\"><div class=\"row g-5\"><div class=\"col-lg-3 col-md-6\"><h4 class=\"text-white mb-4\">Our Office</h4><p class=\"mb-2\"><i class=\"fa fa-map-marker-alt me-3\"></i>123 Street, New York, USA</p><p class=\"mb-2\"><i class=\"fa fa-phone-alt me-3\"></i>+012 345 67890</p><p class=\"mb-2\"><i class=\"fa fa-envelope me-3\"></i>info@example.com</p><div class=\"d-flex pt-2\"><a class=\"btn btn-square btn-outline-light rounded-circle me-2\" href=\"\"><i class=\"fab fa-twitter\"></i></a><a class=\"btn btn-square btn-outline-light rounded-circle me-2\" href=\"\"><i class=\"fab fa-facebook-f\"></i></a><a class=\"btn btn-square btn-outline-light rounded-circle me-2\" href=\"\"><i class=\"fab fa-youtube\"></i></a><a class=\"btn btn-square btn-outline-light rounded-circle me-2\" href=\"\"><i class=\"fab fa-linkedin-in\"></i></a></div></div><div class=\"col-lg-3 col-md-6\"><h4 class=\"text-white mb-4\">Services</h4><a class=\"btn btn-link\" href=\"\">Landscaping</a><a class=\"btn btn-link\" href=\"\">Pruning plants</a><a class=\"btn btn-link\" href=\"\">Urban Gardening</a><a class=\"btn btn-link\" href=\"\">Garden Maintenance</a><a class=\"btn btn-link\" href=\"\">Green Technology</a></div><div class=\"col-lg-3 col-md-6\"><h4 class=\"text-white mb-4\">Quick Links</h4><a class=\"btn btn-link\" href=\"\">About Us</a><a class=\"btn btn-link\" href=\"\">Contact Us</a><a class=\"btn btn-link\" href=\"\">Our Services</a><a class=\"btn btn-link\" href=\"\">Terms &amp; Condition</a><a class=\"btn btn-link\" href=\"\">Support</a></div><div class=\"col-lg-3 col-md-6\"><h4 class=\"text-white mb-4\">Newsletter</h4><p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p><div class=\"position-relative w-100\"><input class=\"form-control bg-light border-light w-100 py-3 ps-4 pe-5\" type=\"text\" placeholder=\"Your email\"><button type=\"button\" class=\"btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2\">SignUp</button></div></div></div></div></div>", 1);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -24136,7 +24141,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("About us")];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["href", "class"])]), !_ctx.$page.props.auth.user ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["Link"], {
+  }, 8 /* PROPS */, ["href", "class"]), !_ctx.$page.props.auth.user ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["Link"], {
     key: 0,
     as: "button",
     text: "Sign in",
@@ -24168,7 +24173,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Dashboard")];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default"), _hoisted_5], 64 /* STABLE_FRAGMENT */);
+  }, 8 /* PROPS */, ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default"), _hoisted_5], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -28995,7 +29000,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n.nk-header-brand img{\r\n    max-width: 44px;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\r\n.nk-header-brand img{\r\n    max-width: 44px;\r\n}\r\n\r\n@media only screen and (min-width: 1000px)  {\r\n    #navbarSupportedContent{\r\n        margin-left: 35%;\r\n    }\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
