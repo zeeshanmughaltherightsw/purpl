@@ -26279,7 +26279,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   "class": "w-100",
-  src: "https://www.prpal.com/images/app-img/Banner.png",
+  src: "img/homebg.jpg",
   alt: "Image"
 }, null, -1 /* HOISTED */);
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
