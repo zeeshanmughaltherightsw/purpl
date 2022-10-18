@@ -29000,7 +29000,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n.nk-header-brand img{\r\n    max-width: 44px;\r\n}\r\n\r\n@media only screen and (min-width: 1000px)  {\r\n    #navbarSupportedContent{\r\n        margin-left: 35%;\r\n    }\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\r\n.nk-header-brand img{\r\n    max-width: 44px;\r\n}\r\n\r\n@media only screen and (min-width: 1000px)  {\r\n    #navbarSupportedContent{\r\n        margin-left: 35%;\r\n    }\r\n}\r\n@media only screen and (max-width: 600px)  {\r\n    .carousel-caption{\r\n        height: 33vh;\r\n        margin-top: 8vh;\r\n    }\r\n    .carousel-caption div h3{\r\n        font-size: 34px;\r\n        margin: auto;\r\n    }\r\n    .carousel-caption div p{\r\n        margin: auto;\r\n    }\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

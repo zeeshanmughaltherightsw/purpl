@@ -8,3 +8,16 @@
         margin-left: 35%;
     }
 }
+@media only screen and (max-width: 600px)  {
+    .carousel-caption{
+        height: 33vh;
+        margin-top: 8vh;
+    }
+    .carousel-caption div h3{
+        font-size: 34px;
+        margin: auto;
+    }
+    .carousel-caption div p{
+        margin: auto;
+    }
+}
