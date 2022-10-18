@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('account_no')->nullable();
+            $table->string('user_type')->nullable();
             $table->unsignedBigInteger('ref_by')->nullable();
             $table->string('username')->nullable();
             $table->string('address')->nullable();
