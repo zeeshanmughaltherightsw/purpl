@@ -7,7 +7,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
     <Head title="Home" />
 
     <GuestLayout>
-        <img class="w-100" src="https://www.prpal.com/images/app-img/Banner.png" alt="Image">
+        <img class="w-100" src="img/homebg.jpg" alt="Image">
     <div class="carousel-caption row">
 
         <div class="justify-content-left row-cols-3 container">
