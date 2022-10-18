@@ -22,6 +22,6 @@
         margin: auto;
     }
     .carousel-caption div p{
-        margin: auto;
+       display: none;
     }
 }
