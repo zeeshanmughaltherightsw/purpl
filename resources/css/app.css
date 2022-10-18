@@ -3,6 +3,10 @@
     max-width: 44px;
 }
 
+.solution_cards_box .solution_card:hover  .plan{
+    
+    color: #fff;
+  }
 @media only screen and (min-width: 1000px)  {
     #navbarSupportedContent{
         margin-left: 35%;

@@ -10,7 +10,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
         <img class="w-100" src="https://www.prpal.com/images/app-img/Banner.png" alt="Image">
     <div class="carousel-caption row">
 
-        <div class="justify-content-left row-cols-3">
+        <div class="justify-content-left row-cols-3 container">
             <h3 class="display-2 text-white mb-5 animated slideInDown">Stonearn
             </h3>
             <p>
@@ -61,7 +61,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                     <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-phone text-primary"></i>
+                                <i class="fas fa-phone text-primary"></i>
                             </div>
                             <div class="ps-3">
                                 <h4>24/7 Available</h4>
@@ -82,71 +82,368 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 
 <center>
 
-    <h1 class="pb-5">Our Membership Plans</h1>
+    <h1 class="display-4">Our Membership Plans</h1>
+
+
+    <!-- investors cards -->
+
+    <h1 class="py-5">FOR INVESTORS</h1>
 
     <div class="row container">
 
-        <div class="col-md-3 solution_cards_box">
+        <div class="col-md-4 solution_cards_box">
             <div class="solution_card">
-
-
-                <h3>Plan 1</h3>
+                
+                <h3 class="plan">BASIC</h3>
+                <h5 class="plan">50$</h5>
 
                 <div class="solu_description">
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable
-                        content of a page when looking at its layout.
-                    </p>
-                    <button type="button" class="read_more_btn">Read More</button>
+                    <ul class="my-2">
+                        <li class="">
+                            <b>Estimated Profit</b>
+                        </li>
+                        <li>
+                           4% to 8%
+                        </li>
+                        <li>
+                          <b>Amount Return</b>
+                        </li>
+                        <li>
+                            14 Months
+                        </li>
+                      
+                        
+                    </ul>
+                    <button type="button" class="read_more_btn my-3">Upgrade Now</button>
                 </div>
             </div>
         </div>
 
+        <div class="col-md-4 solution_cards_box">
+            <div class="solution_card">
+
+
+                <h3 class="plan">STARTER</h3>
+                <h5 class="plan">100$</h5>
+
+                <div class="solu_description">
+                    <ul class="my-2">
+                        <li class="">
+                            <b>Estimated Profit</b>
+                        </li>
+                        <li>
+                           4% to 8%
+                        </li>
+                        <li>
+                          <b>Amount Return</b>
+                        </li>
+                        <li>
+                            14 Months
+                        </li>
+                       </ul>
+                    <button type="button" class="read_more_btn my-3">Upgrade Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 solution_cards_box">
+            <div class="solution_card">
+
+
+                <h3 class="plan">SILVER</h3>
+                <h5 class="plan">500$</h5>
+
+                <div class="solu_description">
+                    <ul class="my-2">
+                        <li class="">
+                            <b>Estimated Profit</b>
+                        </li>
+                        <li>
+                           4% to 8%
+                        </li>
+                        <li>
+                          <b>Amount Return</b>
+                        </li>
+                        <li>
+                            14 Months
+                        </li>
+                     </ul>
+                    <button type="button" class="read_more_btn my-3">Uprade Now</button>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- investors cards end -->
+
+
+
+
+        <!-- refferals cards -->
+
+
+                  
+
+
+<h1 class="col-12 my-3 py-5">FOR REFFERALS</h1>
+
+
+        <div class="col-md-4 solution_cards_box">
+            <div class="solution_card">
+
+
+                <h3 class="plan"></h3>
+                <h5 class="plan"></h5>
+
+                <div class="solu_description">
+                    <ul class="my-2">
+                        <li>
+                           <b>Refferals</b> 
+                        </li>
+                        <li>
+                            1 to 10
+                        </li>
+                        <li>
+                           <b>Refferal Commission</b>
+                        </li>
+                        <li>
+                            1 Percent
+                        </li>
+                        <li>
+                          <b>Amount Return</b>
+                        </li>
+                        <li>
+                            14 Months
+                        </li>
+                      
+                        
+                    </ul>
+                    <button type="button" class="read_more_btn my-3">Uprade Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 solution_cards_box">
+            <div class="solution_card">
+
+
+                <h3 class="plan"></h3>
+                <h5 class="plan"></h5>
+
+                <div class="solu_description">
+                    <ul class="my-2">
+                        <li>
+                            <b>Refferals</b> 
+                         </li>
+                         <li>
+                             11 to 20
+                         </li>
+                         <li>
+                            <b>Refferal Commission</b>
+                         </li>
+                         <li>
+                             2 Percent
+                         </li>
+                         <li>
+                           <b>Amount Return</b>
+                         </li>
+                         <li>
+                             14 Months
+                         </li>
+                    </ul>
+                    <button type="button" class="read_more_btn my-3">Uprade Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 solution_cards_box">
+            <div class="solution_card">
+
+
+                <h1 class="plan"></h1>
+                <h5 class="plan"></h5>
+
+                <div class="solu_description">
+                    <ul class="my-2">
+                        <li>
+                            <b>Refferals</b> 
+                         </li>
+                         <li>
+                             21 to 30
+                         </li>
+                         <li>
+                            <b>Refferal Commission</b>
+                         </li>
+                         <li>
+                             3 Percent
+                         </li>
+                         <li>
+                           <b>Amount Return</b>
+                         </li>
+                         <li>
+                             14 Months
+                         </li>
+                      
+                        
+                    </ul>
+                    <button type="button" class="read_more_btn my-3">Uprade Now</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- refferals cards end -->
+
+
+        <!-- highly agents cards -->
+
+
+        <h1 class="col-12 py-5 my-3">FOR HIGHLY AGENTS</h1>
+
+
         <div class="col-md-3 solution_cards_box">
             <div class="solution_card">
 
 
-                <h3>Plan 2</h3>
+                <h3 class="plan"></h3>
+                <h5 class="plan"></h5>
 
                 <div class="solu_description">
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable
-                        content of a page when looking at its layout.
-                    </p>
-                    <button type="button" class="read_more_btn">Read More</button>
+                    <ul class="my-2">
+                        <li>
+                           <b>Refferals</b> 
+                        </li>
+                        <li>
+                            1 to 50 <br>  <b>With</b>  <br>2500$
+                        </li>
+                        <li>
+                           <b>Refferal Commission</b>
+                        </li>
+                        <li>
+                            4 Percent
+                        </li>
+                        <li>
+                          <b>Amount Return</b>
+                        </li>
+                        <li>
+                            14 Months
+                        </li>
+                      
+                        
+                    </ul>
+                    <button type="button" class="read_more_btn my-3">Uprade Now</button>
                 </div>
             </div>
-        </div>
+        </div>  
+
         <div class="col-md-3 solution_cards_box">
             <div class="solution_card">
 
 
-                <h3>Plan 3</h3>
+                <h3 class="plan"></h3>
+                <h5 class="plan"></h5>
 
                 <div class="solu_description">
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable
-                        content of a page when looking at its layout.
-                    </p>
-                    <button type="button" class="read_more_btn">Read More</button>
+                    <ul class="my-2">
+                        <li>
+                           <b>Refferals</b> 
+                        </li>
+                        <li>
+                            50 to 100 <br>  <b>With</b>  <br>10,000$
+                        </li>
+                        <li>
+                           <b>Refferal Commission</b>
+                        </li>
+                        <li>
+                            5 Percent
+                        </li>
+                        <li>
+                          <b>Amount Return</b>
+                        </li>
+                        <li>
+                            14 Months
+                        </li>
+                      
+                        
+                    </ul>
+                    <button type="button" class="read_more_btn my-3">Uprade Now</button>
                 </div>
             </div>
-        </div>
+        </div>  
+
         <div class="col-md-3 solution_cards_box">
             <div class="solution_card">
 
 
-                <h3>Plan 4</h3>
+                <h3 class="plan"></h3>
+                <h5 class="plan"></h5>
 
                 <div class="solu_description">
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable
-                        content of a page when looking at its layout.
-                    </p>
-                    <button type="button" class="read_more_btn">Read More</button>
+                    <ul class="my-2">
+                        <li>
+                           <b>Refferals</b> 
+                        </li>
+                        <li>
+                            100 to 400 <br>  <b>With</b>  <br>2,00,000$
+                        </li>
+                        <li>
+                           <b>Refferal Commission</b>
+                        </li>
+                        <li>
+                            6 Percent
+                        </li>
+                        <li>
+                          <b>Amount Return</b>
+                        </li>
+                        <li>
+                            14 Months
+                        </li>
+                      
+                        
+                    </ul>
+                    <button type="button" class="read_more_btn my-3">Uprade Now</button>
                 </div>
             </div>
-        </div>
+        </div>  
+
+        <div class="col-md-3 solution_cards_box">
+            <div class="solution_card">
+
+
+                <h3 class="plan"></h3>
+                <h5 class="plan"></h5>
+
+                <div class="solu_description">
+                    <ul class="my-2">
+                        <li>
+                           <b>Refferals</b> 
+                        </li>
+                        <li>
+                            More then 400 <br>  <b>With</b>  <br>20,00,000$
+                        </li>
+                        <li>
+                           <b>Refferal Commission</b>
+                        </li>
+                        <li>
+                            7 Percent
+                        </li>
+                        <li>
+                          <b>Amount Return</b>
+                        </li>
+                        <li>
+                            14 Months
+                        </li>
+                      
+                        
+                    </ul>
+                    <button type="button" class="read_more_btn my-3">Uprade Now</button>
+                </div>
+            </div>
+        </div> 
+        
+        
+
+        <!-- highly agents cards end -->
 
        
 </div>
@@ -185,14 +482,14 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                     <div class="row g-5">
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
-                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                                <i class="fas fa-award fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3">Award Winning</h4>
                                 <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
-                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                <i class="fas fa-users fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3">Dedicated Team</h4>
                                 <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
                             </div>
@@ -251,7 +548,8 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                                         style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
                                         <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                             style="width: 90px; height: 90px;">
-                                            <i class="fa fa-check fa-3x text-primary"></i>
+            
+                                            <i class="fas fa-check fa-3x text-primary"></i>
                                         </div>
                                         <h4 class="mb-0">100% Satisfaction</h4>
                                     </div>
@@ -261,7 +559,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                                         style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
                                         <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                             style="width: 90px; height: 90px;">
-                                            <i class="fa fa-users fa-3x text-primary"></i>
+                                            <i class="fas fa-users fa-3x text-primary"></i>
                                         </div>
                                         <h4 class="mb-0">Dedicated Team</h4>
                                     </div>
@@ -272,7 +570,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
                                 <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                     style="width: 90px; height: 90px;">
-                                    <i class="fa fa-tools fa-3x text-primary"></i>
+                                    <i class="fas fa-tools fa-3x text-primary"></i>
                                 </div>
                                 <h4 class="mb-0">Modern Equipment</h4>
                             </div>
@@ -304,7 +602,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             </div>
                             <h4 class="mb-3">All Stone Jewelry</h4>
                             <p class="mb-4">We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -319,7 +617,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             </div>
                             <h4 class="mb-3">Custom Designs</h4>
                             <p class="mb-4">We encourage our clients to order jewelry with custom designs or changes that they want. </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -334,7 +632,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             </div>
                             <h4 class="mb-3">Fix Raw Designs</h4>
                             <p class="mb-4">Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -349,7 +647,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             </div>
                             <h4 class="mb-3">Beyond Stone Collection </h4>
                             <p class="mb-4">We will give you a stone collection beyond your imagination that you can add to your ring or other jewelry.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -365,14 +663,14 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <h4 class="mb-3">Stone Mining</h4>
                             <p class="mb-4">We also provide the service of different kinds of stone mining and polish them to utilize in jewelry.
                             </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                            <img class="img-fluid" src="img/services/services-9.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
@@ -380,7 +678,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             </div>
                             <h4 class="mb-3"> Sustainable Stone Jewelry</h4>
                             <p class="mb-4">Stonearn gives you sustainable stone jewelry that you can use freely without any tension on various occasions. </p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>
