@@ -16253,6 +16253,14 @@ h6,
 .fw-semi-bold {
     font-weight: 500 !important;
 }
+ul{
+    list-style-type:none;
+    
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 /*** Spinner ***/
@@ -16471,33 +16479,34 @@ h6,
     transform: scale(1.2);
     transition: .3s;
     z-index: -1;
-}
-
-.service-item:hover .service-img img {
     transform: scale(1);
 }
+
 
 .service-item .service-text {
     background: #FFFFFF;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .3s;
+    background: rgba(15, 66, 41, .6);
+    color: #FFFFFF;
 }
 
 .service-item:hover .service-text {
-    background: rgba(15, 66, 41, .6);
+    
 }
 
 .service-item .service-text h4,
 .service-item .service-text p {
     transition: .3;
+    color: var(--light);
 }
 
 .service-item:hover .service-text h4 {
-    color: #FFFFFF;
+   
 }
 
 .service-item:hover .service-text p {
-    color: var(--light);
+    
 }
 
 .service-item .service-text .btn-square {
@@ -16767,6 +16776,13 @@ h6,
     min-height: 265px;
     transition: 0.7s;
   }
+
+  .solution_cards_box .solution_card:hover  .plan{
+    
+    color: #fff;
+  }
+
+  
   
   .solution_cards_box .solution_card:hover {
     background: #6F5EA9;
@@ -16916,3 +16932,8 @@ h6,
 .nk-header-brand img{
     max-width: 44px;
 }
+
+.solution_cards_box .solution_card:hover  .plan{
+    
+    color: #fff;
+  }

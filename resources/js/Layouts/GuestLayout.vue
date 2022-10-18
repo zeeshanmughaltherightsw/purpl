@@ -8,10 +8,8 @@ import { Link } from '@inertiajs/inertia-vue3';
         <Link :href="route('welcome')" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="/logo.png" style="width: 200px; height: 58px;"/>
         </Link>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse countainer">
+        <div class="nk-menu-trigger d-xl-none ms-n1"><a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="navbarCollapse"><em class="icon ni ni-menu"></em></a></div>
+        <div class="collapse navbar-collapse" id="navbarCollapse countainer" data-content="navbarCollapse">
             <Link :href="route('welcome')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('welcome')}">Home</Link>
             <Link :href="route('contact')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('contact')}">Contact us</Link>
             <Link :href="route('about')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('about')}">About us</Link>

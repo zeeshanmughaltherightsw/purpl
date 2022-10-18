@@ -2,3 +2,8 @@
 .nk-header-brand img{
     max-width: 44px;
 }
+
+.solution_cards_box .solution_card:hover  .plan{
+    
+    color: #fff;
+  }
