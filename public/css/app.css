@@ -16933,12 +16933,10 @@ li{
     max-width: 44px;
 }
 
-<<<<<<< HEAD
 .solution_cards_box .solution_card:hover  .plan{
     
     color: #fff;
   }
-=======
 @media only screen and (min-width: 1000px)  {
     #navbarSupportedContent{
         margin-left: 35%;
@@ -16957,4 +16955,3 @@ li{
         margin: auto;
     }
 }
->>>>>>> e3abc72bafb15dde7a73c7e051362ff7034b2cdf
