@@ -4,20 +4,21 @@ import { Link } from '@inertiajs/inertia-vue3';
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow" data-content="sidebarMenu">
         <Link :href="route('welcome')" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="/logo.png" style="width: 200px; height: 58px;"/>
         </Link>
-        <div class="nk-menu-trigger d-xl-none ms-n1"><a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="navbarCollapse"><em class="icon ni ni-menu"></em></a></div>
-        <div class="collapse navbar-collapse" id="navbarCollapse countainer" data-content="navbarCollapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
             <Link :href="route('welcome')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('welcome')}">Home</Link>
             <Link :href="route('contact')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('contact')}">Contact us</Link>
             <Link :href="route('about')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('about')}">About us</Link>
+            <Link as="button" v-if="!$page.props.auth.user" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4"> Sign in</Link>
+            <Link as="button" v-if="!$page.props.auth.user" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Sign up</Link>
+            <Link as="button" v-if="$page.props.auth.user" :href="route('dashboard')" class="btn btn-primary sign mr-3 px-4">Dashboard</Link>
         </div>
-
-        <Link as="button" v-if="!$page.props.auth.user" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4"> Sign in</Link>
-        <Link as="button" v-if="!$page.props.auth.user" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Sign up</Link>
-        <Link as="button" v-if="$page.props.auth.user" :href="route('dashboard')" class="btn btn-primary sign mr-3 px-4">Dashboard</Link>
     </nav>
 
     <slot />
