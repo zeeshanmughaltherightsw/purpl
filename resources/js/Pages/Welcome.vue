@@ -28,7 +28,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 
 
 
-    <div class="container-fluid top-feature py-5 pt-lg-0">
+    <div class="container-fluid py-5 pt-lg-0">
         <div class="container py-5 pt-lg-0">
             <div class="row gx-0">
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
@@ -470,10 +470,12 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                     <h1 class="display-1 mb-0">25</h1>
                     <p class="text-primary mb-4">Year of Experience</p>
                     <h1 class="display-5 mb-4">ABOUT US</h1>
-                    <p class="mb-4">Indeed, Jewellery is something that  Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. <br>
-                        Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. 
-                        Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive.
-                        Stonearn brand allows you the facility of custom designs and helps you to fix all gem jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry that are made of stones. Stone jewelry creates a shining charm to your personality.
+                    <p class="mb-4">Indeed, Jewellery is something that  Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. 
+Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. <br>
+Stonearn also buys mines and does stone mining by taking the help of stone and mine experts. We mine different precious and unique stones that are rare. 
+Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive. <br>
+Stonearn brand allows you the facility of custom designs and helps you to fix all gem jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry that are made of stones. Stone jewelry creates a shining charm to your personality.
+
                         
                     </p>
                     <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
@@ -484,14 +486,14 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <div class="border-start ps-4">
                                 <i class="fas fa-award fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3">Award Winning</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                                <span>Indeed, Stonearn is an award-winning company that works related to stone mining and stone jewelry</span>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fas fa-users fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3">Dedicated Team</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                                <span>For Stone mining and jewelry designs, we have a dedicated team of experts who do their work always expertly</span>
                             </div>
                         </div>
                     </div>
@@ -597,12 +599,10 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <img class="img-fluid" src="img/services/services-4.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">All Stone Jewelry</h4>
-                            <p class="mb-4">We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. </p>
-                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
+                            
+                            <h4 class="m-5">All Stone Jewelry</h4>
+                            <p class="m-5">We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. </p>
+                            <!-- <button type="button" class="btn btn-primary">Primary</button> -->
                         </div>
                     </div>
                 </div>
@@ -612,12 +612,10 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <img class="img-fluid" src="img/services/services-5.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Custom Designs</h4>
-                            <p class="mb-4">We encourage our clients to order jewelry with custom designs or changes that they want. </p>
-                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
+                            
+                            <h4 class="m-5">Custom Designs</h4>
+                            <p class="m-5">We encourage our clients to order jewelry with custom designs or changes that they want. </p>
+                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -627,12 +625,10 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <img class="img-fluid" src="img/services/services-6.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Fix Raw Designs</h4>
-                            <p class="mb-4">Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs.</p>
-                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
+                            
+                            <h4 class="m-5">Fix Raw Designs</h4>
+                            <p class="m-5">Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs.</p>
+                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -642,12 +638,11 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <img class="img-fluid" src="img/services/services-7.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Beyond Stone Collection </h4>
-                            <p class="mb-4">We will give you a stone collection beyond your imagination that you can add to your ring or other jewelry.</p>
-                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
+                            
+                            <h4 class="m-5">Stone Mine Experts</h4>
+                            <p class="mb-5">For stone mining, we get the help of experts who have a good knowledge of stones and their mining.
+</p>
+                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -657,13 +652,11 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <img class="img-fluid" src="img/services/services-8.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Stone Mining</h4>
-                            <p class="mb-4">We also provide the service of different kinds of stone mining and polish them to utilize in jewelry.
+                            
+                            <h4 class="m-5">Stone Mining</h4>
+                            <p class="mb-5">We also provide the service of different kinds of stone mining and polish them to utilize in jewelry.
                             </p>
-                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
+                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -673,12 +666,10 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             <img class="img-fluid" src="img/services/services-9.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3"> Sustainable Stone Jewelry</h4>
-                            <p class="mb-4">Stonearn gives you sustainable stone jewelry that you can use freely without any tension on various occasions. </p>
-                            <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a>
+                            
+                            <h4 class="m-5"> Buy Stone Mine</h4>
+                            <p class="mb-5">Stonearn not just made jewelry from stone mines but also mines in which stones were discovered and then sold them.  </p>
+                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
                         </div>
                     </div>
                 </div>
@@ -688,59 +679,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
     <!-- Service End -->
 
 
-    <!-- Quote Start -->
-    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="gname"
-                                        placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0" id="gmail"
-                                        placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cname"
-                                        placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cage"
-                                        placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here"
-                                        id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote End -->
+    
 
 
     <!-- Projects Start -->
@@ -913,27 +852,24 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="fs-5 fw-bold text-primary">Testimonial</p>
                     <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                    <p class="mb-4">Our first priority is to satisfy our clients. That is why they say that “Our professionalism and commitment to the work always inspires them”. So, they contact us with related stone mining and stone jewelry designs.</p>
                     <a class="btn btn-primary py-3 px-4" href="">See More</a>
                 </div>
                 <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item">
                             <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            <p class="fs-5">I am Clara White and I Love stone jewelry. Stonearn is the brand that completes my dream of wearing unique and rare stone jewelry in amazing designs.
                             </p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
+                            <h4>Clara White</h4>
+                            
                         </div>
                         <div class="testimonial-item">
                             <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            <p class="fs-5">I am Richard Andreson. I love to know about stone mining and different kinds of precious stones that can only be possible because of Stonearn.
                             </p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
+                            <h4>Richard Andreson</h4>
+                            
                         </div>
                     </div>
                 </div>
