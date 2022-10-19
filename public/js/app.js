@@ -24542,7 +24542,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "fa fa-award fa-3x text-primary mb-3"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   "class": "mb-3"
-}, "Award Winning"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+}, "Award Winning"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Indeed, Stonearn is an award-winning company that works related to stone mining and stone jewelry.")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-12 col-sm-6 col-lg-12"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "border-start ps-4"
@@ -24550,7 +24550,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "fa fa-users fa-3x text-primary mb-3"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   "class": "mb-3"
-}, "Dedicated Team"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna")])])])])])])], -1 /* HOISTED */);
+}, "Dedicated Team"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "For Stone mining and jewelry designs, we have a dedicated team of experts who do their work always expertly")])])])])])])], -1 /* HOISTED */);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_guest_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("guest-layout");
@@ -26290,7 +26290,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "display-2 text-white mb-5 animated slideInDown"
 }, "Stonearn "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " We provide an efficient platform for the crypto lovers for trading and making investments in cryptocurrency. Join us to enjoy professional assistance for your growing. ")])], -1 /* HOISTED */);
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "container-fluid top-feature py-5 pt-lg-0"
+  "class": "container-fluid py-5 pt-lg-0"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "container py-5 pt-lg-0"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26537,7 +26537,7 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "display-5 mb-4"
 }, "ABOUT US"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "mb-4"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Indeed, Jewellery is something that Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive. Stonearn brand allows you the facility of custom designs and helps you to fix all gem jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry that are made of stones. Stone jewelry creates a shining charm to your personality. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Indeed, Jewellery is something that Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Stonearn also buys mines and does stone mining by taking the help of stone and mine experts. We mine different precious and unique stones that are rare. Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Stonearn brand allows you the facility of custom designs and helps you to fix all gem jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry that are made of stones. Stone jewelry creates a shining charm to your personality. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "btn btn-primary py-3 px-4",
   href: ""
 }, "Explore More")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26553,7 +26553,7 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "fas fa-award fa-3x text-primary mb-3"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   "class": "mb-3"
-}, "Award Winning"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+}, "Award Winning"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Indeed, Stonearn is an award-winning company that works related to stone mining and stone jewelry")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-12 col-sm-6 col-lg-12"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "border-start ps-4"
@@ -26561,7 +26561,7 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "fas fa-users fa-3x text-primary mb-3"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   "class": "mb-3"
-}, "Dedicated Team"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna")])])])])])])], -1 /* HOISTED */);
+}, "Dedicated Team"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "For Stone mining and jewelry designs, we have a dedicated team of experts who do their work always expertly")])])])])])])], -1 /* HOISTED */);
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "container-xxl py-5"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26672,22 +26672,11 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "btn-square rounded-circle mx-auto mb-3"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
-  src: "img/icon/icon-3.png",
-  alt: "Icon"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "mb-3"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
 }, "All Stone Jewelry"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mb-4"
-}, "We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "btn btn-sm",
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fas fa-plus text-primary me-2"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Read More")])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "m-5"
+}, "We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <button type=\"button\" class=\"btn btn-primary\">Primary</button> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-lg-4 col-md-6 wow fadeInUp",
   "data-wow-delay": "0.3s"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26700,22 +26689,11 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "btn-square rounded-circle mx-auto mb-3"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
-  src: "img/icon/icon-6.png",
-  alt: "Icon"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "mb-3"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
 }, "Custom Designs"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mb-4"
-}, "We encourage our clients to order jewelry with custom designs or changes that they want. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "btn btn-sm",
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fas fa-plus text-primary me-2"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Read More")])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "m-5"
+}, "We encourage our clients to order jewelry with custom designs or changes that they want. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-lg-4 col-md-6 wow fadeInUp",
   "data-wow-delay": "0.5s"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26728,22 +26706,11 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "btn-square rounded-circle mx-auto mb-3"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
-  src: "img/icon/icon-5.png",
-  alt: "Icon"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "mb-3"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
 }, "Fix Raw Designs"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mb-4"
-}, "Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "btn btn-sm",
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fas fa-plus text-primary me-2"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Read More")])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "m-5"
+}, "Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-lg-4 col-md-6 wow fadeInUp",
   "data-wow-delay": "0.1s"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26756,22 +26723,11 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "btn-square rounded-circle mx-auto mb-3"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
-  src: "img/icon/icon-4.png",
-  alt: "Icon"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "mb-3"
-}, "Beyond Stone Collection "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mb-4"
-}, "We will give you a stone collection beyond your imagination that you can add to your ring or other jewelry."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "btn btn-sm",
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fas fa-plus text-primary me-2"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Read More")])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
+}, "Stone Mine Experts"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-5"
+}, "For stone mining, we get the help of experts who have a good knowledge of stones and their mining. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-lg-4 col-md-6 wow fadeInUp",
   "data-wow-delay": "0.3s"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26784,22 +26740,11 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "btn-square rounded-circle mx-auto mb-3"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
-  src: "img/icon/icon-8.png",
-  alt: "Icon"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "mb-3"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
 }, "Stone Mining"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mb-4"
-}, "We also provide the service of different kinds of stone mining and polish them to utilize in jewelry. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "btn btn-sm",
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fas fa-plus text-primary me-2"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Read More")])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "mb-5"
+}, "We also provide the service of different kinds of stone mining and polish them to utilize in jewelry. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-lg-4 col-md-6 wow fadeInUp",
   "data-wow-delay": "0.5s"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26812,103 +26757,12 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "btn-square rounded-circle mx-auto mb-3"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
-  src: "img/icon/icon-2.png",
-  alt: "Icon"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "mb-3"
-}, " Sustainable Stone Jewelry"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mb-4"
-}, "Stonearn gives you sustainable stone jewelry that you can use freely without any tension on various occasions. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "btn btn-sm",
-  href: ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fas fa-plus text-primary me-2"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Read More")])])])])])])], -1 /* HOISTED */);
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
+}, " Buy Stone Mine"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-5"
+}, "Stonearn not just made jewelry from stone mines but also mines in which stones were discovered and then sold them. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])])])])], -1 /* HOISTED */);
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "container-fluid quote my-5 py-5",
-  "data-parallax": "scroll",
-  "data-image-src": "img/carousel-2.jpg"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "container py-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "row justify-content-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-lg-7"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "bg-white rounded p-4 p-sm-5 wow fadeIn",
-  "data-wow-delay": "0.5s"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "display-5 text-center mb-5"
-}, "Get A Free Quote"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "row g-3"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-sm-6"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "form-floating"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-  type: "text",
-  "class": "form-control bg-light border-0",
-  id: "gname",
-  placeholder: "Gurdian Name"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "gname"
-}, "Your Name")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-sm-6"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "form-floating"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-  type: "email",
-  "class": "form-control bg-light border-0",
-  id: "gmail",
-  placeholder: "Gurdian Email"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "gmail"
-}, "Your Email")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-sm-6"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "form-floating"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-  type: "text",
-  "class": "form-control bg-light border-0",
-  id: "cname",
-  placeholder: "Child Name"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "cname"
-}, "Your Mobile")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-sm-6"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "form-floating"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-  type: "text",
-  "class": "form-control bg-light border-0",
-  id: "cage",
-  placeholder: "Child Age"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "cage"
-}, "Service Type")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-12"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "form-floating"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
-  "class": "form-control bg-light border-0",
-  placeholder: "Leave a message here",
-  id: "message",
-  style: {
-    "height": "100px"
-  }
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-  "for": "message"
-}, "Message")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-12 text-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  "class": "btn btn-primary py-3 px-4",
-  type: "submit"
-}, "Submit Now")])])])])])])], -1 /* HOISTED */);
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "container-xxl py-5"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "container"
@@ -26923,7 +26777,7 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "class": "display-5 mb-5"
 }, "What Our Clients Say About Us!"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "mb-4"
-}, "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+}, "Our first priority is to satisfy our clients. That is why they say that “Our professionalism and commitment to the work always inspires them”. So, they contact us with related stone mining and stone jewelry designs."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "btn btn-primary py-3 px-4",
   href: ""
 }, "See More")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26939,7 +26793,7 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "fs-5"
-}, "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Client Name"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Profession")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+}, "I am Clara White and I Love stone jewelry. Stonearn is the brand that completes my dream of wearing unique and rare stone jewelry in amazing designs. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Clara White")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "testimonial-item"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   "class": "img-fluid rounded mb-3",
@@ -26947,7 +26801,7 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "fs-5"
-}, "Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Client Name"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Profession")])])])])])], -1 /* HOISTED */);
+}, "I am Richard Andreson. I love to know about stone mining and different kinds of precious stones that can only be possible because of Stonearn. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Richard Andreson")])])])])])], -1 /* HOISTED */);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_center = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("center");
@@ -26960,7 +26814,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" investors cards "), _hoisted_5, _hoisted_6];
         }),
         _: 1 /* STABLE */
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" plan End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" About Start "), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" About End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Facts Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"container-fluid facts my-5 py-5\" data-parallax=\"scroll\" data-image-src=\"img/carousel-1.jpg\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row g-5\">\r\n                <div class=\"col-sm-6 col-lg-3 text-center wow fadeIn\" data-wow-delay=\"0.1s\">\r\n                    <h1 class=\"display-4 text-white\" data-toggle=\"counter-up\">1234</h1>\r\n                    <span class=\"fs-5 fw-semi-bold text-light\">Happy Clients</span>\r\n                </div>\r\n                <div class=\"col-sm-6 col-lg-3 text-center wow fadeIn\" data-wow-delay=\"0.3s\">\r\n                    <h1 class=\"display-4 text-white\" data-toggle=\"counter-up\">1234</h1>\r\n                    <span class=\"fs-5 fw-semi-bold text-light\">Garden Complated</span>\r\n                </div>\r\n                <div class=\"col-sm-6 col-lg-3 text-center wow fadeIn\" data-wow-delay=\"0.5s\">\r\n                    <h1 class=\"display-4 text-white\" data-toggle=\"counter-up\">1234</h1>\r\n                    <span class=\"fs-5 fw-semi-bold text-light\">Dedicated Staff</span>\r\n                </div>\r\n                <div class=\"col-sm-6 col-lg-3 text-center wow fadeIn\" data-wow-delay=\"0.7s\">\r\n                    <h1 class=\"display-4 text-white\" data-toggle=\"counter-up\">1234</h1>\r\n                    <span class=\"fs-5 fw-semi-bold text-light\">Awards Achieved</span>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Facts End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features Start "), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Service Start "), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Service End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Quote Start "), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Quote End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Projects Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"container-xxl py-5\">\r\n        <div class=\"container\">\r\n            <div class=\"text-center mx-auto wow fadeInUp\" data-wow-delay=\"0.1s\" style=\"max-width: 500px;\">\r\n                <p class=\"fs-5 fw-bold text-primary\">Our Projects</p>\r\n                <h1 class=\"display-5 mb-5\">Some Of Our Wonderful Projects</h1>\r\n            </div>\r\n            <div class=\"row wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n                <div class=\"col-12 text-center\">\r\n                    <ul class=\"list-inline rounded mb-5\" id=\"portfolio-flters\">\r\n                        <li class=\"mx-2 active\" data-filter=\"*\">All</li>\r\n                        <li class=\"mx-2\" data-filter=\".first\">Complete Projects</li>\r\n                        <li class=\"mx-2\" data-filter=\".second\">Ongoing Projects</li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n            <div class=\"row g-4 portfolio-container\">\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item first wow fadeInUp\" data-wow-delay=\"0.1s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-1.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Landscaping</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-1.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item second wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-2.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Pruning plants</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-2.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item first wow fadeInUp\" data-wow-delay=\"0.5s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-3.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Irrigation & Drainage</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-3.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item second wow fadeInUp\" data-wow-delay=\"0.1s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-4.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Garden Maintenance</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-4.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item first wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-5.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Green Technology</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-5.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item second wow fadeInUp\" data-wow-delay=\"0.5s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-6.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Urban Gardening</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-6.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Projects End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Team Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"container-xxl py-5\">\r\n        <div class=\"container\">\r\n            <div class=\"text-center mx-auto wow fadeInUp\" data-wow-delay=\"0.1s\" style=\"max-width: 500px;\">\r\n                <p class=\"fs-5 fw-bold text-primary\">Our Team</p>\r\n                <h1 class=\"display-5 mb-5\">Dedicated & Experienced Team Members</h1>\r\n            </div>\r\n            <div class=\"row g-4\">\r\n                <div class=\"col-lg-4 col-md-6 wow fadeInUp\" data-wow-delay=\"0.1s\">\r\n                    <div class=\"team-item rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/team-1.jpg\" alt=\"\">\r\n                        <div class=\"team-text\">\r\n                            <h4 class=\"mb-0\">Doris Jordan</h4>\r\n                            <p class=\"text-primary\">Landscape Designer</p>\r\n                            <div class=\"team-social d-flex\">\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-facebook-f\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i class=\"fab fa-twitter\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-instagram\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n                    <div class=\"team-item rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/team-2.jpg\" alt=\"\">\r\n                        <div class=\"team-text\">\r\n                            <h4 class=\"mb-0\">Johnny Ramirez</h4>\r\n                            <p class=\"text-primary\">Garden Designer</p>\r\n                            <div class=\"team-social d-flex\">\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-facebook-f\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i class=\"fab fa-twitter\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-instagram\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 wow fadeInUp\" data-wow-delay=\"0.5s\">\r\n                    <div class=\"team-item rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/team-3.jpg\" alt=\"\">\r\n                        <div class=\"team-text\">\r\n                            <h4 class=\"mb-0\">Diana Wagner</h4>\r\n                            <p class=\"text-primary\">Senior Gardener</p>\r\n                            <div class=\"team-social d-flex\">\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-facebook-f\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i class=\"fab fa-twitter\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-instagram\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Team End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Testimonial Start "), _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Testimonial End ")];
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" plan End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" About Start "), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" About End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Facts Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"container-fluid facts my-5 py-5\" data-parallax=\"scroll\" data-image-src=\"img/carousel-1.jpg\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row g-5\">\r\n                <div class=\"col-sm-6 col-lg-3 text-center wow fadeIn\" data-wow-delay=\"0.1s\">\r\n                    <h1 class=\"display-4 text-white\" data-toggle=\"counter-up\">1234</h1>\r\n                    <span class=\"fs-5 fw-semi-bold text-light\">Happy Clients</span>\r\n                </div>\r\n                <div class=\"col-sm-6 col-lg-3 text-center wow fadeIn\" data-wow-delay=\"0.3s\">\r\n                    <h1 class=\"display-4 text-white\" data-toggle=\"counter-up\">1234</h1>\r\n                    <span class=\"fs-5 fw-semi-bold text-light\">Garden Complated</span>\r\n                </div>\r\n                <div class=\"col-sm-6 col-lg-3 text-center wow fadeIn\" data-wow-delay=\"0.5s\">\r\n                    <h1 class=\"display-4 text-white\" data-toggle=\"counter-up\">1234</h1>\r\n                    <span class=\"fs-5 fw-semi-bold text-light\">Dedicated Staff</span>\r\n                </div>\r\n                <div class=\"col-sm-6 col-lg-3 text-center wow fadeIn\" data-wow-delay=\"0.7s\">\r\n                    <h1 class=\"display-4 text-white\" data-toggle=\"counter-up\">1234</h1>\r\n                    <span class=\"fs-5 fw-semi-bold text-light\">Awards Achieved</span>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Facts End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features Start "), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Features End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Service Start "), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Service End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Projects Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"container-xxl py-5\">\r\n        <div class=\"container\">\r\n            <div class=\"text-center mx-auto wow fadeInUp\" data-wow-delay=\"0.1s\" style=\"max-width: 500px;\">\r\n                <p class=\"fs-5 fw-bold text-primary\">Our Projects</p>\r\n                <h1 class=\"display-5 mb-5\">Some Of Our Wonderful Projects</h1>\r\n            </div>\r\n            <div class=\"row wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n                <div class=\"col-12 text-center\">\r\n                    <ul class=\"list-inline rounded mb-5\" id=\"portfolio-flters\">\r\n                        <li class=\"mx-2 active\" data-filter=\"*\">All</li>\r\n                        <li class=\"mx-2\" data-filter=\".first\">Complete Projects</li>\r\n                        <li class=\"mx-2\" data-filter=\".second\">Ongoing Projects</li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n            <div class=\"row g-4 portfolio-container\">\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item first wow fadeInUp\" data-wow-delay=\"0.1s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-1.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Landscaping</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-1.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item second wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-2.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Pruning plants</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-2.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item first wow fadeInUp\" data-wow-delay=\"0.5s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-3.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Irrigation & Drainage</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-3.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item second wow fadeInUp\" data-wow-delay=\"0.1s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-4.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Garden Maintenance</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-4.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item first wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-5.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Green Technology</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-5.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 portfolio-item second wow fadeInUp\" data-wow-delay=\"0.5s\">\r\n                    <div class=\"portfolio-inner rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/service-6.jpg\" alt=\"\">\r\n                        <div class=\"portfolio-text\">\r\n                            <h4 class=\"text-white mb-4\">Urban Gardening</h4>\r\n                            <div class=\"d-flex\">\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"img/service-6.jpg\"\r\n                                    data-lightbox=\"portfolio\"><i class=\"fa fa-eye\"></i></a>\r\n                                <a class=\"btn btn-lg-square rounded-circle mx-2\" href=\"\"><i class=\"fa fa-link\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Projects End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Team Start "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"container-xxl py-5\">\r\n        <div class=\"container\">\r\n            <div class=\"text-center mx-auto wow fadeInUp\" data-wow-delay=\"0.1s\" style=\"max-width: 500px;\">\r\n                <p class=\"fs-5 fw-bold text-primary\">Our Team</p>\r\n                <h1 class=\"display-5 mb-5\">Dedicated & Experienced Team Members</h1>\r\n            </div>\r\n            <div class=\"row g-4\">\r\n                <div class=\"col-lg-4 col-md-6 wow fadeInUp\" data-wow-delay=\"0.1s\">\r\n                    <div class=\"team-item rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/team-1.jpg\" alt=\"\">\r\n                        <div class=\"team-text\">\r\n                            <h4 class=\"mb-0\">Doris Jordan</h4>\r\n                            <p class=\"text-primary\">Landscape Designer</p>\r\n                            <div class=\"team-social d-flex\">\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-facebook-f\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i class=\"fab fa-twitter\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-instagram\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 wow fadeInUp\" data-wow-delay=\"0.3s\">\r\n                    <div class=\"team-item rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/team-2.jpg\" alt=\"\">\r\n                        <div class=\"team-text\">\r\n                            <h4 class=\"mb-0\">Johnny Ramirez</h4>\r\n                            <p class=\"text-primary\">Garden Designer</p>\r\n                            <div class=\"team-social d-flex\">\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-facebook-f\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i class=\"fab fa-twitter\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-instagram\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 wow fadeInUp\" data-wow-delay=\"0.5s\">\r\n                    <div class=\"team-item rounded\">\r\n                        <img class=\"img-fluid\" src=\"img/team-3.jpg\" alt=\"\">\r\n                        <div class=\"team-text\">\r\n                            <h4 class=\"mb-0\">Diana Wagner</h4>\r\n                            <p class=\"text-primary\">Senior Gardener</p>\r\n                            <div class=\"team-social d-flex\">\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-facebook-f\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i class=\"fab fa-twitter\"></i></a>\r\n                                <a class=\"btn btn-square rounded-circle me-2\" href=\"\"><i\r\n                                        class=\"fab fa-instagram\"></i></a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Team End "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Testimonial Start "), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Testimonial End ")];
     }),
     _: 1 /* STABLE */
   })], 64 /* STABLE_FRAGMENT */);
