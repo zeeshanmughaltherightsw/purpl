@@ -24,6 +24,7 @@ mix.js('resources/js/app.js', 'public/js')
     mix.styles([
         'resources/theme/css/dashlite.css',
         'resources/css/app.css',
+        'resources/theme/css/style.css',
     ], 'public/css/app.css')
 
     mix.browserSync({
