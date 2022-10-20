@@ -57,6 +57,7 @@ import { Link } from '@inertiajs/inertia-vue3';
                     <a class="btn btn-link" href="">Our Services</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
+                    <button @click="forceReload">Remove Cache and refresh</button>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>
@@ -72,3 +73,12 @@ import { Link } from '@inertiajs/inertia-vue3';
         </div>
     </div>
 </template>
+<script>
+export default {
+    methods:{
+        forceReload(){
+            window.location.href = '/'
+        }
+    }
+}
+</script>
