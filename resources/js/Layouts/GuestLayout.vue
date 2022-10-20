@@ -77,7 +77,7 @@ import { Link } from '@inertiajs/inertia-vue3';
 export default {
     methods:{
         forceReload(){
-            window.location.href = '/'
+            window.location.reload(true);
         }
     }
 }
