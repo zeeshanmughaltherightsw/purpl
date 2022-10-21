@@ -21,7 +21,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
         </div>
         <!-- Carousel End -->
         <!-- Top Feature Start -->
-        <div class="container-fluid py-5 pt-lg-0 lazyload" id="quick_services" >
+        <div class="container-fluid py-5 pt-lg-0 lazyload" id="quick_services">
             <div class="container py-5 pt-lg-0" v-if="lazyLoadElement.quick_services">
                 <div class="row gx-0">
                     <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
@@ -74,24 +74,24 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                 <h1 class="display-4 col-12">Our Membership Plans</h1>
                 <!-- investors cards -->
                 <h1 class="py-5 col-12">FOR INVESTORS</h1>
-                <div class="row container"  v-if="lazyLoadElement.plans">
-                    <div class="col-md-4 solution_cards_box">
+                <div class="row container" v-if="lazyLoadElement.plans">
+                    <div class="col-md-4 solution_cards_box" v-for="(plan, index) in plans" :key="index">
                         <div class="solution_card">
-                            <h3 class="plan">BASIC</h3>
-                            <h5 class="plan">50$</h5>
+                            <h3 class="plan">{{ plan ? plan.name: '' }}</h3>
+                            <h5 class="plan">{{ plan ? plan.price: '' }} $</h5>
                             <div class="solu_description">
                                 <ul class="my-2">
                                     <li class="">
                                         <b>Estimated Profit</b>
                                     </li>
                                     <li>
-                                        4% to 8%
+                                        {{ plan ? plan.estimated_profit: '' }}
                                     </li>
                                     <li>
                                         <b>Amount Return</b>
                                     </li>
                                     <li>
-                                        14 Months
+                                        {{ plan ? plan.amount_returns: '' }} Months
                                     </li>
 
 
@@ -101,62 +101,10 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                         </div>
                     </div>
 
-                    <div class="col-md-4 solution_cards_box">
-                        <div class="solution_card">
-
-
-                            <h3 class="plan">STARTER</h3>
-                            <h5 class="plan">100$</h5>
-
-                            <div class="solu_description">
-                                <ul class="my-2">
-                                    <li class="">
-                                        <b>Estimated Profit</b>
-                                    </li>
-                                    <li>
-                                        4% to 8%
-                                    </li>
-                                    <li>
-                                        <b>Amount Return</b>
-                                    </li>
-                                    <li>
-                                        14 Months
-                                    </li>
-                                </ul>
-                                <button type="button" class="read_more_btn my-3">Upgrade Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 solution_cards_box">
-                        <div class="solution_card">
-
-
-                            <h3 class="plan">SILVER</h3>
-                            <h5 class="plan">500$</h5>
-
-                            <div class="solu_description">
-                                <ul class="my-2">
-                                    <li class="">
-                                        <b>Estimated Profit</b>
-                                    </li>
-                                    <li>
-                                        4% to 8%
-                                    </li>
-                                    <li>
-                                        <b>Amount Return</b>
-                                    </li>
-                                    <li>
-                                        14 Months
-                                    </li>
-                                </ul>
-                                <button type="button" class="read_more_btn my-3">Uprade Now</button>
-                            </div>
-                        </div>
-                    </div>
                     <!-- investors cards end -->
                     <!-- refferals cards -->
                     <h1 class="col-12 my-3 py-5">FOR REFFERALS</h1>
-                    <div class="col-md-4 solution_cards_box">
+                    <div class="col-md-4 solution_cards_box" v-for="(referral, index) in referrals" :key="index">
                         <div class="solution_card">
                             <h3 class="plan"></h3>
                             <h5 class="plan"></h5>
@@ -166,19 +114,19 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                                         <b>Refferals</b>
                                     </li>
                                     <li>
-                                        1 to 10
+                                        {{ referral ? referral.referrals: '' }}
                                     </li>
                                     <li>
                                         <b>Refferal Commission</b>
                                     </li>
                                     <li>
-                                        1 Percent
+                                        {{ referral ? referral.percent: '' }} Percent
                                     </li>
                                     <li>
                                         <b>Amount Return</b>
                                     </li>
                                     <li>
-                                        14 Months
+                                        {{ referral ? referral.amount_returns: '' }} Months
                                     </li>
 
 
@@ -187,75 +135,6 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4 solution_cards_box">
-                        <div class="solution_card">
-
-
-                            <h3 class="plan"></h3>
-                            <h5 class="plan"></h5>
-
-                            <div class="solu_description">
-                                <ul class="my-2">
-                                    <li>
-                                        <b>Refferals</b>
-                                    </li>
-                                    <li>
-                                        11 to 20
-                                    </li>
-                                    <li>
-                                        <b>Refferal Commission</b>
-                                    </li>
-                                    <li>
-                                        2 Percent
-                                    </li>
-                                    <li>
-                                        <b>Amount Return</b>
-                                    </li>
-                                    <li>
-                                        14 Months
-                                    </li>
-                                </ul>
-                                <button type="button" class="read_more_btn my-3">Uprade Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 solution_cards_box">
-                        <div class="solution_card">
-
-
-                            <h1 class="plan"></h1>
-                            <h5 class="plan"></h5>
-
-                            <div class="solu_description">
-                                <ul class="my-2">
-                                    <li>
-                                        <b>Refferals</b>
-                                    </li>
-                                    <li>
-                                        21 to 30
-                                    </li>
-                                    <li>
-                                        <b>Refferal Commission</b>
-                                    </li>
-                                    <li>
-                                        3 Percent
-                                    </li>
-                                    <li>
-                                        <b>Amount Return</b>
-                                    </li>
-                                    <li>
-                                        14 Months
-                                    </li>
-
-
-                                </ul>
-                                <button type="button" class="read_more_btn my-3">Uprade Now</button>
-                            </div>
-                        </div>
-                    </div>
-
 
 
                     <!-- refferals cards end -->
@@ -267,7 +146,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                     <h1 class="col-12 py-5 my-3">FOR HIGHLY AGENTS</h1>
 
 
-                    <div class="col-md-3 solution_cards_box">
+                    <div class="col-md-3 solution_cards_box" v-for="(ref, index) in refs" :key="index">
                         <div class="solution_card">
 
 
@@ -280,19 +159,20 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                                         <b>Refferals</b>
                                     </li>
                                     <li>
-                                        1 to 50 <br> <b>With</b> <br>2500$
+                                        {{ ref ? ref.referrals: '' }}<br> <b>With</b> <br>{{ ref ? ref.investing_amount:
+                                        '' }}$
                                     </li>
                                     <li>
                                         <b>Refferal Commission</b>
                                     </li>
                                     <li>
-                                        4 Percent
+                                        {{ referral ? referral.percent: '' }} Percent
                                     </li>
                                     <li>
                                         <b>Amount Return</b>
                                     </li>
                                     <li>
-                                        14 Months
+                                        {{ referral ? referral.amount_returns: '' }} Months
                                     </li>
 
 
@@ -302,110 +182,6 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
                         </div>
                     </div>
 
-                    <div class="col-md-3 solution_cards_box">
-                        <div class="solution_card">
-
-
-                            <h3 class="plan"></h3>
-                            <h5 class="plan"></h5>
-
-                            <div class="solu_description">
-                                <ul class="my-2">
-                                    <li>
-                                        <b>Refferals</b>
-                                    </li>
-                                    <li>
-                                        50 to 100 <br> <b>With</b> <br>10,000$
-                                    </li>
-                                    <li>
-                                        <b>Refferal Commission</b>
-                                    </li>
-                                    <li>
-                                        5 Percent
-                                    </li>
-                                    <li>
-                                        <b>Amount Return</b>
-                                    </li>
-                                    <li>
-                                        14 Months
-                                    </li>
-
-
-                                </ul>
-                                <button type="button" class="read_more_btn my-3">Uprade Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 solution_cards_box">
-                        <div class="solution_card">
-
-
-                            <h3 class="plan"></h3>
-                            <h5 class="plan"></h5>
-
-                            <div class="solu_description">
-                                <ul class="my-2">
-                                    <li>
-                                        <b>Refferals</b>
-                                    </li>
-                                    <li>
-                                        100 to 400 <br> <b>With</b> <br>2,00,000$
-                                    </li>
-                                    <li>
-                                        <b>Refferal Commission</b>
-                                    </li>
-                                    <li>
-                                        6 Percent
-                                    </li>
-                                    <li>
-                                        <b>Amount Return</b>
-                                    </li>
-                                    <li>
-                                        14 Months
-                                    </li>
-
-
-                                </ul>
-                                <button type="button" class="read_more_btn my-3">Uprade Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 solution_cards_box">
-                        <div class="solution_card">
-
-
-                            <h3 class="plan"></h3>
-                            <h5 class="plan"></h5>
-
-                            <div class="solu_description">
-                                <ul class="my-2">
-                                    <li>
-                                        <b>Refferals</b>
-                                    </li>
-                                    <li>
-                                        More then 400 <br> <b>With</b> <br>20,00,000$
-                                    </li>
-                                    <li>
-                                        <b>Refferal Commission</b>
-                                    </li>
-                                    <li>
-                                        7 Percent
-                                    </li>
-                                    <li>
-                                        <b>Amount Return</b>
-                                    </li>
-                                    <li>
-                                        14 Months
-                                    </li>
-
-
-                                </ul>
-                                <button type="button" class="read_more_btn my-3">Uprade Now</button>
-                            </div>
-                        </div>
-                    </div>
 
 
 
@@ -417,7 +193,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
         </center>
         <!-- plan End -->
         <!-- About Start -->
-        <div class="container-xxl py-5 lazyload" id="about" >
+        <div class="container-xxl py-5 lazyload" id="about">
             <div class="container" v-if="lazyLoadElement.about">
                 <div class="row g-5 align-items-end">
                     <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -473,7 +249,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
         <!-- About End -->
 
         <!-- Features Start -->
-        <div class="container-xxl py-5 lazyload" id="chose" >
+        <div class="container-xxl py-5 lazyload" id="chose">
             <div class="container" v-if="lazyLoadElement.chose">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -529,7 +305,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
         </div>
         <!-- Features End -->
         <!-- Service Start -->
-        <div class="container-xxl py-5 lazyload" id="services" >
+        <div class="container-xxl py-5 lazyload" id="services">
             <div class="container" v-if="lazyLoadElement.services">
                 <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                     <p class="fs-5 fw-bold text-primary">Our Services</p>
@@ -666,6 +442,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 
 <script>
 export default {
+    props: ['plans', 'referrals', 'refs'],
     data() {
         return {
             lazyLoadElement: {
@@ -699,7 +476,7 @@ export default {
             })
         },
     },
-    mounted(){
+    mounted() {
         this.onObserve()
     }
 }
