@@ -24526,7 +24526,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "display-5 mb-4"
 }, "About Us "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "mb-4"
-}, "Indeed, Jewellery is something that Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive. Stonearn brand allows you the facility of custom designs and helps you to fix all gem jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry that are made of stones. Stone jewelry creates a shining charm to your personality. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Indeed, Jewellery is something that Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Stonearn also buys mines and does stone mining by taking the help of stone and mine experts. We mine different precious and unique stones that are rare. Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Undoubtedly, by investing in mining, you will effortlessly make a good amount of profit without any difficulty. So, on Stonearn, you not only just get the stone jewelry designs but also get profit by investing in mining. For this purpose, we came up with different investment plans for investors that you can check on our Stonearn website. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "btn btn-primary py-3 px-4",
   href: ""
 }, "Explore More")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -24539,7 +24539,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "border-start ps-4"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fa fa-award fa-3x text-primary mb-3"
+  "class": "fas fa-award fa-3x text-primary mb-3"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   "class": "mb-3"
 }, "Award Winning"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Indeed, Stonearn is an award-winning company that works related to stone mining and stone jewelry.")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -24547,7 +24547,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "border-start ps-4"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fa fa-users fa-3x text-primary mb-3"
+  "class": "fas fa-users fa-3x text-primary mb-3"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   "class": "mb-3"
 }, "Dedicated Team"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "For Stone mining and jewelry designs, we have a dedicated team of experts who do their work always expertly")])])])])])])], -1 /* HOISTED */);
@@ -26537,7 +26537,7 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "display-5 mb-4"
 }, "ABOUT US"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "mb-4"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Indeed, Jewellery is something that Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Stonearn also buys mines and does stone mining by taking the help of stone and mine experts. We mine different precious and unique stones that are rare. Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Stonearn brand allows you the facility of custom designs and helps you to fix all gem jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry that are made of stones. Stone jewelry creates a shining charm to your personality. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Indeed, Jewellery is something that Women love. But when it comes to Gems or Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s difficult to design Stone Jewellery. Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Stonearn also buys mines and does stone mining by taking the help of stone and mine experts. We mine different precious and unique stones that are rare. Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Undoubtedly, by investing in mining, you will effortlessly make a good amount of profit without any difficulty. So, on Stonearn, you not only just get the stone jewelry designs but also get profit by investing in mining. For this purpose, we came up with different investment plans for investors that you can check on our Stonearn website. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "btn btn-primary py-3 px-4",
   href: ""
 }, "Explore More")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26668,57 +26668,6 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "service-img rounded"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   "class": "img-fluid",
-  src: "img/services/services-4.jpg",
-  alt: ""
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "m-5"
-}, "All Stone Jewelry"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "m-5"
-}, "We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <button type=\"button\" class=\"btn btn-primary\">Primary</button> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-lg-4 col-md-6 wow fadeInUp",
-  "data-wow-delay": "0.3s"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-item rounded d-flex h-100"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-img rounded"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
-  src: "img/services/services-5.jpg",
-  alt: ""
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "m-5"
-}, "Custom Designs"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "m-5"
-}, "We encourage our clients to order jewelry with custom designs or changes that they want. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-lg-4 col-md-6 wow fadeInUp",
-  "data-wow-delay": "0.5s"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-item rounded d-flex h-100"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-img rounded"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
-  src: "img/services/services-6.jpg",
-  alt: ""
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-text rounded p-5"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
-  "class": "m-5"
-}, "Fix Raw Designs"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "m-5"
-}, "Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-lg-4 col-md-6 wow fadeInUp",
-  "data-wow-delay": "0.1s"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-item rounded d-flex h-100"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "service-img rounded"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "img-fluid",
   src: "img/services/services-7.jpg",
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -26753,7 +26702,7 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "service-img rounded"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   "class": "img-fluid",
-  src: "img/services/services-9.jpg",
+  src: "img/services/services-5.jpg",
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "service-text rounded p-5"
@@ -26761,7 +26710,58 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "m-5"
 }, " Buy Stone Mine"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "mb-5"
-}, "Stonearn not just made jewelry from stone mines but also mines in which stones were discovered and then sold them. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])])])])], -1 /* HOISTED */);
+}, "Stonearn not just made jewelry from stone mines but also mines in which stones were discovered and then sold them. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-lg-4 col-md-6 wow fadeInUp",
+  "data-wow-delay": "0.1s"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-item rounded d-flex h-100"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-img rounded"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "img-fluid",
+  src: "img/services/services-4.jpg",
+  alt: ""
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-text rounded p-5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
+}, "All Stone Jewelry"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "m-5"
+}, "We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <button type=\"button\" class=\"btn btn-primary\">Primary</button> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-lg-4 col-md-6 wow fadeInUp",
+  "data-wow-delay": "0.3s"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-item rounded d-flex h-100"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-img rounded"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "img-fluid",
+  src: "img/services/services-9.jpg",
+  alt: ""
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-text rounded p-5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
+}, "Custom Designs"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "m-5"
+}, "We encourage our clients to order jewelry with custom designs or changes that they want. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-lg-4 col-md-6 wow fadeInUp",
+  "data-wow-delay": "0.5s"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-item rounded d-flex h-100"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-img rounded"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "img-fluid",
+  src: "img/services/services-6.jpg",
+  alt: ""
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "service-text rounded p-5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+  "class": "m-5"
+}, "Fix Raw Designs"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "m-5"
+}, "Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a class=\"btn btn-sm\" href=\"\"><i class=\"fas fa-plus text-primary me-2\"></i>Read More</a> ")])])])])])], -1 /* HOISTED */);
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "container-xxl py-5"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {

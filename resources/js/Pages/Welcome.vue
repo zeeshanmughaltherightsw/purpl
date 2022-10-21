@@ -474,7 +474,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces, bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction for people over the years and are still expanding. <br>
 Stonearn also buys mines and does stone mining by taking the help of stone and mine experts. We mine different precious and unique stones that are rare. 
 Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand tools. In our opinion, jewelry mirrors the personality and represents the style and class of its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a thousand times and years, this just but its value remains expensive. <br>
-Stonearn brand allows you the facility of custom designs and helps you to fix all gem jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry that are made of stones. Stone jewelry creates a shining charm to your personality.
+Undoubtedly, by investing in mining, you will effortlessly make a good amount of profit without any difficulty. So, on Stonearn, you not only just get the stone jewelry designs but also get profit by investing in mining. For this purpose, we came up with different investment plans for investors that you can check on our Stonearn website.
 
                         
                     </p>
@@ -596,45 +596,6 @@ Stonearn brand allows you the facility of custom designs and helps you to fix al
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/services/services-4.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            
-                            <h4 class="m-5">All Stone Jewelry</h4>
-                            <p class="m-5">We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. </p>
-                            <!-- <button type="button" class="btn btn-primary">Primary</button> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/services/services-5.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            
-                            <h4 class="m-5">Custom Designs</h4>
-                            <p class="m-5">We encourage our clients to order jewelry with custom designs or changes that they want. </p>
-                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/services/services-6.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            
-                            <h4 class="m-5">Fix Raw Designs</h4>
-                            <p class="m-5">Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs.</p>
-                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
                             <img class="img-fluid" src="img/services/services-7.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
@@ -663,12 +624,52 @@ Stonearn brand allows you the facility of custom designs and helps you to fix al
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/services/services-9.jpg" alt="">
+                            <img class="img-fluid" src="img/services/services-5.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             
                             <h4 class="m-5"> Buy Stone Mine</h4>
                             <p class="mb-5">Stonearn not just made jewelry from stone mines but also mines in which stones were discovered and then sold them.  </p>
+                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/services/services-4.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            
+                            <h4 class="m-5">All Stone Jewelry</h4>
+                            <p class="m-5">We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems. </p>
+                            <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/services/services-9.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            
+                            <h4 class="m-5">Custom Designs</h4>
+                            <p class="m-5">We encourage our clients to order jewelry with custom designs or changes that they want. </p>
+                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/services/services-6.jpg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            
+                            <h4 class="m-5">Fix Raw Designs</h4>
+                            <p class="m-5">Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs.</p>
                             <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
                         </div>
                     </div>
