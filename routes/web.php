@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserProfileController;
 use App\Models\User;
 use App\Models\UserLogin;
@@ -9,6 +10,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,11 +41,7 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::middleware(['auth', 'verified'])->group(function(){
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard', [
-            'users'  =>  UserLogin::all()
-        ]);
-    })->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
     Route::get('direct-referrals', [\App\Http\Controllers\ReferralController::class, 'directReferals'])->name('direct-referrals');
     Route::get('referral-link', [\App\Http\Controllers\ReferralController::class, 'referralLink'])->name('referral-link');
     Route::get('uni-level', [\App\Http\Controllers\ReferralController::class, 'uniLevel'])->name('uni-level');

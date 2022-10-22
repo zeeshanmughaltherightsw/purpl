@@ -14,7 +14,7 @@ import DashboardCard from '../Components/DashboardCard.vue';
         <div class="nk-block">
             <div class="row g-gs">
                 <div class="col-xxl-12 col-sm-12">
-                   <Struggling/>
+                   <Struggling :users="users"/>
                 </div><!-- .col -->
                 <div class="col-xxl-12 col-sm-12">
                     <div class="nk-block-head nk-block-head-sm">
@@ -71,6 +71,7 @@ import DashboardCard from '../Components/DashboardCard.vue';
 <script>
 import { Link } from '@inertiajs/inertia-vue3';
 export default {
+    props: ['users'],
   components: {Link}
 }
 </script>
