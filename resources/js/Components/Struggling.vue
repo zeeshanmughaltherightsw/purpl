@@ -19,10 +19,10 @@
                         </template>
                         <template #body>
                             <tr>
-                                <td>{{ formatDate(user.created_at) }}</td>
-                                <td>{{ user.created_at }}</td>
-                                <td>{{ user.created_at }}</td>
-                                <td>{{ user.created_at }}</td>
+                                <td>{{ formatDate(users.created_at) }}</td>
+                                <td>{{ formatDateTime(users.user_login[0].created_at) }}</td>
+                                <td>{{ users.created_at }}</td>
+                                <td>{{ users.created_at }}</td>
                             </tr>
                         </template>
                    </Table>
@@ -35,6 +35,7 @@
 import Table from '@/Components/BasicTable.vue'
 import Helpers from '@/Mixins/Helpers'
 export default {
+    props: ['users'],
     components: { Table },
     data(){
         return {

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Facades\Auth;
 
 class User extends Authenticatable
 {
@@ -57,6 +58,10 @@ class User extends Authenticatable
     public function parentRef()
     {
         return $this->belongsTo(User::class, 'ref_by');
+    }
+    public function userLogin()
+    {
+        return $this->hasMany(UserLogin::class);
     }
 
     public function scopeAsNodes($query)
