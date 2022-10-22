@@ -428,23 +428,88 @@ Undoubtedly, by investing in mining, you will effortlessly make a good amount of
                     <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
                     <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+            </div>
+        </center>
+        <!-- plan End -->
+        <!-- About Start -->
+        <div class="container-xxl py-5 lazyload" id="about">
+            <div class="container" v-if="lazyLoadElement.about">
+                <div class="row g-5 align-items-end">
+                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
+                    </div>
+                    <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                        <h1 class="display-1 mb-0">25</h1>
+                        <p class="text-primary mb-4">Year of Experience</p>
+                        <h1 class="display-5 mb-4">ABOUT US</h1>
+                        <p class="mb-4">Indeed, Jewellery is something that Women love. But when it comes to Gems or
+                            Stones Jewellery, Men are also included in the list of Jewellery lovers. No doubt, it’s
+                            difficult to design Stone Jewellery.
+                            Therefore, “stonearn” came up with brilliant jewelry of stone designs of rings, necklaces,
+                            bracelets, earrings, studs, and much more. Besides, stone jewelry designs are an attraction
+                            for people over the years and are still expanding. <br>
+                            Stonearn also buys mines and does stone mining by taking the help of stone and mine experts.
+                            We mine different precious and unique stones that are rare.
+                            Plus, making jewelry takes hours and hours of work on the bench utilizing all types of hand
+                            tools. In our opinion, jewelry mirrors the personality and represents the style and class of
+                            its owner. Furthermore, along with the fact that a piece of jewelry can accompany somebody a
+                            thousand times and years, this just but its value remains expensive. <br>
+                            Stonearn brand allows you the facility of custom designs and helps you to fix all gem
+                            jewelry-related problems. Plus, it gives you modern, classic, and unique designs of jewelry
+                            that are made of stones. Stone jewelry creates a shining charm to your personality.
+
+
+                        </p>
+                        <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    </div>
+                    <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row g-5">
+                            <div class="col-12 col-sm-6 col-lg-12">
+                                <div class="border-start ps-4">
+                                    <i class="fas fa-award fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Award Winning</h4>
+                                    <span>Indeed, Stonearn is an award-winning company that works related to stone
+                                        mining and stone jewelry</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-12">
+                                <div class="border-start ps-4">
+                                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Dedicated Team</h4>
+                                    <span>For Stone mining and jewelry designs, we have a dedicated team of experts who
+                                        do their work always expertly</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div> -->
     <!-- Facts End -->
 
+        <!-- Features Start -->
+        <div class="container-xxl py-5 lazyload" id="chose">
+            <div class="container" v-if="lazyLoadElement.chose">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="fs-5 fw-bold text-primary">Why Choosing Us!</p>
+                        <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
+                        <p class="mb-4">We provide excellent stones and Gems Collection with modern, unique, and
+                            eye-catching jewelry designs that develop people's interests. Besides, our jewelry is
+                            handmade with high-quality materials and a sharp finish the way people like
+                        </p>
+                        <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-6">
+                                <div class="row g-4">
+                                    <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <div class="text-center rounded py-5 px-4"
+                                            style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                                style="width: 90px; height: 90px;">
 
     <!-- Features Start -->
     <div class="container-xxl py-5">
@@ -469,7 +534,6 @@ Undoubtedly, by investing in mining, you will effortlessly make a good amount of
             
                                             <i class="fas fa-check fa-3x text-primary"></i>
                                         </div>
-                                        <h4 class="mb-0">100% Satisfaction</h4>
                                     </div>
                                 </div>
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
@@ -497,58 +561,13 @@ Undoubtedly, by investing in mining, you will effortlessly make a good amount of
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Features End -->
-
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Services That We Offer For You</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/services/services-7.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            
-                            <h4 class="m-5">Stone Mine Experts</h4>
-                            <p class="mb-5">For stone mining, we get the help of experts who have a good knowledge of stones and their mining.
-</p>
-                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/services/services-8.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            
-                            <h4 class="m-5">Stone Mining</h4>
-                            <p class="mb-5">We also provide the service of different kinds of stone mining and polish them to utilize in jewelry.
-                            </p>
-                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/services/services-5.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            
-                            <h4 class="m-5"> Buy Stone Mine</h4>
-                            <p class="mb-5">Stonearn not just made jewelry from stone mines but also mines in which stones were discovered and then sold them.  </p>
-                            <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                        </div>
-                    </div>
+        <!-- Features End -->
+        <!-- Service Start -->
+        <div class="container-xxl py-5 lazyload" id="services">
+            <div class="container" v-if="lazyLoadElement.services">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="fs-5 fw-bold text-primary">Our Services</p>
+                    <h1 class="display-5 mb-5">Services That We Offer For You</h1>
                 </div>
 
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -801,6 +820,7 @@ Undoubtedly, by investing in mining, you will effortlessly make a good amount of
 import QuickService from '@/Components/QuickService.vue'
 import Button from '@/Components/PrimaryButton.vue'
 export default {
+    props: ['plans', 'referrals', 'refs'],
     data() {
         return {
             lazyLoadElement: {
@@ -835,7 +855,7 @@ export default {
             })
         },
     },
-    mounted(){
+    mounted() {
         this.onObserve()
     }
 }
