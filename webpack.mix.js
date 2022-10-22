@@ -22,7 +22,7 @@ mix.js('resources/js/app.js', 'public/js')
     ], 'public/js/theme.js');
     
     mix.styles([
-        'resources/theme/css/*.css',
+        'resources/theme/css/dashlite.css',
         'resources/css/app.css',
     ], 'public/css/app.css')
 

@@ -12,6 +12,7 @@
         margin-left: 35%;
     }
 }
+
 @media only screen and (max-width: 600px)  {
     .carousel-caption{
         height: 33vh;
@@ -22,6 +23,6 @@
         margin: auto;
     }
     .carousel-caption div p{
-        margin: auto;
+       display: none;
     }
 }
