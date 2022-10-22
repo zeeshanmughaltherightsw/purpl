@@ -24,45 +24,9 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
         <div class="container-fluid py-5 pt-lg-0 lazyload" id="quick_services" >
             <div class="container py-5 pt-lg-0" v-if="lazyLoadElement.quick_services">
                 <div class="row gx-0">
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                    <i class="fa fa-times"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h4>Quick Service </h4>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                    <i class="fa fa-users text-primary"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h4>Dedicated Team</h4>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                    <i class="fas fa-phone text-primary"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h4>24/7 Available</h4>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <QuickService title="Quick Services" icon="fas fa-times"/>
+                    <QuickService title="Dedicated Team" icon="fas fa-users text-primary"/>
+                    <QuickService title="24/7 Available" icon="fas fa-phone text-primary"/>
                 </div>
             </div>
         </div>
@@ -96,7 +60,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 
 
                                 </ul>
-                                <button type="button" class="read_more_btn my-3">Upgrade Now</button>
+                                <Button type="button" class="read_more_btn my-3">Upgrade Now</Button>
                             </div>
                         </div>
                     </div>
@@ -665,6 +629,8 @@ import GuestLayout from '@/Layouts/GuestLayout.vue'
 </template>
 
 <script>
+import QuickService from '@/Components/QuickService.vue'
+import Button from '@/Components/PrimaryButton.vue'
 export default {
     data() {
         return {
@@ -678,6 +644,7 @@ export default {
             }
         }
     },
+    components: {QuickService, Button},
     methods: {
         onObserve() {
             const sections = document.querySelectorAll('div.lazyload')
