@@ -9,38 +9,30 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
     <img class="w-100" src="img/homebg.jpg" alt="Image" />
     <div class="carousel-caption row">
       <div class="justify-content-left row-cols-3 container">
-        <h3 class="display-2 text-white mb-5 animated slideInDown">Stonearn</h3>
+        <h3 class="display-2 text-white mb-5 mt-5 animated slideInDown">Stonearn</h3>
         <p>
           We provide an efficient platform for the crypto lovers for trading and
           making investments in cryptocurrency. Join us to enjoy professional
           assistance for your growing.
         </p>
       </div>
+    </div>
       <!-- Carousel End -->
       <!-- Top Feature Start -->
-      <div class="container-fluid py-5 pt-lg-0 lazyload" id="quick_services">
-        <div
-          class="container py-5 pt-lg-0"
-          v-if="lazyLoadElement.quick_services"
-        >
-          <div class="row mx-5 my-5">
-            <QuickService title="Quick Services" icon="fas fa-times" />
-            <QuickService
-              title="Dedicated Team"
-              icon="fas fa-users text-primary"
-            />
-            <QuickService
-              title="24/7 Available"
-              icon="fas fa-phone text-primary"
-            />
+      <div class="container-fluid top-feature py-5 pt-lg-0" id="quick_services">
+        <div class="container py-5 pt-lg-0">
+          <div class="row gx-0 mx-5">
+            <QuickService title="Quick Services" icon="fas fa-times"/>
+            <QuickService title="Dedicated Team" icon="fas fa-users text-primary"/>
+            <QuickService title="24/7 Available" icon="fas fa-phone text-primary"/>
           </div>
         </div>
       </div>
-    </div>
+    
     <!-- Top Feature End -->
     <!-- Plans-Starts -->
     <center>
-      <h1 class="display-4 py-5">Our Membership Plans</h1>
+      <h1 class="display-3 py-5">Our Membership Plans</h1>
       <!-- investors cards -->
       <h1 class="py-5">FOR INVESTORS</h1>
       <div class="row container">
@@ -198,7 +190,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
             </div>
           </div>
         </div>
- <!-- highly agents cards end -->
+        <!-- highly agents cards end -->
       </div>
     </center>
 
@@ -273,7 +265,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
     </div>
     <!-- About End -->
 
-     <!-- Features Start -->
+    <!-- Features Start -->
     <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5 align-items-center">
