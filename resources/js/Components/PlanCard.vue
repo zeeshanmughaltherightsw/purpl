@@ -1,41 +1,48 @@
 <template>
-  <div class="col-md-4 solution_cards_box">
-    <div class="solution_card">
-      <div class="ps-3">
-        <h3>{{ title }}</h3>
-        <span></span>
-      </div>
-      <h5 class="plan">{{ price }}</h5>
-      <div class="solu_description">
-        <ul class="my-2">
-          <li class="" v-if="planType == 'Investors'">
-            <b>Estimated Profit</b>
-          </li>
-          <li v-if="planType == 'Investors'">4% to 8%</li>
-          <li v-if="planType == 'Refferals'">
-            <b>Refferals</b>
-          </li>
-          <li v-if="planType == 'Refferals'"></li>
-          <li>{{ reffer }}</li>
 
-          <li v-if="planType == 'Refferals'">
-            <b>Refferal Commission</b>
-          </li>
-          <li v-if="planType == 'Refferals'"></li>
-          <li>{{ commission }}</li>
+  <div class="solution_card">
+    <div class="ps-3">
+      <h3>{{ title }}</h3>
+      <span></span>
+    </div>
+    <h5 class="plan" v-if="planType == 'investor'">{{ price }}</h5>
+    <div class="solu_description">
+      <ul class="my-2">
+        <li class="" v-if="planType == 'investor'">
+          <b>Estimated Profit</b>
+        </li>
+        <li v-if="planType == 'investor'">{{ minProfit }} to {{ maxProfit }}</li>
+        <li v-if="planType == 'referral' || planType == 'high_agent'">
+          <b>Refferals</b>
+        </li>
+        <li v-if="planType == 'referral' || planType == 'high_agent'">
+          {{ minReffer }} to {{ maxReffer }}
+        </li>
+        <li v-if="planType == 'high_agent'">
+          <b>With</b> <br />{{ price }}
+        </li>
 
-          <li>
-            <b>Amount Return</b>
-          </li>
-          <li>14 Months</li>
-        </ul>
-        <button type="button" class="read_more_btn my-3">Upgrade Now</button>
-      </div>
+
+
+        <li v-if="planType == 'referral' || planType == 'high_agent'">
+          <b>Refferal Commission</b>
+        </li>
+        <li v-if="planType == 'referral'"></li>
+        <li>{{ commission }}</li>
+
+        <li v-if="planType == 'referral' || planType == 'high_agent' || planType == 'investor'">
+          <b>Amount Return</b>
+        </li>
+        <li>
+        {{ amountReturn }} Days
+        </li>
+      </ul>
+      <button type="button" class="read_more_btn my-3">Upgrade Now</button>
     </div>
   </div>
 </template>
 <script>
 export default {
-  props: ["title", "price", "planType", "reffer", "commission"],
+  props: ["title", "price", "planType", "reffer", "commission", "minProfit", "maxProfit", "minReffer", "maxReffer" , "amountReturn"],
 };
 </script>
