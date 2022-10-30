@@ -38,7 +38,9 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
             <h1 class="py-5">FOR INVESTORS</h1>
             <div class="row container">
                 <div v-for="plan in plans" :key="plan.id" class="col-md-4 solution_cards_box">
-                    <PlanCard v-if="plan.plan_type == 'investor'" :title="plan.name" :minProfit="plan.min_profit"
+                    <PlanCard v-if="plan.plan_type == 'investor'" 
+                      :title="plan.name" 
+                      :minProfit="plan.min_profit"
                         :maxProfit="plan.max_profit" :amountReturn="plan.amount_returns" :price="plan.price + ' $'" planType="investor" />
                 </div>
 
@@ -57,7 +59,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
                 <h1 class="col-12 py-5 my-3">FOR HIGHLY AGENTS</h1>
 
-                <div v-for="plan in plans" :key="plan.id" class="col-md-4 solution_cards_box">
+                <div v-for="plan in plans" :key="plan.id" class="col-md-3 solution_cards_box">
                     <PlanCard v-if="plan.plan_type == 'high_agent'" title="" :price="plan.price"
                         :minReffer="plan.min_ref" :maxReffer="plan.max_ref" :amountReturn="plan.amount_returns"
                         :commission="plan.ref_commission + ' Percent'" planType="high_agent" />
@@ -197,97 +199,12 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                     <h1 class="display-5 mb-5">Services That We Offer For You</h1>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/services/services-7.jpg" alt="" />
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <h4 class="m-5">Stone Mine Experts</h4>
-                                <p class="mb-5">
-                                    For stone mining, we get the help of experts who have a good
-                                    knowledge of stones and their mining.
-                                </p>
-                                <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/services/services-8.jpg" alt="" />
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <h4 class="m-5">Stone Mining</h4>
-                                <p class="mb-5">
-                                    We also provide the service of different kinds of stone mining
-                                    and polish them to utilize in jewelry.
-                                </p>
-                                <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/services/services-5.jpg" alt="" />
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <h4 class="m-5">Buy Stone Mine</h4>
-                                <p class="mb-5">
-                                    Stonearn not just made jewelry from stone mines but also mines
-                                    in which stones were discovered and then sold them.
-                                </p>
-                                <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/services/services-4.jpg" alt="" />
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <h4 class="m-5">All Stone Jewelry</h4>
-                                <p class="m-5">
-                                    We provide you with all kinds of stone jewelry in unique and
-                                    modern designs with antique Gems.
-                                </p>
-                                <!-- <button type="button" class="btn btn-primary">Primary</button> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/services/services-9.jpg" alt="" />
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <h4 class="m-5">Custom Designs</h4>
-                                <p class="m-5">
-                                    We encourage our clients to order jewelry with custom designs
-                                    or changes that they want.
-                                </p>
-                                <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/services/services-6.jpg" alt="" />
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <h4 class="m-5">Fix Raw Designs</h4>
-                                <p class="m-5">
-                                    Stonearn fixes the problem of each stone jewelry and gives
-                                    finishing to your raw designs.
-                                </p>
-                                <!-- <a class="btn btn-sm" href=""><i class="fas fa-plus text-primary me-2"></i>Read More</a> -->
-                            </div>
-                        </div>
-                    </div>
+                    <our-services 
+                      v-for="card in servicesCard" :key="card" 
+                      :title="card.title" 
+                      :image="card.image" 
+                      :description="card.description"
+                    />
                 </div>
             </div>
         </div>
@@ -297,40 +214,11 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5">
-                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <p class="fs-5 fw-bold text-primary">Testimonial</p>
-                        <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
-                        <p class="mb-4">
-                            Our first priority is to satisfy our clients. That is why they say
+                   <our-clients testimonial="Testimonial" title="What our Clients Say About Us" desec="Our first priority is to satisfy our clients. That is why they say
                             that “Our professionalism and commitment to the work always
                             inspires them”. So, they contact us with related stone mining and
-                            stone jewelry designs.
-                        </p>
-                        <a class="btn btn-primary py-3 px-4" href="">See More</a>
-                    </div>
-                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="testimonial-item">
-                                <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="" />
-                                <p class="fs-5">
-                                    I am Clara White and I Love stone jewelry. Stonearn is the
-                                    brand that completes my dream of wearing unique and rare stone
-                                    jewelry in amazing designs.
-                                </p>
-                                <h4>Clara White</h4>
-                            </div>
-                            <div class="testimonial-item">
-                                <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="" />
-                                <p class="fs-5">
-                                    I am Richard Andreson. I love to know about stone mining and
-                                    different kinds of precious stones that can only be possible
-                                    because of Stonearn.
-                                </p>
-                                <h4>Richard Andreson</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            stone jewelry designs."/>
+                  </div>
             </div>
         </div>
         <!-- Testimonial End -->
@@ -341,6 +229,8 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 import QuickService from "@/Components/QuickService.vue";
 import Button from "@/Components/PrimaryButton.vue";
 import PlanCard from "@/Components/PlanCard.vue";
+import OurServices from '@/Components/OurServices.vue';
+import OurClients from '@/Components/OurClients.vue';
 export default {
     props: ['plans'],
     data() {
@@ -353,9 +243,41 @@ export default {
                 services: false,
                 testimonial: false,
             },
+            servicesCard: [
+                  {
+                    title: 'Stone Mine Experts',
+                    image: 'img/services/services-7.jpg',
+                    description:  'For stone mining, we get the help of experts who have a good knowledge of stones and their mining.'
+                  },
+                  {
+                    title: 'Stone Mining',
+                    image: 'img/services/services-8.jpg',
+                    description:  'We also provide the service of different kinds of stone mining and polish them to utilize in jewelry.'
+                  },
+                  {
+                    title: 'Buy Stone Mine',
+                    image: 'img/services/services-5.jpg',
+                    description: 'Stonearn not just made jewelry from stone mines but also mines in which stones were discovered and then sold them.'
+                  },
+                  {
+                    title: 'All Stone Jewelary',
+                    image: 'img/services/services-4.jpg',
+                    description: 'We provide you with all kinds of stone jewelry in unique and modern designs with antique Gems.'
+                  },
+                  {
+                    title: 'Custom Designs',
+                    image: 'img/services/services-9.jpg',
+                    description: 'We encourage our clients to order jewelry with custom designs or changes that they want.'
+                  },
+                  {
+                    title: 'Fix Raw Designs',
+                    image: 'img/services/services-6.jpg',
+                    description: 'Stonearn fixes the problem of each stone jewelry and gives finishing to your raw designs.'
+                  }
+              ]
         };
     },
-    components: { QuickService, Button, PlanCard },
+    components: { QuickService, Button, PlanCard, OurServices, OurClients },
     methods: {
         onObserve() {
             const sections = document.querySelectorAll("div.lazyload");
