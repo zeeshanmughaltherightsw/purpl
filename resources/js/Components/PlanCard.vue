@@ -5,13 +5,13 @@
       <h3>{{ title }}</h3>
       <span></span>
     </div>
-    <h5 class="plan" v-if="planType == 'investor'">{{ price }}</h5>
+    <h5 class="plan" v-if="planType == 'investor'">{{ parseInt(min_price).toFixed(0) }} to {{ parseInt(max_price).toFixed(0) }} $</h5>
     <div class="solu_description">
       <ul class="my-2">
         <li class="" v-if="planType == 'investor'">
           <b>Estimated Profit</b>
         </li>
-        <li v-if="planType == 'investor'">{{ minProfit }} to {{ maxProfit }}</li>
+        <li v-if="planType == 'investor'">{{ profit }} $</li>
         <li v-if="planType == 'referral' || planType == 'high_agent'">
           <b>Refferals</b>
         </li>
@@ -19,7 +19,7 @@
           {{ minReffer }} to {{ maxReffer }}
         </li>
         <li v-if="planType == 'high_agent'">
-          <b>With</b> <br />{{ price }}
+          <b>With</b> <br />{{ max_price }} $
         </li>
 
 
@@ -30,11 +30,11 @@
         <li v-if="planType == 'referral'"></li>
         <li>{{ commission }}</li>
 
-        <li v-if="planType == 'referral' || planType == 'high_agent' || planType == 'investor'">
-          <b>Amount Return</b>
+        <li>
+          <b>Plan Expiry</b>
         </li>
         <li>
-        {{ amountReturn }} Days
+        {{ parseFloat(expire) * 100}} % 
         </li>
       </ul>
       <button type="button" class="read_more_btn my-3">Upgrade Now</button>
@@ -43,6 +43,17 @@
 </template>
 <script>
 export default {
-  props: ["title", "price", "planType", "reffer", "commission", "minProfit", "maxProfit", "minReffer", "maxReffer" , "amountReturn"],
+  props: [
+    "title", 
+    "min_price", 
+    "max_price", 
+    "planType", 
+    "reffer", 
+    "commission", 
+    "profit", 
+    "minReffer", 
+    "maxReffer" , 
+    "expire"
+  ],
 };
 </script>
