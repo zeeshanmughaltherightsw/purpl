@@ -63,147 +63,56 @@
               </Link>
             </li>
             <!-- .nk-menu-item -->
-
-            <li class="nk-menu-item has-sub" v-if="false">
-              <a href="#" class="nk-menu-link nk-menu-toggle">
-                <span class="nk-menu-icon"
-                  ><em class="icon ni ni-toolbar"></em
-                ></span>
-                <span class="nk-menu-text">Pins</span>
-              </a>
-              <ul class="nk-menu-sub">
-                <li class="nk-menu-item">
-                  <a href="html/project-card.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Pins Info</span></a
-                  >
-                </li>
-              </ul>
-              <!-- .nk-menu-sub -->
-            </li>
-            <!-- .nk-menu-item -->
-            <li class="nk-menu-item has-sub">
-              <a href="#" class="nk-menu-link nk-menu-toggle">
-                <span class="nk-menu-icon"
-                  ><em class="icon ni ni-row-view1"></em
-                ></span>
-                <span class="nk-menu-text">Purchase</span>
-              </a>
-              <ul class="nk-menu-sub">
-                <li class="nk-menu-item">
-                  <Link :href="route('membership.index')" class="nk-menu-link"
-                    ><span class="nk-menu-text">Upgrade Membership</span></Link
-                  >
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/user-list-regular.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Staking Pack</span></a
-                  >
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/user-list-compact.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Master Node Pack</span></a
-                  >
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/user-details-regular.html" class="nk-menu-link"
-                    ><span class="nk-menu-text"
-                      >Shared Master Node Packs</span
-                    ></a
-                  >
-                </li>
-              </ul>
-              <!-- .nk-menu-sub -->
-            </li>
-            <!-- .nk-menu-item -->
-            <li class="nk-menu-item has-sub">
-              <a href="#" class="nk-menu-link nk-menu-toggle">
-                <span class="nk-menu-icon"
-                  ><em class="icon ni ni-sign-mxn-alt"></em
-                ></span>
-                <span class="nk-menu-text">Transactions</span>
-              </a>
-              <ul class="nk-menu-sub">
-                <li class="nk-menu-item">
-                  <Link :href="route('transactions')" class="nk-menu-link"
-                    ><span class="nk-menu-text">Transactions</span></Link
-                  >
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/orders-regular.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Invoices</span></a
-                  >
-                </li>
-                <li class="nk-menu-item">
-                  <a href="html/orders-sales.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Withdraw</span></a
-                  >
-                </li>
-              </ul>
-              <!-- .nk-menu-sub -->
-            </li>
             <!-- .nk-menu-item -->
             <li
-              v-if="$page.props.auth.user.plan_id"
-              class="nk-menu-item has-sub"
-              :class="{
-                'active current-page':
-                  route().current('direct-referrals') ||
-                  route().current('referral-link'),
-              }"
+              class="nk-menu-item"
+              :class="{ 'active current-page': route().current('profile') }"
             >
-              <a href="#" class="nk-menu-link nk-menu-toggle">
+              <Link
+                preserve-scroll
+                :href="route('membership.index')"
+                class="nk-menu-link"
+              >
                 <span class="nk-menu-icon"
-                  ><em class="icon ni ni-wifi"></em
+                  ><em class="icon ni ni-user-c"></em
                 ></span>
-                <span class="nk-menu-text">Network</span>
-              </a>
-              <ul class="nk-menu-sub">
-                <li
-                  class="nk-menu-item"
-                  :class="{
-                    'active current-page': route().current('direct-referrals'),
-                  }"
-                >
-                  <Link
-                    preserve-scroll
-                    :href="route('direct-referrals')"
-                    class="nk-menu-link"
-                  >
-                    <span class="nk-menu-text">Direct Referrals</span>
-                  </Link>
-                </li>
-                <li class="nk-menu-item">
-                  <Link 
-                  preserve-scroll
-                  :href="route('uni-level')" 
-                  class="nk-menu-link"
-                    ><span class="nk-menu-text">UniLevel Tree</span></Link
-                  >
-                </li>
-                <li
-                  class="nk-menu-item"
-                  :class="{
-                    'active current-page': route().current('referral-link'),
-                  }"
-                >
-                  <Link
-                    preserve-scroll
-                    :href="route('referral-link')"
-                    class="nk-menu-link"
-                    ><span class="nk-menu-text">Referral link</span></Link
-                  >
-                </li>
-              </ul>
-              <!-- .nk-menu-sub -->
+                <span class="nk-menu-text">Upgrade Membership</span>
+              </Link>
             </li>
-            <!-- .nk-menu-item -->
-            <li class="nk-menu-item">
-              <a href="html/pricing-table.html" class="nk-menu-link">
-                <span class="nk-menu-icon"
-                  ><em class="icon ni ni-view-col"></em
-                ></span>
-                <span class="nk-menu-text">Achievement</span>
-              </a>
+
+            <li
+              class="nk-menu-item"
+              :class="{ 'active current-page': route().current('profile') }"
+            >
+            <Link
+                preserve-scroll
+                :href="route('direct-referrals')"
+                class="nk-menu-link"
+              >
+                <span class="nk-menu-text">Direct Referrals</span>
+              </Link>
+            </li>
+            <li
+              class="nk-menu-item"
+              :class="{ 'active current-page': route().current('profile') }"
+            >
+            <Link 
+                preserve-scroll
+                :href="route('uni-level')" 
+                class="nk-menu-link">
+                <span class="nk-menu-text">UniLevel Tree</span>
+              </Link>
+            </li>
+            <li
+              class="nk-menu-item"
+              :class="{ 'active current-page': route().current('profile') }"
+            >
+            <Link
+                preserve-scroll
+                :href="route('referral-link')"
+                class="nk-menu-link"
+                ><span class="nk-menu-text">Referral link</span></Link
+              >
             </li>
           </ul>
           <!-- .nk-menu -->

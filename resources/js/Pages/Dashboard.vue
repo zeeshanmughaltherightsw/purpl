@@ -26,12 +26,12 @@ import DashboardCard from '../Components/DashboardCard.vue';
                                     <div class="toggle-expand-content" data-content="pageMenu">
                                         <ul class="nk-block-tools g-3">
                                             <li class="nk-block-tools-opt">
-                                                <Link href="#" class="btn btn-primary bg-azure">
+                                                <Link :href="route('profile')" class="btn btn-primary bg-azure">
                                                     <em class="icon ni ni-reports"></em><span>Edit profile</span>
                                                 </Link>
                                             </li>
                                             <li class="nk-block-tools-opt">
-                                                <Link href="#" class="btn btn-primary bg-azure">
+                                                <Link :href="route('membership.index')" class="btn btn-primary bg-azure">
                                                     <em class="icon ni ni-reports"></em><span>Deposit now</span>
                                                 </Link>
                                             </li>
