@@ -35,9 +35,10 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <center>
             <h1 class="display-3 py-5">Our Membership Plans</h1>
             <!-- investors cards -->
-            <h1 class="py-5">FOR INVESTORS</h1>
-            <div class="row container">
-                <div v-for="plan in plans" :key="plan.id" class="col-md-4 solution_cards_box">
+            <h1 class="py-5" v-if="investorPlans.length > 0">FOR INVESTORS</h1>
+            <div class="row container justify-content-between">
+                <div v-for="plan in investorPlans" :key="plan.id" 
+                    class="solution_cards_box" :class="`${'col-md-' + 12/investorPlans.length}`">
                     <PlanCard v-if="plan.plan_type == 'investor'" 
                       :title="plan.name" 
                       :amountReturn="plan.amount_returns" 
@@ -52,8 +53,8 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
                 <!-- refferals cards -->
 
-                <h1 class="col-12 my-3 py-5">FOR REFFERALS</h1>
-                <div v-for="plan in plans" :key="plan.id" class="col-md-4 solution_cards_box">
+                <h1 class="col-12 my-3 py-5" v-if="referralPlans.length > 0">FOR REFFERALS</h1>
+                <div v-for="plan in referralPlans" :key="plan.id" class="solution_cards_box" :class="`${'col-md-' + 12/referralPlans.length}`">
                     <PlanCard v-if="plan.plan_type == 'referral'" 
                         title="" 
                         price="" 
@@ -68,9 +69,9 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
                 <!-- highly agents cards -->
 
-                <h1 class="col-12 py-5 my-3">FOR HIGHLY AGENTS</h1>
+                <h1 class="col-12 py-5 my-3" v-if="highAgentPlans.length > 0">FOR HIGHLY AGENTS</h1>
 
-                <div v-for="plan in plans" :key="plan.id" class="col-md-3 solution_cards_box">
+                <div v-for="plan in highAgentPlans" :key="plan.id" class="solution_cards_box" :class="`${'col-md-' + 12/referralPlans.length}`">
                     <PlanCard v-if="plan.plan_type == 'high_agent'" title=""
                       :min_price="plan.min_price" 
                       :max_price="plan.max_price" 
@@ -250,6 +251,15 @@ export default {
     props: ['plans'],
     data() {
         return {
+            investorPlans: plans.filter((obj) => {
+                obj.plan_type == 'investor'
+            }),
+            referralPlans: plans.filter((obj) => {
+                obj.plan_type == 'referral'
+            }),
+            highAgentPlans: plans.filter((obj) => {
+                obj.plan_type == 'high_agent'
+            }),
             lazyLoadElement: {
                 quick_services: false,
                 plans: false,

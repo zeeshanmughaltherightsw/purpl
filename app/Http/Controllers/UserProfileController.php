@@ -108,7 +108,7 @@ class UserProfileController extends Controller
                 'amount' => $request->amount,
                 'trx' => getTrx(),
                 'trx_type' => '+',
-                'details' => "Received profit from investment"
+                'details' => "Deposit"
             ]);
 
             upgradeMembership($request->amount, $user);

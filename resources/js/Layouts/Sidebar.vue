@@ -105,7 +105,7 @@
                 <span class="nk-menu-text">UniLevel Tree</span>
               </Link>
             </li> -->
-            <li
+            <li v-if="$page.props.auth.user.investment > 0"
               class="nk-menu-item"
               :class="{ 'active current-page': route().current('referral-link') }"
             >
