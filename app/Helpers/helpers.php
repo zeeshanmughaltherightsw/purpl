@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Plan;
 use App\Models\PlanLevel;
 use Illuminate\Support\Facades\Log;
 function getRealIP()
@@ -43,7 +44,7 @@ function getTrx($length = 12)
 }
 
 function addCommissionToReferals($user = null){
-    $level = PlanLevel::where('plan_id', $user->plan_id)->orderBy('level')->get();
+    $level = PlanLevel::where('plan_id', $user->plan_id)->orderByDesc('level')->get();
     if($user && $user->ref_by && count($level) > 0){
         $user = $user->parentRef;
         for($i=0; $i < count($level); $i++){
@@ -51,6 +52,16 @@ function addCommissionToReferals($user = null){
             $user->save();
         }
     }
+}
+
+function upgradeMembership($investment, $user)
+{
+    $plan = Plan::where('min_price', '>=', $investment)
+            ->where('max_price', '<=', $investment)
+            ->orderByDesc('max_price')
+            ->first();
+    $user->plan_id = $plan->id;
+    $user->save();
 }
 
 /*

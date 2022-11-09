@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Exception;
-use Illuminate\Http\JsonResponse;
+use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\DB;
 
 class UserProfileController extends Controller
 {
@@ -98,10 +99,11 @@ class UserProfileController extends Controller
     public function saveTransactions(Request $request)
     {
         try{
+            DB::beginTransaction();
             $user = User::findOrFail(auth()->user()->id);
             $user->investment += $request->amount;
             $user->save();
-            
+
             $user->transactions()->create([
                 'amount' => $request->amount,
                 'trx' => getTrx(),
@@ -109,9 +111,12 @@ class UserProfileController extends Controller
                 'details' => "Received profit from investment"
             ]);
 
-            addCommissionToReferals($user);
+            upgradeMembership($request->amount, $user);
 
+            addCommissionToReferals($user);
+            DB::commit();
         }catch(Exception $e){
+            DB::rollBack();
             return response()->json([
                 'message' => $e->getMessage()
             ], JsonResponse::HTTP_INTERNAL_SERVER_ERROR);
