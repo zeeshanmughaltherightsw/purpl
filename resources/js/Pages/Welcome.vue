@@ -62,6 +62,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                         :maxReffer="plan.max_ref" 
                         :expire="plan.expire" 
                         :commission="plan.ref_commission" 
+                        :levels="plan.levels_count"
                         planType="referral" />
                 </div>
 

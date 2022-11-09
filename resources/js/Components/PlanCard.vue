@@ -27,6 +27,13 @@
         <li v-if="planType == 'referral'"></li>
         <li>{{ commission }}</li>
 
+        <li v-if="planType == 'referral'">
+          <b>Levels </b>
+        </li>
+        <li v-if="planType == 'referral'">
+          {{ levels }} % 
+        </li>
+
         <li>
           <b>Plan Expiry</b>
         </li>
@@ -50,7 +57,8 @@ export default {
     "profit", 
     "minReffer", 
     "maxReffer" , 
-    "expire"
+    "expire",
+    "levels"
   ],
 };
 </script>
