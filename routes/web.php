@@ -1,16 +1,12 @@
 <?php
 
+use App\Models\Plan;
+use App\Models\User;
+use Inertia\Inertia;
+use App\Models\UserLogin;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserProfileController;
-use App\Models\User;
-use App\Models\UserLogin;
-use App\Models\Plan;
-use App\Models\Referral;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
-use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,9 +22,7 @@ use Carbon\Carbon;
 Route::get('/', function () {
 
     return Inertia::render('Welcome' , [
-        'plans'   =>  Plan::all(),
-        'referrals'  => Referral::where('investing_amount', '=' , null)->get(),
-        'refs'    =>  Referral::where('investing_amount', '!=' , null)->get(),
+        'plans'   =>  Plan::active()->get(),
     ]);
 })->name('welcome');
 
@@ -45,19 +39,23 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('direct-referrals', [\App\Http\Controllers\ReferralController::class, 'directReferals'])->name('direct-referrals');
     Route::get('referral-link', [\App\Http\Controllers\ReferralController::class, 'referralLink'])->name('referral-link');
     Route::get('uni-level', [\App\Http\Controllers\ReferralController::class, 'uniLevel'])->name('uni-level');
-
     Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
-
-      Route::get('account-activity', function(){
+    Route::get('transactions', function (){
+        return Inertia::render('Transactions', [
+            'transactions' => auth()->user()->transactions()->paginate(8),
+        ]);
+    })->name('transactions');
+    Route::get('membership', [\App\Http\Controllers\MembershipController::class, 'index'])->name('membership.index');
+    Route::get('account-activity', function(){
         return Inertia::render('Profile/AccountActivity', [
             'details'  =>  UserLogin::all()
         ]);
-      })->name('account-activity');
+    })->name('account-activity');
 
-      Route::get('security-setting', function(){
+    Route::get('security-setting', function(){
         User::all();
         return Inertia::render('Profile/SecuritySetting');
-      })->name('security-setting');
+    })->name('security-setting');
 });
 
 

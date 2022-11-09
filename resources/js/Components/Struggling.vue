@@ -14,15 +14,15 @@
                                 <th>Joining date</th>
                                 <th>Last login</th>
                                 <th>Membership type</th>
-                                <th>Upgrade Expires</th>
+                                <th>Expires</th>
                             </tr>
                         </template>
                         <template #body>
                             <tr>
                                 <td>{{ formatDate(users.created_at) }}</td>
                                 <td>{{ formatDateTime(users.user_login[0].created_at) }}</td>
-                                <td>{{ users.created_at }}</td>
-                                <td>{{ users.created_at }}</td>
+                                <td>{{ users.plan?.name }}</td>
+                                <td>Max {{ parseFloat(users.plan_expiry) * 100 }} %</td>
                             </tr>
                         </template>
                    </Table>

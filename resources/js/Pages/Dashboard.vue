@@ -35,7 +35,7 @@ import DashboardCard from '../Components/DashboardCard.vue';
                                                     <em class="icon ni ni-reports"></em><span>Deposit now</span>
                                                 </Link>
                                             </li>
-                                            <li class="nk-block-tools-opt">
+                                            <li class="nk-block-tools-opt" v-if="users.plan_id">
                                                 <Link :href="route('referral-link')" class="btn btn-primary bg-azure">
                                                     <em class="icon ni ni-reports"></em><span>Referral link</span>
                                                 </Link>
