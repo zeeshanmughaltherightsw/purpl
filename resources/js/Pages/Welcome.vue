@@ -40,8 +40,13 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 <div v-for="plan in plans" :key="plan.id" class="col-md-4 solution_cards_box">
                     <PlanCard v-if="plan.plan_type == 'investor'" 
                       :title="plan.name" 
-                      :minProfit="plan.min_profit"
-                        :maxProfit="plan.max_profit" :amountReturn="plan.amount_returns" :price="plan.price + ' $'" planType="investor" />
+                      :amountReturn="plan.amount_returns" 
+                      :profit="plan.profit" 
+                      :min_price="plan.min_price" 
+                      :max_price="plan.max_price" 
+                      :expire="plan.expire" 
+
+                      planType="investor" />
                 </div>
 
 
@@ -49,8 +54,14 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
                 <h1 class="col-12 my-3 py-5">FOR REFFERALS</h1>
                 <div v-for="plan in plans" :key="plan.id" class="col-md-4 solution_cards_box">
-                    <PlanCard v-if="plan.plan_type == 'referral'" title="" price="" :minReffer="plan.min_ref"
-                        :maxReffer="plan.max_ref" :amountReturn="plan.amount_returns" :commission="plan.ref_commission + ' Percent'" planType="referral" />
+                    <PlanCard v-if="plan.plan_type == 'referral'" 
+                        title="" 
+                        price="" 
+                        :minReffer="plan.min_ref"
+                        :maxReffer="plan.max_ref" 
+                        :expire="plan.expire" 
+                        :commission="plan.ref_commission" 
+                        planType="referral" />
                 </div>
 
                 <!-- refferals cards end -->
@@ -60,9 +71,13 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 <h1 class="col-12 py-5 my-3">FOR HIGHLY AGENTS</h1>
 
                 <div v-for="plan in plans" :key="plan.id" class="col-md-3 solution_cards_box">
-                    <PlanCard v-if="plan.plan_type == 'high_agent'" title="" :price="plan.price"
-                        :minReffer="plan.min_ref" :maxReffer="plan.max_ref" :amountReturn="plan.amount_returns"
-                        :commission="plan.ref_commission + ' Percent'" planType="high_agent" />
+                    <PlanCard v-if="plan.plan_type == 'high_agent'" title=""
+                      :min_price="plan.min_price" 
+                      :max_price="plan.max_price" 
+                      :expire="plan.expire" 
+
+                    :minReffer="plan.min_ref" :maxReffer="plan.max_ref" :amountReturn="plan.amount_returns"
+                    :commission="plan.ref_commission + ' Percent'" planType="high_agent" />
                 </div>
 
 

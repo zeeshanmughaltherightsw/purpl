@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Plan extends Model
 {
     use HasFactory;
+
+    public function scopeActive($query)
+    {
+        $query->whereStatus('active');
+    }
 }
