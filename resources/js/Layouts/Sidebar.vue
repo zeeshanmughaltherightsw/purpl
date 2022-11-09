@@ -16,7 +16,7 @@
           href="#"
           class="nk-nav-toggle nk-quick-nav-icon d-xl-none"
           data-target="sidebarMenu"
-          ><em class="icon ni ni-arrow-left"></em
+          ><em class="icon ni ni-arrow-left" @click="hideSidebar"></em
         ></a>
         <a
           href="#"
@@ -131,6 +131,12 @@
 import { Link } from "@inertiajs/inertia-vue3";
 export default {
   components: { Link },
+  methods: {
+    hideSidebar(){
+      let sidebar = document.querySelector('.nk-sidebar')
+      sidebar.classList.remove('nk-sidebar-active')
+    },
+  }
   mounted(){
     // NioApp.TGL.init()
   },

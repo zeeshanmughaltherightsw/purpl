@@ -14,7 +14,7 @@ const showingNavigationDropdown = ref(false);
   <div class="nk-header nk-header-fixed head">
     <div class="container-fluid">
       <div class="nk-header-wrap">
-        <div class="nk-menu-trigger d-xl-none ml-n1">
+        <div class="nk-menu-trigger d-xl-none ml-n1" @click="showSidebar">
           <a
             href="#"
             class="nk-nav-toggle nk-quick-nav-icon"
@@ -117,6 +117,12 @@ const showingNavigationDropdown = ref(false);
 <script>
 import moment from 'moment'
 export default {
+  methods: {
+    showSidebar(){
+      let sidebar = document.querySelector('.nk-sidebar')
+      sidebar.classList.add('nk-sidebar-active')
+    },
+  }
   computed:{
     currentDate(){
       return  moment().format("Do MMM YYYY hh:mm:ss");
