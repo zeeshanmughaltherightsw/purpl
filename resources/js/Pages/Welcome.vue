@@ -33,18 +33,18 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <!-- Top Feature End -->
         <!-- Plans-Starts -->
         <center>
-            <h1 class="display-3 py-5">Our Membership Plans</h1>
+            <h1 class="display-5 py-5">Our Membership Plans</h1>
             <!-- investors cards -->
-            <h1 class="py-5">FOR INVESTORS</h1>
+            <h2 class="py-5">FOR INVESTORS</h2>
             <div class="row container">
                 <div v-for="plan in plans" :key="plan.id" class="col-md-4 solution_cards_box">
-                    <PlanCard v-if="plan.plan_type == 'investor'" 
-                      :title="plan.name" 
-                      :amountReturn="plan.amount_returns" 
-                      :profit="plan.profit" 
-                      :min_price="plan.min_price" 
-                      :max_price="plan.max_price" 
-                      :expire="plan.expire" 
+                    <PlanCard v-if="plan.plan_type == 'investor'"
+                      :title="plan.name"
+                      :amountReturn="plan.amount_returns"
+                      :profit="plan.profit"
+                      :min_price="plan.min_price"
+                      :max_price="plan.max_price"
+                      :expire="plan.expire"
 
                       planType="investor" />
                 </div>
@@ -52,15 +52,17 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
                 <!-- refferals cards -->
 
-                <h1 class="col-12 my-3 py-5">FOR REFFERALS</h1>
+                <h2 class="col-12 my-3 py-5">FOR REFFERALS</h2>
                 <div v-for="plan in plans" :key="plan.id" class="col-md-4 solution_cards_box">
-                    <PlanCard v-if="plan.plan_type == 'referral'" 
-                        title="" 
-                        price="" 
+
+
+                    <PlanCard v-if="plan.plan_type == 'referral'"
+                        title=""
+                        price=""
                         :minReffer="plan.min_ref"
-                        :maxReffer="plan.max_ref" 
-                        :expire="plan.expire" 
-                        :commission="plan.ref_commission" 
+                        :maxReffer="plan.max_ref"
+                        :expire="plan.expire"
+                        :commission="plan.ref_commission"
                         planType="referral" />
                 </div>
 
@@ -68,17 +70,17 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
                 <!-- highly agents cards -->
 
-                <h1 class="col-12 py-5 my-3">FOR HIGHLY AGENTS</h1>
+                <!-- <h1 class="col-12 py-5 my-3">FOR HIGHLY AGENTS</h1>
 
                 <div v-for="plan in plans" :key="plan.id" class="col-md-3 solution_cards_box">
                     <PlanCard v-if="plan.plan_type == 'high_agent'" title=""
-                      :min_price="plan.min_price" 
-                      :max_price="plan.max_price" 
-                      :expire="plan.expire" 
+                      :min_price="plan.min_price"
+                      :max_price="plan.max_price"
+                      :expire="plan.expire"
 
                     :minReffer="plan.min_ref" :maxReffer="plan.max_ref" :amountReturn="plan.amount_returns"
                     :commission="plan.ref_commission + ' Percent'" planType="high_agent" />
-                </div>
+                </div> -->
 
 
                 <!-- highly agents cards end -->
@@ -214,10 +216,10 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                     <h1 class="display-5 mb-5">Services That We Offer For You</h1>
                 </div>
                 <div class="row g-4">
-                    <our-services 
-                      v-for="card in servicesCard" :key="card" 
-                      :title="card.title" 
-                      :image="card.image" 
+                    <our-services
+                      v-for="card in servicesCard" :key="card"
+                      :title="card.title"
+                      :image="card.image"
                       :description="card.description"
                     />
                 </div>
