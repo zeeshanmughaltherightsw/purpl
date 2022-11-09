@@ -54,6 +54,9 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 <!-- refferals cards -->
 
                 <h1 class="col-12 my-3 py-5" v-if="referralPlans.length > 0">FOR REFFERALS</h1>
+                
+                <div class="solution_cards_box col-md-2">
+                </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 0">
                     <PlanCard 
                         title="" 
@@ -64,8 +67,6 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                         :commission="referralPlans[0].ref_commission" 
                         :levels="referralPlans[0].levels_count"
                         planType="referral" />
-                </div>
-                <div class="solution_cards_box col-md-4">
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 1">
                     <PlanCard 
@@ -78,7 +79,8 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                         :levels="referralPlans[1].levels_count"
                         planType="referral" />
                 </div>
-
+                <div class="solution_cards_box col-md-2">
+                </div>
                 <!-- refferals cards end -->
 
                 <!-- highly agents cards -->

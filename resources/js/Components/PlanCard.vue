@@ -16,7 +16,7 @@
           <b>Refferals</b>
         </li>
         <li v-if="planType == 'referral' || planType == 'high_agent'">
-          {{ minReffer }} to {{ maxReffer }}
+          {{ minReffer }} to {{ maxReffer > 4 ? 'Unlimited' : maxReffer }}
         </li>
         <li v-if="planType == 'high_agent'">
           <b>With</b> <br />{{ max_price }} $
@@ -31,7 +31,7 @@
           <b>Levels </b>
         </li>
         <li v-if="planType == 'referral'">
-          {{ levels }} % 
+          {{ levels }} 
         </li>
 
         <li>
