@@ -38,7 +38,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
             <h1 class="py-5" v-if="investorPlans.length > 0">FOR INVESTORS</h1>
             <div class="row container justify-content-between">
                 <div v-for="plan in investorPlans" :key="plan.id" 
-                    class="solution_cards_box" :class="`${'col-md-' + 12/investorPlans.length}`">
+                    class="solution_cards_box col-md-4" >
                     <PlanCard v-if="plan.plan_type == 'investor'" 
                       :title="plan.name" 
                       :amountReturn="plan.amount_returns" 
@@ -54,15 +54,28 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 <!-- refferals cards -->
 
                 <h1 class="col-12 my-3 py-5" v-if="referralPlans.length > 0">FOR REFFERALS</h1>
-                <div v-for="plan in referralPlans" :key="plan.id" class="solution_cards_box" :class="`${'col-md-' + 12/referralPlans.length}`">
-                    <PlanCard v-if="plan.plan_type == 'referral'" 
+                <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 0">
+                    <PlanCard 
                         title="" 
                         price="" 
-                        :minReffer="plan.min_ref"
-                        :maxReffer="plan.max_ref" 
-                        :expire="plan.expire" 
-                        :commission="plan.ref_commission" 
-                        :levels="plan.levels_count"
+                        :minReffer="referralPlans[0].min_ref"
+                        :maxReffer="referralPlans[0].max_ref" 
+                        :expire="referralPlans[0].expire" 
+                        :commission="referralPlans[0].ref_commission" 
+                        :levels="referralPlans[0].levels_count"
+                        planType="referral" />
+                </div>
+                <div class="solution_cards_box col-md-4">
+                </div>
+                <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 1">
+                    <PlanCard 
+                        title="" 
+                        price="" 
+                        :minReffer="referralPlans[1].min_ref"
+                        :maxReffer="referralPlans[1].max_ref" 
+                        :expire="referralPlans[1].expire" 
+                        :commission="referralPlans[1].ref_commission" 
+                        :levels="referralPlans[1].levels_count"
                         planType="referral" />
                 </div>
 
@@ -253,13 +266,13 @@ export default {
     data() {
         return {
             investorPlans: this.plans.filter((obj) => {
-                obj.plan_type == 'investor'
+                return obj.plan_type == 'investor'
             }),
             referralPlans: this.plans.filter((obj) => {
-                obj.plan_type == 'referral'
+                return obj.plan_type == 'referral'
             }),
             highAgentPlans: this.plans.filter((obj) => {
-                obj.plan_type == 'high_agent'
+                return obj.plan_type == 'high_agent'
             }),
             lazyLoadElement: {
                 quick_services: false,
