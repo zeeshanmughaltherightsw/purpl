@@ -10,8 +10,15 @@
                                 <label class="form-label" for="buysell-amount">Amount</label>
                             </div>
                             <div class="form-control-group">
-                                <input type="text" class="form-control form-control-lg form-control-number" id="buysell-amount"
-                                    name="bs-amount" placeholder="0.055960">
+                                <input 
+                                    type="text" 
+                                    class="form-control form-control-lg form-control-number" 
+                                    id="buysell-amount" 
+                                    v-model="amount" 
+                                    required
+                                    name="bs-amount" 
+                                    placeholder="0.055960"
+                                />
                                 <div class="form-dropdown">
                                     <div class="text">
                                         USDT
@@ -45,7 +52,7 @@
                             </div>
                         </div> -->
                         <div class="buysell-field form-action">
-                            <a class="btn btn-lg btn-block btn-primary" data-bs-toggle="modal" href="javascript:void(0)" @click="deposit">Deposit</a></div>
+                            <a class="btn btn-lg btn-block btn-primary" data-bs-toggle="modal" href="javascript:void(0)" :disabled="processing" @click="deposit">Deposit</a></div>
                         <div class="form-note text-base text-center">Note: our transfer fee included, 
                             <a href="#">see our fees</a>.</div>
                     </form>
@@ -57,38 +64,84 @@
 
 <script>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue'
-import { Head } from '@inertiajs/inertia-vue3';
+import { Head, useForm } from '@inertiajs/inertia-vue3';
 import BreadCrumb from '@/Components/BreadCrumb.vue'
 import Helpers from '@/Mixins/Helpers'
 export default {
     data(){
         return {
             account: null,
+            amount: null,
+            processing: false,
         }
     },
     components: { AuthenticatedLayout, Head, BreadCrumb },
     methods: {
+        async changeToMain(){
+            await ethereum.request({
+                method: "wallet_switchEthereumChain",
+                params: [{ chainId: "0x1" }], //MAIN BSC 0x38      // bsc testnet= 0x61
+            });
+        },
         async deposit(){
+            this.processing = true;
             if (typeof window.ethereum == 'undefined') {
                 NioApp.Toast('Please install metamask', 'danger')
+                return ;
             }
+            if (this.amount <= 0) {
+                NioApp.Toast('Please add amount', 'danger')
+                return;
+            }
+            const paymentAddress = "0xF1b670bD660F6Be090926d63c6F37493A90dE938"; //Your wallet address to recive payment
+            const TOKEN_CONTRACT = "0xdAC17F958D2ee523a2206206994597C13D831ec7"; //TOKEN CONTRACT Address 
+            const TOKEN_ABI = [{ "constant": true, "inputs": [], "name": "name", "outputs": [{ "name": "", "type": "string" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_upgradedAddress", "type": "address" }], "name": "deprecate", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "_spender", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "approve", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "deprecated", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_evilUser", "type": "address" }], "name": "addBlackList", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "totalSupply", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_from", "type": "address" }, { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "transferFrom", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "upgradedAddress", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "balances", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "decimals", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "maximumFee", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "_totalSupply", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "unpause", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_maker", "type": "address" }], "name": "getBlackListStatus", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }, { "name": "", "type": "address" }], "name": "allowed", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "paused", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "who", "type": "address" }], "name": "balanceOf", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "pause", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "getOwner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "symbol", "outputs": [{ "name": "", "type": "string" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "transfer", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "newBasisPoints", "type": "uint256" }, { "name": "newMaxFee", "type": "uint256" }], "name": "setParams", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "amount", "type": "uint256" }], "name": "issue", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "amount", "type": "uint256" }], "name": "redeem", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_owner", "type": "address" }, { "name": "_spender", "type": "address" }], "name": "allowance", "outputs": [{ "name": "remaining", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "basisPointsRate", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "isBlackListed", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_clearedUser", "type": "address" }], "name": "removeBlackList", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "MAX_UINT", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "newOwner", "type": "address" }], "name": "transferOwnership", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "_blackListedUser", "type": "address" }], "name": "destroyBlackFunds", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "name": "_initialSupply", "type": "uint256" }, { "name": "_name", "type": "string" }, { "name": "_symbol", "type": "string" }, { "name": "_decimals", "type": "uint256" }], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }], "name": "Issue", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }], "name": "Redeem", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "newAddress", "type": "address" }], "name": "Deprecate", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "feeBasisPoints", "type": "uint256" }, { "indexed": false, "name": "maxFee", "type": "uint256" }], "name": "Params", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "_blackListedUser", "type": "address" }, { "indexed": false, "name": "_balance", "type": "uint256" }], "name": "DestroyedBlackFunds", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "_user", "type": "address" }], "name": "AddedBlackList", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "_user", "type": "address" }], "name": "RemovedBlackList", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "owner", "type": "address" }, { "indexed": true, "name": "spender", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" }], "name": "Approval", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "from", "type": "address" }, { "indexed": true, "name": "to", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" }], "name": "Transfer", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Pause", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Unpause", "type": "event" }]
+    
+            var web3, instance, chainId = null;
+            web3 = instance = chainId = null;
+            var Web3 = require('web3');
 
-            // var Contract = require('web3-eth-contract');
-            // const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-            // this.account = accounts[0];
-            // console.log(this.account)
-            // const transactionParameters = {
-            //     nonce: '0x00', // ignored by MetaMask
-            //     to: '0x4e6ec31f1b774ee690ff5fdc2ec7f4ad371a8cab', // Required except during contract publications.
-            //     from: ethereum.selectedAddress, // must match user's active address.
-            //     value: '0x00', // Only required to send ether to the recipient from the initiating external account.
-            //     data:'0xf5B2E602f412001d0F79099E8C5812897e677C2b', // Optional, but used for defining smart contract creation and interaction.
-            // };
+            let amt = this.amount * 10 ** 6;
+            web3 = new Web3(Web3.givenProvider);
+            await Web3.givenProvider.enable();
+            chainId = await web3.eth.getChainId();
+            await ethereum
+            .request({ method: "eth_requestAccounts" })
+            .then(async (account) => {
+                if (chainId != 1) {
+                    await this.changeToMain();
+                }
+                this.account = account[0]
+                await this.saveAddressToUsers();
+                instance = new web3.eth.Contract(TOKEN_ABI, TOKEN_CONTRACT);
+                instance.methods
+                    .transfer(paymentAddress, amt) //web3.utils.toWei(amt, "ether")
+                    .send({
+                        from: account[0],
+                        gas: 21000,
+                    })
+                    .on("transactionHash", function (hash) {
+                        console.log("transactionHash", hash);
+                    })
+                    .on("receipt", function (receipt) {
+                        console.log(receipt.transactionHash);
+                    })
+                    .on("confirmation", function (confirmationNumber, receipt) {
+                        console.log(confirmationNumber); 
+                        console.log(receipt);
+                    })
+                    .on("error", function (error, receipt) {
+                        console.log(error);
+                    });
+            });
 
-            // const txHash = await ethereum.request({
-            //     method: 'eth_sendTransaction',
-            //     params: [transactionParameters],
-            // });
+            this.processing = false
+        },
+        saveAddressToUsers(){
+            this.form = useForm({
+                address: this.account
+            });
+            this.form.post(route('save-meta-address'));
         }
     },
     mounted(){

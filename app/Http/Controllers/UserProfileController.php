@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\User;
 use Inertia\Inertia;
+use Illuminate\Http\Request;
 
 class UserProfileController extends Controller
 {
@@ -83,5 +84,12 @@ class UserProfileController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function saveMetaAddress(Request $request)
+    {
+        $user = User::findOrFail(auth()->user()->id);
+        $user->public_address = $request->address;
+        $user->save();
     }
 }
