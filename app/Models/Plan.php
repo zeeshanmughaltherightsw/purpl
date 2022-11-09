@@ -13,4 +13,9 @@ class Plan extends Model
     {
         $query->whereStatus(1);
     }
+
+    public function levels()
+    {
+        return $this->hasMany(PlanLevel::class);
+    }
 }

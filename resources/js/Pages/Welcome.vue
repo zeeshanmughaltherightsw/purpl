@@ -251,13 +251,13 @@ export default {
     props: ['plans'],
     data() {
         return {
-            investorPlans: plans.filter((obj) => {
+            investorPlans: this.plans.filter((obj) => {
                 obj.plan_type == 'investor'
             }),
-            referralPlans: plans.filter((obj) => {
+            referralPlans: this.plans.filter((obj) => {
                 obj.plan_type == 'referral'
             }),
-            highAgentPlans: plans.filter((obj) => {
+            highAgentPlans: this.plans.filter((obj) => {
                 obj.plan_type == 'high_agent'
             }),
             lazyLoadElement: {
