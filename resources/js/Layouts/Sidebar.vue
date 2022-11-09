@@ -64,7 +64,7 @@
             </li>
             <!-- .nk-menu-item -->
 
-            <li class="nk-menu-item has-sub">
+            <li class="nk-menu-item has-sub" v-if="false">
               <a href="#" class="nk-menu-link nk-menu-toggle">
                 <span class="nk-menu-icon"
                   ><em class="icon ni ni-toolbar"></em
@@ -90,8 +90,8 @@
               </a>
               <ul class="nk-menu-sub">
                 <li class="nk-menu-item">
-                  <a href="html/user-list-default.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Upgrade Membership</span></a
+                  <Link :href="route('membership.index')" class="nk-menu-link"
+                    ><span class="nk-menu-text">Upgrade Membership</span></Link
                   >
                 </li>
                 <li class="nk-menu-item">
@@ -124,8 +124,8 @@
               </a>
               <ul class="nk-menu-sub">
                 <li class="nk-menu-item">
-                  <a href="html/orders-default.html" class="nk-menu-link"
-                    ><span class="nk-menu-text">Transactions</span></a
+                  <Link :href="route('transactions')" class="nk-menu-link"
+                    ><span class="nk-menu-text">Transactions</span></Link
                   >
                 </li>
                 <li class="nk-menu-item">
@@ -143,6 +143,7 @@
             </li>
             <!-- .nk-menu-item -->
             <li
+              v-if="$page.props.auth.user.plan_id"
               class="nk-menu-item has-sub"
               :class="{
                 'active current-page':
@@ -219,7 +220,7 @@ import { Link } from "@inertiajs/inertia-vue3";
 export default {
   components: { Link },
   mounted(){
-    NioApp.TGL.init()
+    // NioApp.TGL.init()
   },
 };
 </script>

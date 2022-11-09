@@ -1,0 +1,71 @@
+[12-Oct-2022 19:19:35 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:19:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:19:35 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:19:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:20:20 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:20:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:25:14 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:25:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:25:42 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:25:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:25:47 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:25:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:25:59 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:25:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:26:01 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:26:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:26:50 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:26:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:27:09 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:27:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:29:41 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[12-Oct-2022 19:29:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/aamhxgpc/stonearn.com/public/index.php on line 34
+[15-Oct-2022 12:37:08 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/vendor/composer/../../app/helpers/helpers.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/vendor/composer/autoload_real.php on line 78
+[15-Oct-2022 12:37:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/vendor/composer/../../app/helpers/helpers.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/aamhxgpc/stonearn.com/vendor/composer/autoload_real.php(61): composerRequire9b2cef2f781d76180b8daf77b399ec24()
+#1 /home/aamhxgpc/stonearn.com/vendor/autoload.php(7): ComposerAutoloaderInit9b2cef2f781d76180b8daf77b399ec24::getLoader()
+#2 /home/aamhxgpc/stonearn.com/public/index.php(34): require('/home/aamhxgpc/...')
+#3 {main}
+  thrown in /home/aamhxgpc/stonearn.com/vendor/composer/autoload_real.php on line 78
+[15-Oct-2022 12:37:53 UTC] PHP Warning:  require(/home/aamhxgpc/stonearn.com/vendor/composer/../../app/helpers/helpers.php): Failed to open stream: No such file or directory in /home/aamhxgpc/stonearn.com/vendor/composer/autoload_real.php on line 78
+[15-Oct-2022 12:37:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/aamhxgpc/stonearn.com/vendor/composer/../../app/helpers/helpers.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/aamhxgpc/stonearn.com/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/aamhxgpc/stonearn.com/vendor/composer/autoload_real.php(61): composerRequire9b2cef2f781d76180b8daf77b399ec24()
+#1 /home/aamhxgpc/stonearn.com/vendor/autoload.php(7): ComposerAutoloaderInit9b2cef2f781d76180b8daf77b399ec24::getLoader()
+#2 /home/aamhxgpc/stonearn.com/public/index.php(34): require('/home/aamhxgpc/...')
+#3 {main}
+  thrown in /home/aamhxgpc/stonearn.com/vendor/composer/autoload_real.php on line 78

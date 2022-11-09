@@ -72,4 +72,14 @@ class User extends Authenticatable
     public function nodes() {
         return $this->directReferrals()->with(['nodes' => function($q){$q->asNodes();}]);
     }
+
+    public function plan()
+    {
+        return $this->belongsTo(Plan::class);
+    }
+
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class);
+    }
 }

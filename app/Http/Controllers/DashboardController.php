@@ -16,7 +16,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $users = User::with(['userLogin' => function($query){
+        $users = User::with(['plan', 'userLogin' => function($query){
             $query->select(['id','user_id','created_at'])->latest()->limit(1);
             }])->find(auth()->user()->id);
           return Inertia::render('Dashboard', [
