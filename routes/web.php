@@ -22,7 +22,7 @@ use App\Http\Controllers\UserProfileController;
 Route::get('/', function () {
 
     return Inertia::render('Welcome' , [
-        'plans'   =>  Plan::active()->get(),
+        'plans'   => Plan::active()->get(),
     ]);
 })->name('welcome');
 
