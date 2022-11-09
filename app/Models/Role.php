@@ -13,7 +13,7 @@ class Role extends Model
     public function users(): BelongsToMany
     {
         return $this->morphedByMany(
-            'web',
+            User::class,
             'model',
             'model_has_roles',
             'role_id',
