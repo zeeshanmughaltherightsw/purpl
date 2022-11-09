@@ -122,7 +122,7 @@ export default {
       let sidebar = document.querySelector('.nk-sidebar')
       sidebar.classList.add('nk-sidebar-active')
     },
-  }
+  },
   computed:{
     currentDate(){
       return  moment().format("Do MMM YYYY hh:mm:ss");

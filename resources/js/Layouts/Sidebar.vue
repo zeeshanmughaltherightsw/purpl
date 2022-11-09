@@ -137,8 +137,5 @@ export default {
       sidebar.classList.remove('nk-sidebar-active')
     },
   }
-  mounted(){
-    // NioApp.TGL.init()
-  },
 };
 </script>
