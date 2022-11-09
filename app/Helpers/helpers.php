@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\PlanLevel;
 use Illuminate\Support\Facades\Log;
 function getRealIP()
 {
@@ -40,10 +41,22 @@ function getTrx($length = 12)
     }
     return $randomString;
 }
-      /*
-     * Recursive top-down tree traversal example:
-     * Indent and print child nodes
-     */
+
+function addCommissionToReferals($user = null){
+    $level = PlanLevel::where('plan_id', $user->plan_id)->orderBy('level')->get();
+    if($user && $user->ref_by && count($level) > 0){
+        $user = $user->parentRef;
+        for($i=0; $i < count($level); $i++){
+            $user->commission += $level->commission;
+            $user->save();
+        }
+    }
+}
+
+/*
+* Recursive top-down tree traversal example:
+* Indent and print child nodes
+*/
 function display_child_nodes($child=null, $spaces=0)
 {
     

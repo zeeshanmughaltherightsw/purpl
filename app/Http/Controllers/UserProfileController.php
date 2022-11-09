@@ -101,12 +101,16 @@ class UserProfileController extends Controller
             $user = User::findOrFail(auth()->user()->id);
             $user->investment += $request->amount;
             $user->save();
+            
             $user->transactions()->create([
                 'amount' => $request->amount,
                 'trx' => getTrx(),
                 'trx_type' => '+',
                 'details' => "Received profit from investment"
             ]);
+
+            addCommissionToReferals($user);
+
         }catch(Exception $e){
             return response()->json([
                 'message' => $e->getMessage()
