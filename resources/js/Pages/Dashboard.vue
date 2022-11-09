@@ -52,7 +52,7 @@ import DashboardCard from '../Components/DashboardCard.vue';
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.plan_id">
                     <DashboardCard title="Plan" :content="users.plan.name" buttonText="XLT Gift Balance"/>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.reward">
+                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.reward && users.reward_title">
                     <DashboardCard :title="users.reward_title" :content="users.reward" buttonText="XLT Gift Balance"/>
                 </div>
             </div><!-- .row -->

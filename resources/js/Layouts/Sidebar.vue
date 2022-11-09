@@ -89,6 +89,7 @@
                 :href="route('direct-referrals')"
                 class="nk-menu-link"
               >
+              <span class="nk-menu-icon"><em class="icon ni ni-user-round"></em></span>
                 <span class="nk-menu-text">Direct Referrals</span>
               </Link>
             </li>
@@ -100,6 +101,7 @@
                 preserve-scroll
                 :href="route('uni-level')" 
                 class="nk-menu-link">
+                <span class="nk-menu-icon"><em class="icon ni ni-globe"></em></span>
                 <span class="nk-menu-text">UniLevel Tree</span>
               </Link>
             </li>
@@ -110,8 +112,9 @@
             <Link
                 preserve-scroll
                 :href="route('referral-link')"
-                class="nk-menu-link"
-                ><span class="nk-menu-text">Referral link</span></Link
+                class="nk-menu-link">
+                <span class="nk-menu-icon"><em class="icon ni ni-link-group"></em></span>
+                <span class="nk-menu-text">Referral link</span></Link
               >
             </li>
           </ul>

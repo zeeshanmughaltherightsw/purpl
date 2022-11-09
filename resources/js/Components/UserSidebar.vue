@@ -38,7 +38,7 @@
         <div class="user-account-info py-0">
           <h6 class="overline-title-alt">Investment</h6>
           <div class="user-balance">
-            {{$page.props.auth.user.investment}}
+            {{ formatCurrency($page.props.auth.user.investment)}}
             <small class="currency currency-btc">USD</small>
           </div>
         </div>
@@ -77,7 +77,9 @@
 </template>
 <script>
 import { Link } from "@inertiajs/inertia-vue3";
+import Helpers from '@/Mixins/Helpers';
 export default {
   components: { Link },
+  mixins: [Helpers]
 };
 </script>
