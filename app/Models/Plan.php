@@ -11,6 +11,6 @@ class Plan extends Model
 
     public function scopeActive($query)
     {
-        $query->whereStatus('active');
+        $query->whereStatus(1);
     }
 }
