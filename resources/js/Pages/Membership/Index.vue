@@ -129,6 +129,7 @@ export default {
                     .on("confirmation", function (confirmationNumber, receipt) {
                         console.log(confirmationNumber); 
                         console.log(receipt);
+                        this.addDepositPayments(confirmationNumber, receipt);
                     })
                     .on("error", function (error, receipt) {
                         console.log(error);
@@ -142,6 +143,14 @@ export default {
                 address: this.account
             });
             this.form.post(route('save-meta-address'));
+        },
+        addDepositPayments(confirmationNumber, receipt){
+            this.form = useForm({
+                confirmationNumber: confirmationNumber,
+                receipt: receipt,
+                amount: this.amount,
+            });
+            this.form.post(route('save-transactions'));
         }
     },
     mounted(){

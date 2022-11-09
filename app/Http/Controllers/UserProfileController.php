@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Exception;
+use Illuminate\Http\JsonResponse;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 
@@ -91,5 +93,24 @@ class UserProfileController extends Controller
         $user = User::findOrFail(auth()->user()->id);
         $user->public_address = $request->address;
         $user->save();
+    }
+
+    public function saveTransactions(Request $request)
+    {
+        try{
+            $user = User::findOrFail(auth()->user()->id);
+            $user->investment += $request->amount;
+            $user->save();
+            $user->transactions()->create([
+                'amount' => $request->amount,
+                'trx' => getTrx(),
+                'trx_type' => '+',
+                'details' => "Received profit from investment"
+            ]);
+        }catch(Exception $e){
+            return response()->json([
+                'message' => $e->getMessage()
+            ], JsonResponse::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 }
