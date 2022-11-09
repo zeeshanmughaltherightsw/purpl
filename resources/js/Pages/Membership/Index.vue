@@ -73,7 +73,7 @@ export default {
                 NioApp.Toast('Please install metamask', 'danger')
             }
 
-            var Contract = require('web3-eth-contract');
+            // var Contract = require('web3-eth-contract');
             // const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
             // this.account = accounts[0];
             // console.log(this.account)

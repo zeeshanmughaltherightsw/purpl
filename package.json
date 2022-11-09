@@ -29,7 +29,6 @@
         "vue-loader": "^17.0.0"
     },
     "dependencies": {
-        "@metamask/detect-provider": "^2.0.0",
         "@popperjs/core": "^2.11.6",
         "bootstrap": "^4.6.1",
         "bootstrap-datepicker": "^1.9.0",
@@ -40,7 +39,6 @@
         "sweetalert2": "^9.17.1",
         "toastr": "^2.1.4",
         "vue-jstree": "^2.1.6",
-        "vue3-tree": "^0.11.4",
-        "web3": "^1.8.0"
+        "vue3-tree": "^0.11.4"
     }
 }
