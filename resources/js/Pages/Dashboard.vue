@@ -49,20 +49,11 @@ import DashboardCard from '../Components/DashboardCard.vue';
                     <!-- XLT PRICE -->
                     <Alert/>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
-                    <DashboardCard title="XLT Gift balance" content="00000000" buttonText="XLT Gift Balance"/>
+                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.plan_id">
+                    <DashboardCard title="Plan" :content="users.plan.name" buttonText="XLT Gift Balance"/>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
-                    <DashboardCard title="Master Nodes Profit" content="00000000" buttonText="Master Nodes Profit"/>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
-                    <DashboardCard title="Staking Purchasing" content="00000000" buttonText="Staking Purchasing"/>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
-                    <DashboardCard title="XLT Balance" content="00000000" buttonText="XLT Balance"/>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
-                    <DashboardCard title="Staking Profit" content="00000000" buttonText="Staking Profit"/>
+                <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.reward">
+                    <DashboardCard :title="users.reward_title" :content="users.reward" buttonText="XLT Gift Balance"/>
                 </div>
             </div><!-- .row -->
         </div><!-- .nk-block -->

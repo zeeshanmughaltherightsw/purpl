@@ -66,7 +66,7 @@
             <!-- .nk-menu-item -->
             <li
               class="nk-menu-item"
-              :class="{ 'active current-page': route().current('profile') }"
+              :class="{ 'active current-page': route().current('membership.index') }"
             >
               <Link
                 preserve-scroll
@@ -82,7 +82,7 @@
 
             <li
               class="nk-menu-item"
-              :class="{ 'active current-page': route().current('profile') }"
+              :class="{ 'active current-page': route().current('direct-referrals') }"
             >
             <Link
                 preserve-scroll
@@ -94,7 +94,7 @@
             </li>
             <li
               class="nk-menu-item"
-              :class="{ 'active current-page': route().current('profile') }"
+              :class="{ 'active current-page': route().current('uni-level') }"
             >
             <Link 
                 preserve-scroll
@@ -105,7 +105,7 @@
             </li>
             <li
               class="nk-menu-item"
-              :class="{ 'active current-page': route().current('profile') }"
+              :class="{ 'active current-page': route().current('referral-link') }"
             >
             <Link
                 preserve-scroll

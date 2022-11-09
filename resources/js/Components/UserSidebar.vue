@@ -11,8 +11,8 @@
             <span>AB</span>
           </div>
           <div class="user-info">
-            <span class="lead-text">Abu Bin Ishtiyak</span>
-            <span class="sub-text">info@softnio.com</span>
+            <span class="lead-text">{{$page.props.auth.user.name}}</span>
+            <span class="sub-text">{{$page.props.auth.user.email}}</span>
           </div>
           <div class="user-action">
             <div class="dropdown">
@@ -36,15 +36,10 @@
       <!-- .card-inner -->
       <div class="card-inner">
         <div class="user-account-info py-0">
-          <h6 class="overline-title-alt">Account Balance</h6>
+          <h6 class="overline-title-alt">Investment</h6>
           <div class="user-balance">
-            12.395769
+            {{$page.props.auth.user.investment}}
             <small class="currency currency-btc">USD</small>
-          </div>
-          <div class="user-balance-sub">
-            Pending
-            <span>0.344939
-              <span class="currency currency-btc">USD</span></span>
           </div>
         </div>
       </div>

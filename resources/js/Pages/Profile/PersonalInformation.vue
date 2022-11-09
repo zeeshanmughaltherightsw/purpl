@@ -17,8 +17,7 @@
                           <h4 class="nk-block-title">Personal Information</h4>
                           <div class="nk-block-des">
                             <p>
-                              Basic info, like your name and address, that you
-                              use on Nio Platform.
+                              Basic info
                             </p>
                           </div>
                         </div>
@@ -78,16 +77,6 @@
                           </div>
                         </div>
                         <!-- data-item -->
-                        <div class="data-item" data-toggle="modal" data-target="#profile-edit">
-                          <div class="data-col">
-                            <span class="data-label">Date of Birth</span>
-                            <span class="data-value">{{ profiles ? profiles.date_of_birth: '' }}</span>
-                          </div>
-                          <div class="data-col data-col-end">
-                            <span class="data-more"><em class="icon ni ni-forward-ios"></em></span>
-                          </div>
-                        </div>
-                        <!-- data-item -->
                         <div class="data-item" data-toggle="modal" data-target="#profile-edit"
                           data-tab-target="#address">
                           <div class="data-col">
@@ -101,44 +90,7 @@
                         <!-- data-item -->
                       </div>
                       <!-- data-list -->
-                      <div class="nk-data data-list">
-                        <div class="data-head">
-                          <h6 class="overline-title">Preferences</h6>
-                        </div>
-                        <div class="data-item">
-                          <div class="data-col">
-                            <span class="data-label">Language</span>
-                            <span class="data-value">English (United State)</span>
-                          </div>
-                          <div class="data-col data-col-end">
-                            <a href="#" data-toggle="modal" data-target="#profile-language"
-                              class="link link-primary">Change Language</a>
-                          </div>
-                        </div>
-                        <!-- data-item -->
-                        <div class="data-item">
-                          <div class="data-col">
-                            <span class="data-label">Date Format</span>
-                            <span class="data-value">M d, YYYY</span>
-                          </div>
-                          <div class="data-col data-col-end">
-                            <a href="#" data-toggle="modal" data-target="#profile-language"
-                              class="link link-primary">Change</a>
-                          </div>
-                        </div>
-                        <!-- data-item -->
-                        <div class="data-item">
-                          <div class="data-col">
-                            <span class="data-label">Timezone</span>
-                            <span class="data-value">Bangladesh (GMT +6)</span>
-                          </div>
-                          <div class="data-col data-col-end">
-                            <a href="#" data-toggle="modal" data-target="#profile-language"
-                              class="link link-primary">Change</a>
-                          </div>
-                        </div>
-                        <!-- data-item -->
-                      </div>
+                      
                       <!-- data-list -->
                     </div>
                     <!-- .nk-block -->

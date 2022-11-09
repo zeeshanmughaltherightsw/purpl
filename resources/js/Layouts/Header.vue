@@ -87,12 +87,6 @@ const showingNavigationDropdown = ref(false);
                         ><span>Login Activity</span></Link
                       >
                     </li>
-                    <li>
-                      <a class="dark-switch" href="#"
-                        ><em class="icon ni ni-moon"></em
-                        ><span>Dark Mode</span></a
-                      >
-                    </li>
                   </ul>
                 </div>
                 <div class="dropdown-inner">
