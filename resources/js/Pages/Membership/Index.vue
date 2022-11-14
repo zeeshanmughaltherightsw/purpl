@@ -1,4 +1,5 @@
 <template>
+    <Head title="Upgrade membership"/>
     <authenticated-layout>
         <BreadCrumb title="Upgrade membership" />
         <div class="nk-content-body">
