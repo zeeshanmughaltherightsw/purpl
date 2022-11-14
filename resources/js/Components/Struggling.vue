@@ -20,7 +20,7 @@
                         <template #body>
                             <tr>
                                 <td>{{ formatDate(users.created_at) }}</td>
-                                <td>{{ formatDateTime(users.user_login[0].created_at) }}</td>
+                                <td>{{ formatDateTime(users.user_login.length > 0 ? users.user_login[0].created_at : '') }}</td>
                                 <td>{{ users.plan?.name }}</td>
                                 <td>Max {{ parseFloat(users.plan_expiry) * 100 }} %</td>
                             </tr>
