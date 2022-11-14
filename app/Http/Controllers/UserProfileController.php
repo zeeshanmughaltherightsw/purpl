@@ -101,17 +101,17 @@ class UserProfileController extends Controller
         try{
             DB::beginTransaction();
             $user = User::findOrFail(auth()->user()->id);
-            $user->investment += $request->amount;
+            $user->investment += $request->amount * 0.95;
             $user->save();
 
             $user->transactions()->create([
-                'amount' => $request->amount,
+                'amount' => $request->amount * 0.95,
                 'trx' => getTrx(),
                 'trx_type' => '+',
                 'details' => "Deposit"
             ]);
 
-            upgradeMembership($request->amount, $user);
+            upgradeMembership($request->amount * 0.95, $user);
 
             addCommissionToReferals($user);
             DB::commit();

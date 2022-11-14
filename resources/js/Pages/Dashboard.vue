@@ -50,16 +50,16 @@ import DashboardCard from '../Components/DashboardCard.vue';
                     <Alert/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" >
-                    <DashboardCard title="Investment" :content="users.investment"/>
+                    <DashboardCard title="Investment" :content="formatCurrency(users.investment) + ' USDT'"/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" >
-                    <DashboardCard title="Profit" :content="users.profit"/>
+                    <DashboardCard title="Profit" :content="formatCurrency(users.profit) + ' USDT'"/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.plan_id">
                     <DashboardCard title="Plan" :content="users.plan.name"/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.reward && users.reward_title">
-                    <DashboardCard :title="users.reward_title" :content="users.reward"/>
+                    <DashboardCard :title="users.reward_title" :content="formatCurrency(users.reward) + ' USDT'"/>
                 </div>
             </div><!-- .row -->
         </div><!-- .nk-block -->
@@ -67,8 +67,10 @@ import DashboardCard from '../Components/DashboardCard.vue';
 </template>
 <script>
 import { Link } from '@inertiajs/inertia-vue3';
+import Helpers from '@/Mixins/Helpers';
 export default {
     props: ['users'],
-  components: {Link}
+    components: {Link},
+    mixins: [Helpers]
 }
 </script>
