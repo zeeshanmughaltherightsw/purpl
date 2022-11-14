@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\GeneralSetting;
 use App\Models\Plan;
 use App\Models\PlanLevel;
 use Illuminate\Support\Facades\Log;
@@ -53,7 +54,6 @@ function addCommissionToReferals($user = null){
         }
     }
 }
-
 function upgradeMembership($investment, $user)
 {
     $plan = Plan::where('min_price', '>=', $investment)
@@ -63,7 +63,6 @@ function upgradeMembership($investment, $user)
     $user->plan_id = $plan->id;
     $user->save();
 }
-
 /*
 * Recursive top-down tree traversal example:
 * Indent and print child nodes
@@ -88,5 +87,13 @@ function display_child_nodes($child=null, $spaces=0)
     }
     Log::info("$left - $root->name");                
     return $spaces;
+}
+
+function getSettings($group = null)
+{
+    if($group){
+        return GeneralSetting::where('group', $group)->get();
+    }
+    return GeneralSetting::all();
 }
 ?>

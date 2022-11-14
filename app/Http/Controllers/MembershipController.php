@@ -10,7 +10,7 @@ class MembershipController extends Controller
     public function index()
     {
         return Inertia::render('Membership/Index', [
-            
+            'settings' => getSettings('payment')
         ]);
     }
 }
