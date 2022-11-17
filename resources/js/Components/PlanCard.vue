@@ -41,7 +41,7 @@
         {{ parseFloat(expire) * 100}} % 
         </li>
       </ul>
-      <button type="button" class="read_more_btn my-3">Upgrade Now</button>
+      <Link :href="route('membership.index')" class="read_more_btn my-3">Upgrade Now</Link>
     </div>
   </div>
 </template>

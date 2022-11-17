@@ -20,7 +20,6 @@ use App\Http\Controllers\UserProfileController;
 */
 
 Route::get('/', function () {
-
     return Inertia::render('Welcome' , [
         'plans'   => Plan::withCount('levels')->active()->get(),
     ]);
@@ -48,6 +47,7 @@ Route::middleware(['auth', 'verified'])->group(function(){
         ]);
     })->name('transactions');
     Route::get('membership', [\App\Http\Controllers\MembershipController::class, 'index'])->name('membership.index');
+    
     Route::get('account-activity', function(){
         return Inertia::render('Profile/AccountActivity', [
             'details'  =>  UserLogin::all()
@@ -58,6 +58,7 @@ Route::middleware(['auth', 'verified'])->group(function(){
         User::all();
         return Inertia::render('Profile/SecuritySetting');
     })->name('security-setting');
+
 });
 
 
