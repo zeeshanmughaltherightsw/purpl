@@ -11,5 +11,13 @@ export default {
         formatCurrency(currency = 0){
             return parseInt(currency).toFixed(2)
         },
+        
+        getClass(status){
+            if(status == 'active' || status == 1)
+                return 'success';
+            else if(status == 'inactive' || status == 'baned'){
+                return 'danger';
+            }
+        }
     }
 } 

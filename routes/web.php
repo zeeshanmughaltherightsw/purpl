@@ -41,11 +41,13 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
     Route::post('save-meta-address', [UserProfileController::class, 'saveMetaAddress'])->name('save-meta-address');
     Route::get('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
+    
     Route::get('transactions', function (){
         return Inertia::render('Transactions', [
             'transactions' => auth()->user()->transactions()->paginate(8),
         ]);
     })->name('transactions');
+    
     Route::get('membership', [\App\Http\Controllers\MembershipController::class, 'index'])->name('membership.index');
     
     Route::get('account-activity', function(){

@@ -21,7 +21,7 @@ class ReferralController extends Controller
 
     public function uniLevel(){
         return Inertia::render('Referral/UniLevel', [
-            'user' => [User::asNodes()->with('nodes', function($q){$q->asNodes();})->find(auth()->user()->id)]
+            'users' => User::asNodes()->with('nodes', function($q){$q->asNodes();})->find(auth()->user()->id)
         ]);
     }
 }

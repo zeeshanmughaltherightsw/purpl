@@ -69,11 +69,11 @@ class User extends Authenticatable
 
     public function scopeAsNodes($query)
     {
-        $query->select(['name as label', 'id', 'ref_by']);
+        $query->select(['name', 'id', 'ref_by', 'investment', 'status']);
     }
 
     public function nodes() {
-        return $this->directReferrals()->with(['nodes' => function($q){$q->asNodes();}]);
+        return $this->directReferrals()->with(['nodes' => function($q){ $q->asNodes(); }]);
     }
 
     public function plan()
