@@ -117,6 +117,20 @@
                 <span class="nk-menu-text">Referral link</span></Link
               >
             </li>
+
+            <li
+              class="nk-menu-item"
+              :class="{ 'active current-page': route().current('transactions') }"
+            >
+            <Link
+                preserve-scroll
+                :href="route('transactions')"
+                class="nk-menu-link"
+              >
+              <span class="nk-menu-icon"><em class="icon ni ni-user-round"></em></span>
+                <span class="nk-menu-text">Transactions</span>
+              </Link>
+            </li>
           </ul>
           <!-- .nk-menu -->
         </div>

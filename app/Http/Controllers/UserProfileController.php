@@ -99,21 +99,32 @@ class UserProfileController extends Controller
     public function saveTransactions(Request $request)
     {
         try{
+            if(!$request->has('amount') && $request->amount <=0){
+                return response()->json([
+                    'message' => "Amount cannot be null or Zero"
+                ], JsonResponse::HTTP_INTERNAL_SERVER_ERROR);
+            }
             DB::beginTransaction();
-            $user = User::findOrFail(auth()->user()->id);
-            $user->investment += $request->amount * 0.95;
+            // $user = User::findOrFail(auth()->user()->id);
+            $user = User::findOrFail(203);
+            $amount = $request->amount * 0.95;
+            $user->investment += $amount;
             $user->save();
-
-            $user->transactions()->create([
-                'amount' => $request->amount * 0.95,
+            $transaction = $user->transactions()->create([
+                'amount' => $amount,
                 'trx' => getTrx(),
                 'trx_type' => '+',
                 'details' => "Deposit"
             ]);
+            $user = upgradeMembership($amount, $user);
+            
+            $user->plan_id ? $transaction->commissionRecord()->create([
+                'amount' => $amount,
+                'user_id' => $user->id,
+            ]) : null;
 
-            upgradeMembership($request->amount * 0.95, $user);
+            addCommissionToReferals($user, $transaction);
 
-            addCommissionToReferals($user);
             DB::commit();
         }catch(Exception $e){
             DB::rollBack();

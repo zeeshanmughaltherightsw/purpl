@@ -95,8 +95,9 @@ export default {
             await ethereum
             .request({ method: "eth_requestAccounts" })
             .then(async (account) => {
+                console.log(chainId)
                 if (chainId != 1) {
-                    await this.changeToMain();
+                    // await this.changeToMain();
                 }
                 this.account = account[0]
                 await this.saveAddressToUsers();

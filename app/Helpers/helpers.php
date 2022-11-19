@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\CommissionRecord;
 use App\Models\GeneralSetting;
 use App\Models\Plan;
 use App\Models\PlanLevel;
@@ -44,24 +45,63 @@ function getTrx($length = 12)
     return $randomString;
 }
 
-function addCommissionToReferals($user = null){
-    $level = PlanLevel::where('plan_id', $user->plan_id)->orderByDesc('level')->get();
-    if($user && $user->ref_by && count($level) > 0){
-        $user = $user->parentRef;
+function addCommissionToReferals($user, $transaction){
+    $realUser = $user;
+    $amount = $transaction->amount;
+    $levelOneExists = $realUser->transactions()->where('ref_id', $realUser->id)->first();
+    $level = PlanLevel::orderBy('level', 'asc')->get();
+    $transaction->commissionRecord()->increment('day');
+    if($user && $user->ref_by && $user->plan_id && count($level) > 0 && $amount > 0 && $transaction){
         for($i=0; $i < count($level); $i++){
-            $user->commission += $level->commission;
+            //getting direct referral of current user
+            $user = $user->parentRef;
+            //if no referrals then breaking the loop
+            if(!$user){
+                break;
+            }
+            //if level one referral has already given the amount the skip this iteration
+            if($levelOneExists){
+                continue;
+            }
+
+            // geting percentage of amout according to level
+            $commission = $amount * ($level[$i]->commission / 100);
+            
+            // if level is greater than one then dividing the amount with 30
+            if($level[$i]->level > 1){
+                $commission = $commission / 30; 
+            }
+            $user->commission += $commission;
             $user->save();
+            $user->transactions()->create([
+                'amount' => $commission,
+                'trx' => getTrx(),
+                'trx_type' => '+',
+                'details' => "Referral Commission of level " . $level[$i]->level,
+                'remarks' => "Referral Commission",
+                'ref_id' => $realUser->id
+            ]);
         }
     }
 }
+
+
 function upgradeMembership($investment, $user)
 {
-    $plan = Plan::where('min_price', '>=', $investment)
-            ->where('max_price', '<=', $investment)
+    $plan = Plan::active()
+            ->where('max_price', '<=', $user->investment)
+            ->where('plan_type', 'investor')
             ->orderByDesc('max_price')
             ->first();
-    $user->plan_id = $plan->id;
-    $user->save();
+    if($plan){
+        if($plan->id == $user->plan_id){
+            return $user;
+        }
+        $user->plan_id = $plan->id;
+        $user->save();
+        return $user;
+    }
+    return null;
 }
 /*
 * Recursive top-down tree traversal example:

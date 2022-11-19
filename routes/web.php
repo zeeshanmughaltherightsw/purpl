@@ -40,7 +40,7 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('uni-level', [\App\Http\Controllers\ReferralController::class, 'uniLevel'])->name('uni-level');
     Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
     Route::post('save-meta-address', [UserProfileController::class, 'saveMetaAddress'])->name('save-meta-address');
-    Route::post('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
+    Route::get('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
     Route::get('transactions', function (){
         return Inertia::render('Transactions', [
             'transactions' => auth()->user()->transactions()->paginate(8),
