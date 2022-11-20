@@ -298,6 +298,9 @@
           get_target = $self.data('target'),
           $self_content = $('[data-content=' + get_target + ']');
       $self.toggleClass('compact-active');
+      
+      let widget = $('.nk-sidebar-widget')
+      widget.toggleClass('d-xl-block')
       $self_content.toggleClass('is-compact');
     });
   }; // Animate FormSearch @v1.0
@@ -672,7 +675,6 @@
             _tooltip = $self.data('tooltip'),
             _tooltip = _tooltip ? _tooltip : false;
 
-        console.log(_tooltip);
         var target = document.getElementById(self_id);
         var def = {
           start: _start,
@@ -930,6 +932,6 @@
     NioApp.coms.docReady.push(NioApp.sbCompact);
     // NioApp.coms.winLoad.push(NioApp.ModeSwitch);
   };
-  NioApp.init();
+  // NioApp.init();
   return NioApp;
 }(NioApp, jQuery);

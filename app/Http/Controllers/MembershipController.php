@@ -2,15 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Plan;
 use Inertia\Inertia;
+use Illuminate\Http\Request;
 
 class MembershipController extends Controller
 {
     public function index()
     {
         return Inertia::render('Membership/Index', [
-            'settings' => getSettings('payment')
+            'settings' => getSettings('payment'),
+            'plans' => Plan::active()->get(),
         ]);
     }
 }

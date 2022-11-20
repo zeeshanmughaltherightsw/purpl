@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Exception;
 use App\Models\User;
 use Inertia\Inertia;
+use App\Models\UserLogin;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
@@ -132,5 +133,24 @@ class UserProfileController extends Controller
                 'message' => $e->getMessage()
             ], JsonResponse::HTTP_INTERNAL_SERVER_ERROR);
         }
+    }
+
+    public function transactions(){
+        return Inertia::render('Transactions', [
+            'transactions' => auth()->user()->transactions()->paginate(8),
+        ]);
+    }
+
+    public function accountActivity()
+    {
+        return Inertia::render('Profile/AccountActivity', [
+            'details'  =>  UserLogin::all()
+        ]);
+    }
+
+    public function securitySettings()
+    {
+        User::all();
+        return Inertia::render('Profile/SecuritySetting');
     }
 }

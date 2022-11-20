@@ -6,6 +6,8 @@ use Inertia\Inertia;
 use App\Models\UserLogin;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DepositController;
+use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\UserProfileController;
 
 /*
@@ -35,32 +37,17 @@ Route::get('/about', function () {
 
 Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
-    Route::get('direct-referrals', [\App\Http\Controllers\ReferralController::class, 'directReferals'])->name('direct-referrals');
-    Route::get('referral-link', [\App\Http\Controllers\ReferralController::class, 'referralLink'])->name('referral-link');
-    Route::get('uni-level', [\App\Http\Controllers\ReferralController::class, 'uniLevel'])->name('uni-level');
+    Route::get('security-setting', [UserProfileController::class, 'securitySettings'])->name('security-setting');
+    Route::get('account-activity', [UserProfileController::class, 'accountActivity'])->name('account-activity');
+    Route::get('direct-referrals', [ReferralController::class, 'directReferals'])->name('direct-referrals');
+    Route::get('referral-link', [ReferralController::class, 'referralLink'])->name('referral-link');
+    Route::get('uni-level', [ReferralController::class, 'uniLevel'])->name('uni-level');
     Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
     Route::post('save-meta-address', [UserProfileController::class, 'saveMetaAddress'])->name('save-meta-address');
     Route::get('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
-    
-    Route::get('transactions', function (){
-        return Inertia::render('Transactions', [
-            'transactions' => auth()->user()->transactions()->paginate(8),
-        ]);
-    })->name('transactions');
-    
-    Route::get('membership', [\App\Http\Controllers\MembershipController::class, 'index'])->name('membership.index');
-    
-    Route::get('account-activity', function(){
-        return Inertia::render('Profile/AccountActivity', [
-            'details'  =>  UserLogin::all()
-        ]);
-    })->name('account-activity');
-
-    Route::get('security-setting', function(){
-        User::all();
-        return Inertia::render('Profile/SecuritySetting');
-    })->name('security-setting');
-
+    Route::get('transactions', [UserProfileController::class, 'transactions'])->name('transactions');
+    Route::get('deposit', [DepositController::class, 'index'])->name('deposit.index');
+    Route::get('membership', [MembershipController::class, 'index'])->name('membership.index');
 });
 
 

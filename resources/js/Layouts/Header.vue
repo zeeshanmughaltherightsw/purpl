@@ -120,6 +120,9 @@ export default {
   methods: {
     showSidebar(){
       let sidebar = document.querySelector('.nk-sidebar')
+      
+      document.querySelector('.nk-sidebar-widget').classList.remove('d-none')
+      document.querySelector('.nk-sidebar-widget').classList.add('d-xl-block')
       sidebar.classList.add('nk-sidebar-active')
     },
   },
