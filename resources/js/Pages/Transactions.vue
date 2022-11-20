@@ -15,6 +15,9 @@
                             <th class="tb-odr-amount">
                                 <span class="tb-odr-total">Amount</span>
                             </th>
+                            <th class="tb-odr-amount">
+                                <span class="tb-odr-total">Details</span>
+                            </th>
                             <th>
                                 <span class="tb-odr-status d-none d-md-inline-block">Status</span>
                             </th>
@@ -29,6 +32,11 @@
                             <td class="tb-odr-amount">
                                 <span class="tb-odr-total">
                                     <span class="amount">{{formatCurrency(transaction.amount)}}</span>
+                                </span>
+                            </td>
+                            <td class="tb-odr-amount">
+                                <span class="tb-odr-total">
+                                    <span class="amount">{{ transaction.details }}</span>
                                 </span>
                             </td>
                             <td>

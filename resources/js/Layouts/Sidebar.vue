@@ -102,7 +102,7 @@
                 :href="route('uni-level')" 
                 class="nk-menu-link">
                 <span class="nk-menu-icon"><em class="icon ni ni-globe"></em></span>
-                <span class="nk-menu-text">UniLevel Tree</span>
+                <span class="nk-menu-text">All Referrals</span>
               </Link>
             </li>
             <li v-if="$page.props.auth.user.investment > 0"
