@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DepositController;
 use App\Http\Controllers\MembershipController;
+use App\Http\Controllers\ReferralController;
 use App\Http\Controllers\UserProfileController;
 
 /*
