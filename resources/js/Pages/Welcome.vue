@@ -59,7 +59,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 0">
                     <PlanCard 
-                        title="" 
+                        :title="referralPlans[0].name" 
                         price="" 
                         :minReffer="referralPlans[0].min_ref"
                         :maxReffer="referralPlans[0].max_ref" 
@@ -70,7 +70,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 1">
                     <PlanCard 
-                        title="" 
+                        :title="referralPlans[1].name" 
                         price="" 
                         :minReffer="referralPlans[1].min_ref"
                         :maxReffer="referralPlans[1].max_ref" 
