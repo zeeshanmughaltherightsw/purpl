@@ -22,12 +22,16 @@ const submit = () => {
     onFinish: () => form.reset("password"),
   });
 };
+
+onMounted(() => {
+  NioApp.PassSwitch()
+});
+
 </script>
 
 <template>
   <GuestLayout>
     <Head title="Log in" />
-
     <div class="nk-content">
     <div class="nk-block nk-block-middle nk-auth-body wide-xs">
         <div class="card">

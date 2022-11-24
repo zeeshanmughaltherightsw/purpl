@@ -3,12 +3,13 @@
 use App\Models\Plan;
 use App\Models\User;
 use Inertia\Inertia;
+use App\Models\Reward;
 use App\Models\UserLogin;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DepositController;
-use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\ReferralController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\UserProfileController;
 
 /*
@@ -25,6 +26,7 @@ use App\Http\Controllers\UserProfileController;
 Route::get('/', function () {
     return Inertia::render('Welcome' , [
         'plans'   => Plan::withCount('levels')->active()->get(),
+        'rewards'   => Reward::active()->get(),
     ]);
 })->name('welcome');
 
