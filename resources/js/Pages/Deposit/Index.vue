@@ -126,6 +126,7 @@ export default {
                         gas: 21000,
                     })
                     .on("error", function (error, receipt) {
+                        this.processing = false
                         NioApp.Toast('Something went wrong', 'error');
                     })
                     .then(function(receipt){
@@ -168,7 +169,7 @@ export default {
                     NioApp.Toast('Payment Deposit Successfully', 'success');
                 },
                 onError: () => {
-
+                    this.processing = false
                 },
                 })
             }
