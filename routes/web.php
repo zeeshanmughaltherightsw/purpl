@@ -45,7 +45,7 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('uni-level', [ReferralController::class, 'uniLevel'])->name('uni-level');
     Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
     Route::post('save-meta-address', [UserProfileController::class, 'saveMetaAddress'])->name('save-meta-address');
-    Route::get('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
+    Route::post('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
     Route::get('transactions', [UserProfileController::class, 'transactions'])->name('transactions');
     Route::get('deposit', [DepositController::class, 'index'])->name('deposit.index');
     Route::get('membership', [MembershipController::class, 'index'])->name('membership.index');

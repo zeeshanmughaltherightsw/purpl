@@ -95,38 +95,49 @@ class UserProfileController extends Controller
         $user = User::findOrFail(auth()->user()->id);
         $user->public_address = $request->address;
         $user->save();
+        return response()->json([
+            'status' => JsonResponse::HTTP_OK,
+        ], JsonResponse::HTTP_OK);
     }
 
     public function saveTransactions(Request $request)
     {
+        // $request->validate([
+        //     'amount' => 'required | min:1',
+        //     'trx' => 'required',
+                // 'from' => 'required'
+        // ]);
         try{
-            if(!$request->has('amount') && $request->amount <=0){
-                return response()->json([
-                    'message' => "Amount cannot be null or Zero"
-                ], JsonResponse::HTTP_INTERNAL_SERVER_ERROR);
-            }
             DB::beginTransaction();
             // $user = User::findOrFail(auth()->user()->id);
-            $user = User::findOrFail(203);
-            $amount = $request->amount * 0.95;
+            $user = User::findOrFail(auth()->user()->id);
+            $amount = $request->amount;
             $user->investment += $amount;
             $user->save();
             $transaction = $user->transactions()->create([
                 'amount' => $amount,
-                'trx' => getTrx(),
+                'trx' => $request->trx,
+                'gas_price' => $request->gas_price,
                 'trx_type' => '+',
-                'details' => "Deposit"
+                'details' => "Deposit",
+                'remark' => "Deposit",
+                'status' => $request->status ? 1 : 0,
+                'from' => $request->from,
+                'to' => $request->to,
             ]);
+            // http://localhost:8000/save-transactions?gas_price=21596&trx=0x893e5721e7d65431caf38da7871cded5ffe2e42cdb8fd658e21765b22d5a225f&amount=1000000&status=true&from=0xadc95259bf19af8cea70426af1ae5db4e71167f1&to=0xdac17f958d2ee523a2206206994597c13d831ec7
             $user = upgradeMembership($amount, $user);
-            
-            $user->plan_id ? $transaction->commissionRecord()->create([
-                'amount' => $amount,
-                'user_id' => $user->id,
-            ]) : null;
-
-            addCommissionToReferals($user, $transaction);
+            if($user && $user->plan_id){
+                $transaction->commissionRecord()->create([
+                    'amount' => $amount,
+                    'user_id' => $user->id,
+                ]);
+    
+                addCommissionToReferals($user, $transaction);
+            }
 
             DB::commit();
+            return redirect()->back();
         }catch(Exception $e){
             DB::rollBack();
             return response()->json([
