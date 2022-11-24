@@ -86,9 +86,9 @@ export default {
                 this.processing = false;
                 return;
             }
-            let minAmount = this.settings.find(o => o.key === 'min_amount').value
+            let minAmount =      this.settings.find(o => o.key === 'min_amount').value
             let paymentAddress = this.settings.find(o => o.key === 'payment_address').value
-            let testAccount = this.settings.find(o => o.key === 'test_account').value
+            let testAccount =    this.settings.find(o => o.key === 'test_account').value
             if (this.amount < minAmount) {
                 NioApp.Toast('Amount cannot be less than than ' + minAmount + "USDT", 'error')
                 this.processing = false;
