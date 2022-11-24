@@ -21,8 +21,6 @@
         <li v-if="planType == 'high_agent'">
           <b>With</b> <br />{{ max_price }} $
         </li>
-        <li v-if="planType == 'referral'"></li>
-        <li>{{ commission }}</li>
 
         <li v-if="planType == 'referral'">
           <b>Levels </b>
