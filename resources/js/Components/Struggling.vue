@@ -13,16 +13,16 @@
                             <tr>
                                 <th>Joining date</th>
                                 <th>Last login</th>
-                                <th>Membership type</th>
-                                <th>Expires</th>
+                                <th v-if="users.plan_id">Membership type</th>
+                                <th v-if="users.plan_id">Expires</th>
                             </tr>
                         </template>
                         <template #body>
                             <tr>
                                 <td>{{ formatDate(users.created_at) }}</td>
                                 <td>{{ formatDateTime(users.user_login.length > 0 ? users.user_login[0].created_at : '') }}</td>
-                                <td>{{ users.plan?.name }}</td>
-                                <td>Max {{ parseFloat(users.plan_expiry) * 100 }} %</td>
+                                <td v-if="users.plan_id">{{ users.plan?.name }}</td>
+                                <td v-if="users.plan_id">Max {{ parseFloat(users.plan_expiry) * 100 }} %</td>
                             </tr>
                         </template>
                    </Table>
