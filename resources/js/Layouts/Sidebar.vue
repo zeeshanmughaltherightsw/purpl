@@ -115,7 +115,8 @@ export default {
     },
   },
   mounted(){
-    NioApp.init();
+    NioApp.TGL.init();
+    NioApp.sbCompact();
   },
   computed: {
     investment() {

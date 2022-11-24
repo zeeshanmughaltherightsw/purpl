@@ -49,7 +49,7 @@ onMounted(() => {
               <div class="row">
                 <div class="col-12">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Full name</label>
                     </div>
                     <div class="form-control-wrap">
@@ -62,7 +62,7 @@ onMounted(() => {
                 </div>
                 <div class="col-6">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Username</label>
                     </div>
                     <div class="form-control-wrap">
@@ -75,7 +75,7 @@ onMounted(() => {
                 </div>
                 <div class="col-6">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Phone</label>
                     </div>
                     <div class="form-control-wrap">
@@ -88,7 +88,7 @@ onMounted(() => {
                 </div>
                 <div class="col-12">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Email</label>
                     </div>
                     <div class="form-control-wrap">
@@ -102,7 +102,7 @@ onMounted(() => {
                 
                 <div class="col-6">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="password">Password</label>
                      </div>
                     <div class="form-control-wrap">
@@ -118,12 +118,15 @@ onMounted(() => {
                 </div>
                 <div class="col-6">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Confrim Password</label>
                     </div>
                     <div class="form-control-wrap">
-
-                      <TextInput id="confirm_password" type="text" class="mt-1 block w-full form-control form-control-lg"
+                      <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="confirm_password">
+                        <em class="passcode-icon icon-show icon ni ni-eye"></em>
+                        <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
+                      </a>
+                      <TextInput id="confirm_password" type="password" class="mt-1 block w-full form-control form-control-lg"
                         v-model="form.password_confirmation" required autofocus autocomplete="name" />
                       <InputError class="mt-2" :message="form.errors.password_confirmation" />
                     </div>
@@ -131,7 +134,7 @@ onMounted(() => {
                 </div>
                 <div class="col-12">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Address</label>
                     </div>
                     <div class="form-control-wrap">
