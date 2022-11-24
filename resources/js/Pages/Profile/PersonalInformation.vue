@@ -1,5 +1,4 @@
 <template>
-
   <Head title="Personal Information" />
   <AuthenticatedLayout>
     <BreadCrumb title="Personal Information" />

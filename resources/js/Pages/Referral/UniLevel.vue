@@ -5,7 +5,7 @@
         <BreadCrumb title="Uni level tree" />
         <div class="card card-preview">
             <div class="card-inner">
-                <div class="nk-tb-list nk-tb-ulist is-compact">
+                <div class="nk-tb-list nk-tb-ulist is-compact" v-if="allUsers.length > 0">
                     <div class="nk-tb-item nk-tb-head">
                         <div class="nk-tb-col"><span class="sub-text">User</span></div>
                         <div class="nk-tb-col tb-col-md"><span class="sub-text">Level</span></div>
@@ -24,6 +24,9 @@
                         <div class="nk-tb-col"><span :class="`tb-status text-${getClass(user.status)}`">{{user.status}}</span></div>
                         
                     </div>
+                </div>
+                <div v-else>
+                    No Record found
                 </div>
             </div>
         </div>

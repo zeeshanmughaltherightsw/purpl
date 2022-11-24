@@ -152,10 +152,12 @@ export default {
                 });
         },
         saveAddressToUsers() {
-            this.form = useForm({
+            axios.post(route('save-meta-address'), {
                 address: this.account
+            }) 
+            .catch(function (error) {
+                console.log(error);
             });
-            this.form.post(route('save-meta-address'));
         },
         addDepositPayments(confirmationNumber, receipt) {
             this.form = useForm({

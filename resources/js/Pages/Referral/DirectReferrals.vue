@@ -8,7 +8,7 @@
                         <div class="form-icon form-icon-right">
                             <em class="icon ni ni-search"></em>
                         </div>
-                        <input type="text" class="form-control" id="default-04" placeholder="Search by name">
+                        <!-- <input type="text" class="form-control" id="default-04" placeholder="Search by name"> -->
                     </div>
                 </li>
             </template>
@@ -62,6 +62,9 @@
                                     </tr>
                                 </template>
                             </Table>
+                        </div>
+                        <div v-else>
+                            No Records Found
                         </div>
                     </div>
                 </div>

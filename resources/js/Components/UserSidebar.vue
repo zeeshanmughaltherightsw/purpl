@@ -62,12 +62,12 @@
             <em class="icon ni ni-activity-round-fill"></em><span>Account Activity</span>
             </Link>
           </li>
-          <li class="" :class="{'active current-page': route().current('security-setting'),
+          <!-- <li class="" :class="{'active current-page': route().current('security-setting'),
           }">
             <Link preserve-scroll :href="route('security-setting')" class="nk-menu-link">
             <em class="icon ni ni-lock-alt-fill"></em><span>Security Settings</span>
             </Link>
-          </li>
+          </li> -->
         </ul>
       </div>
       <!-- .card-inner -->

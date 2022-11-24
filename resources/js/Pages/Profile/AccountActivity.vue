@@ -48,12 +48,10 @@
                                                         <td class="tb-col-ip"><span class="sub-text">{{ detail ?
                                                         detail.user_ip: '' }}</span></td>
                                                         <td class="tb-col-time"><span class="sub-text">{{
-                                                        formatDate(detail ? detail.created_at: '') }}</span>
+                                                        formatDateTime(detail ? detail.created_at : '') }}</span>
                                                         </td>
                                                         <td class="tb-col-action"></td>
                                                     </tr>
-
-
                                                 </tbody>
                                             </table>
                                         </div><!-- .nk-block-head -->

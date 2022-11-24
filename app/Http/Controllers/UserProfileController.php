@@ -155,7 +155,7 @@ class UserProfileController extends Controller
     public function accountActivity()
     {
         return Inertia::render('Profile/AccountActivity', [
-            'details'  =>  UserLogin::all()
+            'details'  =>  UserLogin::limit(20)->get()
         ]);
     }
 

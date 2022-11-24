@@ -12,7 +12,7 @@ class MembershipController extends Controller
     {
         return Inertia::render('Membership/Index', [
             'settings' => getSettings('payment'),
-            'plans' => Plan::active()->get(),
+            'plans' => Plan::where('plan_type', 'investor')->active()->get(),
         ]);
     }
 }
