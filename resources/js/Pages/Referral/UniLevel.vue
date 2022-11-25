@@ -1,8 +1,8 @@
 <template>
 
-    <Head title="Uni level tree" />
+    <Head title="All Referrals" />
     <AuthenticatedLayout>
-        <BreadCrumb title="Uni level tree" />
+        <BreadCrumb title="All Referrals" />
         <div class="card card-preview">
             <div class="card-inner">
                 <div class="nk-tb-list nk-tb-ulist is-compact" v-if="allUsers.length > 0">

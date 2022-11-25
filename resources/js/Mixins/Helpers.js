@@ -6,7 +6,6 @@ export default {
         },
 
         formatDateTime(dateString) {
-            console.log(dateString)
             return moment(dateString).format("Do MMM YYYY h:mm A");
         },
         formatCurrency(currency = 0){
