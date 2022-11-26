@@ -87,6 +87,7 @@ const showingNavigationDropdown = ref(false);
                         ><span>Login Activity</span></Link
                       >
                     </li>
+                    <li><a class="dark-switch" :href="void(0)"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
                   </ul>
                 </div>
                 <div class="dropdown-inner">
@@ -120,7 +121,6 @@ export default {
   methods: {
     showSidebar(){
       let sidebar = document.querySelector('.nk-sidebar')
-      
       document.querySelector('.nk-sidebar-widget').classList.remove('d-none')
       document.querySelector('.nk-sidebar-widget').classList.add('d-xl-block')
       sidebar.classList.add('nk-sidebar-active')
@@ -131,5 +131,8 @@ export default {
       return  moment().format("Do MMM YYYY hh:mm:ss");
     }
   },
+  mounted(){
+    NioApp.ModeSwitch();
+  }
 }
 </script>

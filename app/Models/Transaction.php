@@ -12,11 +12,14 @@ class Transaction extends Model
         'amount',
         'trx',
         'trx_type',
-        'trx_type',
         'user_id',
         'ref_id',
         'remark',
-        'details'
+        'details',
+        'from',
+        'to',
+        'status',
+        'gas_price'
     ];
 
     

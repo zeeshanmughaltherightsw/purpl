@@ -60,7 +60,7 @@ function addCommissionToReferals($user, $transaction){
                 break;
             }
             //if level one referral has already given the amount the skip this iteration
-            if($levelOneExists){
+            if($levelOneExists || !$user->plan_id){
                 continue;
             }
 

@@ -1,5 +1,4 @@
 <template>
-
   <Head title="Personal Information" />
   <AuthenticatedLayout>
     <BreadCrumb title="Personal Information" />
@@ -49,7 +48,7 @@
                         <!-- data-item -->
                         <div class="data-item" data-toggle="modal" data-target="#profile-edit">
                           <div class="data-col">
-                            <span class="data-label">Display Name</span>
+                            <span class="data-label">Username</span>
                             <span class="data-value">{{ profiles ? profiles.username: '' }}</span>
                           </div>
                           <div class="data-col data-col-end">

@@ -3,12 +3,13 @@
 use App\Models\Plan;
 use App\Models\User;
 use Inertia\Inertia;
+use App\Models\Reward;
 use App\Models\UserLogin;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DepositController;
-use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\ReferralController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\UserProfileController;
 
 /*
@@ -25,6 +26,7 @@ use App\Http\Controllers\UserProfileController;
 Route::get('/', function () {
     return Inertia::render('Welcome' , [
         'plans'   => Plan::withCount('levels')->active()->get(),
+        'rewards'   => Reward::active()->get(),
     ]);
 })->name('welcome');
 
@@ -45,7 +47,7 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('uni-level', [ReferralController::class, 'uniLevel'])->name('uni-level');
     Route::get('profile', [UserProfileController::class, 'index'])->name('profile');
     Route::post('save-meta-address', [UserProfileController::class, 'saveMetaAddress'])->name('save-meta-address');
-    Route::get('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
+    Route::post('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
     Route::get('transactions', [UserProfileController::class, 'transactions'])->name('transactions');
     Route::get('deposit', [DepositController::class, 'index'])->name('deposit.index');
     Route::get('membership', [MembershipController::class, 'index'])->name('membership.index');

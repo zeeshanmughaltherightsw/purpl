@@ -50,7 +50,7 @@ import { Link } from '@inertiajs/inertia-vue3';
                     <a class="btn btn-link" href="">Urban Gardening</a>
                     <a class="btn btn-link" href="">Garden Maintenance</a>
                     <a class="btn btn-link" href="">Green Technology</a>
-                    <Link class="btn btn-link" href="/storage/intro.pdf">Download intro</Link>
+                    <a class="btn btn-link" href="/storage/intro.pdf">Download intro</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Quick Links</h4>
@@ -59,7 +59,7 @@ import { Link } from '@inertiajs/inertia-vue3';
                     <a class="btn btn-link" href="">Our Services</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
-                    <button @click="forceReload">Remove Cache and refresh</button>
+                    <button class="btn btn-link" @click="forceReload">Remove Cache and refresh</button>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>

@@ -11,7 +11,7 @@
         <li class="" v-if="planType == 'investor'">
           <b>Estimated Profit</b>
         </li>
-        <li v-if="planType == 'investor'">{{ profit }} $</li>
+        <li v-if="planType == 'investor'">{{ profit }} %</li>
         <li v-if="planType == 'referral' || planType == 'high_agent'">
           <b>Refferals</b>
         </li>
@@ -21,11 +21,6 @@
         <li v-if="planType == 'high_agent'">
           <b>With</b> <br />{{ max_price }} $
         </li>
-        <li v-if="planType == 'referral' || planType == 'high_agent'">
-          <b>Refferal Commission</b>
-        </li>
-        <li v-if="planType == 'referral'"></li>
-        <li>{{ commission }}</li>
 
         <li>
           <b>Plan Expiry</b>

@@ -59,7 +59,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 0">
                     <PlanCard 
-                        title="" 
+                        :title="referralPlans[0].name" 
                         price="" 
                         :minReffer="referralPlans[0].min_ref"
                         :maxReffer="referralPlans[0].max_ref" 
@@ -70,7 +70,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 1">
                     <PlanCard 
-                        title="" 
+                        :title="referralPlans[1].name" 
                         price="" 
                         :minReffer="referralPlans[1].min_ref"
                         :maxReffer="referralPlans[1].max_ref" 
@@ -103,6 +103,24 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         </center>
 
         <!-- plan End -->
+        <div class="main text-center mt-5">
+            <h1 class="reward-heading">REWARDS</h1>
+        </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-end">
+                    <div class="col-md-3 border-right" v-for="(reward, index) in rewards" :key="index">
+                        <reward-card 
+                            :name="reward.name" 
+                            :investment="reward.total_investment" 
+                            :amount="reward.amount" 
+                            :index="index+1"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- About Start -->
         <div class="container-xxl py-5">
@@ -263,8 +281,9 @@ import Button from "@/Components/PrimaryButton.vue";
 import PlanCard from "@/Components/PlanCard.vue";
 import OurServices from '@/Components/OurServices.vue';
 import OurClients from '@/Components/OurClients.vue';
+import RewardCard from '@/Components/RewardCard.vue'
 export default {
-    props: ['plans'],
+    props: ['plans', 'rewards'],
     data() {
         return {
             investorPlans: this.plans.filter((obj) => {
@@ -318,7 +337,7 @@ export default {
               ]
         };
     },
-    components: { QuickService, Button, PlanCard, OurServices, OurClients },
+    components: { QuickService, Button, PlanCard, OurServices, OurClients, RewardCard},
     methods: {
         onObserve() {
             const sections = document.querySelectorAll("div.lazyload");
@@ -345,3 +364,48 @@ export default {
     },
 };
 </script>
+<style>
+
+h1{
+    font-weight: bolder;
+    color: #6f5ea9;
+}
+.reward-card-container h4{
+    font-weight: bold;
+    justify-content: center;
+    color: #6f5ea9;
+}
+.li-color{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    justify-content: space-around;
+    color: black;
+    list-style: none;
+    font-size: small;
+    text-align: center;
+}
+.reward-card-container ul > li{
+    list-style: none;
+    font-size: small;
+    text-align: center;
+}
+
+.reward-heading{
+    font-weight:800;
+    color:#6f5ea9;
+    text-decoration: underline;
+
+}
+.reward-card{
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.reward-card:hover{
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+    border: 2px solid #6f5ea9;
+}
+
+</style>

@@ -23,7 +23,7 @@
               <div class="user-account-info between-center">
                 <div class="user-account-main">
                   <h6 class="overline-title-alt">Available Balance</h6>
-                  <div class="user-balance">{{ formatCurrency($page.props.auth.user.investment) }}<small class="currency currency-btc">USDT</small></div>
+                  <div class="user-balance">{{ formatCurrency(balance) }}<small class="currency currency-btc">USDT</small></div>
                 </div><a href="#" class="btn btn-white btn-icon btn-light"><em class="icon ni ni-line-chart"></em></a>
               </div>
               <ul class="user-account-data gy-1">
@@ -107,6 +107,11 @@ import Helpers from "@/Mixins/Helpers";
 import { Link } from "@inertiajs/inertia-vue3";
 export default {
   components: { Link },
+  data(){
+    return {
+      balance: 0
+    }
+  },
   methods: {
     hideSidebar() {
       let sidebar = document.querySelector('.nk-sidebar')
@@ -115,7 +120,21 @@ export default {
     },
   },
   mounted(){
-    NioApp.init();
+    NioApp.TGL.init();
+    NioApp.sbCompact();
+  },
+  computed: {
+    investment() {
+      return this.$page.props.auth.user.investment
+    },
+  },
+
+  watch: {
+    'investment': {
+      handler(investment, oldBalance) {
+        this.balance = investment
+      }, immediate:true, deep: true
+    }
   },
   mixins: [Helpers]
 };

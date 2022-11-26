@@ -5,6 +5,7 @@ import InputLabel from "@/Components/InputLabel.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import TextInput from "@/Components/TextInput.vue";
 import { Head, Link, useForm } from "@inertiajs/inertia-vue3";
+import { onMounted } from '@vue/runtime-core';
 
 const form = useForm({
   name: "",
@@ -22,6 +23,11 @@ const submit = () => {
     onFinish: () => form.reset("password", "password_confirmation"),
   });
 };
+
+onMounted(() => {
+  NioApp.PassSwitch()
+});
+
 </script>
 
 <template>
@@ -43,7 +49,7 @@ const submit = () => {
               <div class="row">
                 <div class="col-12">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Full name</label>
                     </div>
                     <div class="form-control-wrap">
@@ -56,7 +62,7 @@ const submit = () => {
                 </div>
                 <div class="col-6">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Username</label>
                     </div>
                     <div class="form-control-wrap">
@@ -69,7 +75,20 @@ const submit = () => {
                 </div>
                 <div class="col-6">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
+                      <label class="form-label" for="default-01">Phone</label>
+                    </div>
+                    <div class="form-control-wrap">
+
+                      <TextInput id="phone" type="text" class="mt-1 block w-full form-control form-control-lg"
+                        v-model="form.phone_no" required autofocus autocomplete="phone"/>
+                      <InputError class="mt-2" :message="form.errors.phone_no" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Email</label>
                     </div>
                     <div class="form-control-wrap">
@@ -80,22 +99,10 @@ const submit = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <div class="form-label-group">
-                      <label class="form-label" for="default-01">Phone</label>
-                    </div>
-                    <div class="form-control-wrap">
-
-                      <TextInput id="phone" type="text" class="mt-1 block w-full form-control form-control-lg"
-                        v-model="form.phone_no" required autofocus autocomplete="phone" />
-                      <InputError class="mt-2" :message="form.errors.phone_no" />
-                    </div>
-                  </div>
-                </div>
+                
                 <div class="col-6">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="password">Password</label>
                      </div>
                     <div class="form-control-wrap">
@@ -111,12 +118,15 @@ const submit = () => {
                 </div>
                 <div class="col-6">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Confrim Password</label>
                     </div>
                     <div class="form-control-wrap">
-
-                      <TextInput id="confirm_password" type="text" class="mt-1 block w-full form-control form-control-lg"
+                      <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="confirm_password">
+                        <em class="passcode-icon icon-show icon ni ni-eye"></em>
+                        <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
+                      </a>
+                      <TextInput id="confirm_password" type="password" class="mt-1 block w-full form-control form-control-lg"
                         v-model="form.password_confirmation" required autofocus autocomplete="name" />
                       <InputError class="mt-2" :message="form.errors.password_confirmation" />
                     </div>
@@ -124,7 +134,7 @@ const submit = () => {
                 </div>
                 <div class="col-12">
                   <div class="form-group">
-                    <div class="form-label-group">
+                    <div class="form-label-group mt-1">
                       <label class="form-label" for="default-01">Address</label>
                     </div>
                     <div class="form-control-wrap">

@@ -6,6 +6,8 @@ import InputLabel from "@/Components/InputLabel.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import TextInput from "@/Components/TextInput.vue";
 import { Head, Link, useForm } from "@inertiajs/inertia-vue3";
+import { onMounted } from '@vue/runtime-core';
+
 defineProps({
   canResetPassword: Boolean,
   status: String,
@@ -22,12 +24,16 @@ const submit = () => {
     onFinish: () => form.reset("password"),
   });
 };
+
+onMounted(() => {
+  NioApp.PassSwitch()
+});
+
 </script>
 
 <template>
   <GuestLayout>
     <Head title="Log in" />
-
     <div class="nk-content">
     <div class="nk-block nk-block-middle nk-auth-body wide-xs">
         <div class="card">
