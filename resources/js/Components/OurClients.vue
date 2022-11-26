@@ -13,13 +13,13 @@
                                     I am Clara White and I Love stone jewelry. Stonearn is the
                                     brand that completes my dream of wearing unique and rare stone jewelry in amazing designs.
                                 </p>
-                                <h4>Calera White</h4>
+                                <h4 class="mb-3">Calera White</h4>
                             </div>
                             <div class="testimonial-item">
                                 <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="" />
                                 <p class="fs-5">
                                   I am Richard Andreson. I love to know about stone mining and
-                                    different kinds of precious stones that can only be possible  
+                                    different kinds of precious stones that can only be possible
                                 </p>
                                 <h4>Richard Andreson</h4>
                             </div>
