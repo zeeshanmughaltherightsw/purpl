@@ -35,7 +35,12 @@
               </ul>
               <div class="user-account-actions">
                 <ul class="g-3">
-                  <li><Link :href="route('deposit.index')" class="btn btn-lg btn-primary"><span>Deposit</span></Link></li>
+                  <li>
+                    <Link :href="route('deposit.index')" class="btn btn-lg btn-primary"><span>Deposit</span></Link>
+                  </li>
+                  <li>
+                    <Link :href="route('withdraw.index')" class="btn btn-lg btn-primary"><span>Withdraw</span></Link>
+                  </li>
                   <!-- <li><a href="#" class="btn btn-lg btn-warning"><span>Withdraw</span></a></li> -->
                 </ul>
               </div>
