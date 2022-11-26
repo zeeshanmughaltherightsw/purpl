@@ -18,6 +18,16 @@ export default {
             else if(status == 'inactive' || status == 'baned'){
                 return 'danger';
             }
-        }
+        },
+        // generic function to get images
+        getImage(path, isSaved = true, type = 'avatar', isExternal = 0) {
+            const baseUrl = window.location.protocol + "//" + window.location.host
+            if (isExternal) {
+                return path
+            } else {
+                return this.$page.props.ziggy.url + '/storage/' + path
+            }
+            
+        },
     }
 } 

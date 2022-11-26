@@ -1,42 +1,85 @@
 <template>
     <Head title="Withdraw"/>
-    <authenticated-layout>
-        <BreadCrumb title="Withdraw" />
-        <div class="nk-content-body">
-            <div class="buysell wide-xs m-auto">
-                <div class="buysell-block">
-                    <div class="buysell-field form-group">
-                        <div class="form-label-group">
-                            <label class="form-label" for="buysell-amount">Amount</label>
+    <AuthenticatedLayout>
+        <BreadCrumb title="Withdraw">
+            <template #plugin>
+                <li>
+                    <div class="form-control-wrap">
+                        <div class="form-icon form-icon-right">
+                            <em class="icon ni ni-search"></em>
                         </div>
-                        <div class="form-control-group">
-                            <input 
-                                type="text" 
-                                class="form-control form-control-lg form-control-number" 
-                                id="buysell-amount" 
-                                v-model="amount" 
-                                required
-                                name="bs-amount" 
-                                placeholder="0.055960"
-                            />
-                            <div class="form-dropdown">
-                                <div class="text">
-                                    USDT
-                                </div>
-                            </div>
+                        <!-- <input type="text" class="form-control" id="default-04" placeholder="Search by name"> -->
+                    </div>
+                </li>
+            </template>
+        </BreadCrumb>
+        <div class="nk-content bg-white">
+            <div class="container-fluid">
+                <div class="nk-content-inner">
+                    <div class="nk-content-body">
+                        <div class="components-preview wide-md mx-auto" v-if="gateways.length > 0">
+                            <Table>
+                                <template #head>
+                                    <th class="tb-tnx-amount is-alt">
+                                        <span class="tb-tnx-desc d-none d-sm-inline-block">
+                                            <span>Name</span>
+                                        </span>
+                                    </th>
+                                    <th class="tb-tnx-info">
+                                        <span class="tb-tnx-desc d-none d-sm-inline-block">
+                                            <span>Min Limit</span>
+                                        </span>
+                                        <span class="tb-tnx-desc d-none d-sm-inline-block">
+                                            <span>Max Limit</span>
+                                        </span>
+                                    </th>
+                                    <th class="tb-tnx-amount is-alt">
+                                        <span class="tb-tnx-desc d-none d-sm-inline-block">
+                                            <span>Charge</span>
+                                        </span>
+                                    </th>
+                                    <th class="tb-tnx-amount is-alt">
+                                        <span class="tb-tnx-desc d-none d-sm-inline-block">
+                                            <span></span>
+                                        </span>
+                                    </th>
+                                </template>
+                                <template #body>
+                                    <tr class="tb-tnx-item" v-for="(gateway, index) in gateways" :key="index">
+                                        <td class="tb-tnx-amount is-alt">
+                                            <div class="tb-tnx-status">
+                                                <span class="badge badge-dot badge-info">{{ gateway.name }}</span>
+                                            </div>
+                                        </td>
+                                        <td class="tb-tnx-info">
+                                            <div class="tb-tnx-desc">
+                                                <span class="title text-dark text-capitalize">{{ formatCurrency(gateway.single_currency.min_limit) }}</span>
+                                            </div>
+                                            <div class="tb-tnx-date">
+                                                <span class="date">{{formatCurrency(gateway.single_currency.max_limit)}}</span>
+                                            </div>
+                                        </td>
+                                        <td class="tb-tnx-amount is-alt">
+                                            <div class="tb-tnx-status">
+                                                <span class="badge badge-dot badge-danger">{{ formatCurrency(gateway.single_currency.charge) }}</span>
+                                            </div>
+                                        </td>
+                                        <td class="">
+                                            <button class="btn btn-primary" @click="openModal(gateway)">Withdraw Now</button>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </Table>
                         </div>
-                        <div class="form-note-group"><span class="buysell-min form-note-alt">
-                            Minimum: {{settings.find(o => o.key === 'min_amount').value}} USDT</span>
-                            <span class="buysell-rate form-note-alt">1 USDT = 1 USD</span>
+                        <div v-else>
+                            No Records Found
                         </div>
                     </div>
-                    <div class="buysell-field form-action">
-                        <PrimaryButton class="btn btn-lg btn-block btn-primary" :disabled="processing" @click="deposit">Deposit</PrimaryButton></div>
-                    <div class="form-note text-base text-center">Note: our transfer fee included.</div>
                 </div>
             </div>
         </div>
-    </authenticated-layout>
+        <WithdrawModal />
+    </AuthenticatedLayout>
 </template>
 
 <script>
@@ -45,107 +88,28 @@ import { Head, useForm } from '@inertiajs/inertia-vue3';
 import BreadCrumb from '@/Components/BreadCrumb.vue'
 import Helpers from '@/Mixins/Helpers'
 import PrimaryButton from '@/Components/PrimaryButton';
+import Table from '@/Components/BasicTable.vue'
+import WithdrawModal from '@/Components/WithdrawModal.vue'
 export default {
-    props: ['settings'],
+    props: ['gateways',],
     data(){
         return {
             account: null,
             amount: null,
             processing: false,
+            showModal: false,
         }
     },
-    components: { AuthenticatedLayout, Head, BreadCrumb, PrimaryButton},
+    components: { AuthenticatedLayout, Head, BreadCrumb, PrimaryButton, Table, WithdrawModal},
     methods: {
-        async changeToMain(){
-            await ethereum.request({
-                method: "wallet_switchEthereumChain",
-                params: [{ chainId: "0x1" }], //MAIN BSC 0x38      // bsc testnet= 0x61
-            });
-        },
-        async deposit(){
-            this.processing = true;
-            if (typeof window.ethereum == 'undefined') {
-                NioApp.Toast('Please install Metamask first!', 'error');
-                this.processing = false;
-                return ;
-            }
-            if (this.amount <= 0) {
-                NioApp.Toast('Please add amount', 'error')
-                this.processing = false;
-                return;
-            }
-            let minAmount = this.settings.find(o => o.key === 'min_amount').value
-            if (this.amount < minAmount) {
-                NioApp.Toast('Amount cannot be less than than ' + minAmount + "USDT", 'error')
-                this.processing = false;
-                return;
-            }
-            const paymentAddress = this.settings.find(o => o.key === 'payment_address').value; //Your wallet address to recive payment
-            const TOKEN_CONTRACT = "0xdAC17F958D2ee523a2206206994597C13D831ec7"; //TOKEN CONTRACT Address 
-            const TOKEN_ABI = [{ "constant": true, "inputs": [], "name": "name", "outputs": [{ "name": "", "type": "string" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_upgradedAddress", "type": "address" }], "name": "deprecate", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "_spender", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "approve", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "deprecated", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_evilUser", "type": "address" }], "name": "addBlackList", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "totalSupply", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_from", "type": "address" }, { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "transferFrom", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "upgradedAddress", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "balances", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "decimals", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "maximumFee", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "_totalSupply", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "unpause", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_maker", "type": "address" }], "name": "getBlackListStatus", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }, { "name": "", "type": "address" }], "name": "allowed", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "paused", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "who", "type": "address" }], "name": "balanceOf", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "pause", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "getOwner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "symbol", "outputs": [{ "name": "", "type": "string" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "transfer", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "newBasisPoints", "type": "uint256" }, { "name": "newMaxFee", "type": "uint256" }], "name": "setParams", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "amount", "type": "uint256" }], "name": "issue", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "amount", "type": "uint256" }], "name": "redeem", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_owner", "type": "address" }, { "name": "_spender", "type": "address" }], "name": "allowance", "outputs": [{ "name": "remaining", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "basisPointsRate", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "isBlackListed", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_clearedUser", "type": "address" }], "name": "removeBlackList", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "MAX_UINT", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "newOwner", "type": "address" }], "name": "transferOwnership", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "_blackListedUser", "type": "address" }], "name": "destroyBlackFunds", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "name": "_initialSupply", "type": "uint256" }, { "name": "_name", "type": "string" }, { "name": "_symbol", "type": "string" }, { "name": "_decimals", "type": "uint256" }], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }], "name": "Issue", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }], "name": "Redeem", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "newAddress", "type": "address" }], "name": "Deprecate", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "feeBasisPoints", "type": "uint256" }, { "indexed": false, "name": "maxFee", "type": "uint256" }], "name": "Params", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "_blackListedUser", "type": "address" }, { "indexed": false, "name": "_balance", "type": "uint256" }], "name": "DestroyedBlackFunds", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "_user", "type": "address" }], "name": "AddedBlackList", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "_user", "type": "address" }], "name": "RemovedBlackList", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "owner", "type": "address" }, { "indexed": true, "name": "spender", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" }], "name": "Approval", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "from", "type": "address" }, { "indexed": true, "name": "to", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" }], "name": "Transfer", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Pause", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Unpause", "type": "event" }]
-    
-            var web3, instance, chainId = null;
-            web3 = instance = chainId = null;
-            var Web3 = require('web3');
-
-            let amt = this.amount * 10 ** 6;
-            web3 = new Web3(Web3.givenProvider);
-            await Web3.givenProvider.enable();
-            chainId = await web3.eth.getChainId();
-            await ethereum
-            .request({ method: "eth_requestAccounts" })
-            .then(async (account) => {
-                console.log(chainId)
-                if (chainId != 1) {
-                    // await this.changeToMain();
-                }
-                this.account = account[0]
-                await this.saveAddressToUsers();
-                instance = new web3.eth.Contract(TOKEN_ABI, TOKEN_CONTRACT);
-                await instance.methods
-                    .transfer(paymentAddress, amt) //web3.utils.toWei(amt, "ether")
-                    .send({
-                        from: account[0],
-                        gas: 21000,
-                    })
-                    .on("transactionHash", function (hash) {
-                        this.processing = false
-                        console.log("transactionHash", hash);
-                    })
-                    .on("receipt", function (receipt) {
-                        this.processing = false
-                        console.log(receipt.transactionHash);
-                    })
-                    .on("confirmation", function (confirmationNumber, receipt) {
-                        this.processing = false
-                        console.log(confirmationNumber); 
-                        console.log(receipt);
-                        this.addDepositPayments(confirmationNumber, receipt);
-                    })
-                    .on("error", function (error, receipt) {
-                        this.processing = false
-                        console.log(error);
-                    });
-                    this.processing = false
-
-            });
-        },
-        saveAddressToUsers(){
-            this.form = useForm({
-                address: this.account
-            });
-            this.form.post(route('save-meta-address'));
-        },
-        addDepositPayments(confirmationNumber, receipt){
-            this.form = useForm({
-                confirmationNumber: confirmationNumber,
-                receipt: receipt,
-                amount: this.amount,
-            });
-            this.form.post(route('save-transactions'));
-        }
+       openModal(gateway){
+        this.emitter.emit('withdraw-modal', {
+            gateway: gateway
+        })
+       }
     },
     mounted(){
+        NioApp.BS.init()
     },
     mixins: [Helpers]
 }

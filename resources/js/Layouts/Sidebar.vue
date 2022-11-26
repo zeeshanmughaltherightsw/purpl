@@ -2,8 +2,9 @@
   <div class="nk-sidebar nk-sidebar-fixed is-light" data-content="sidebarMenu">
     <div class="nk-sidebar-element nk-sidebar-head">
       <div class="nk-sidebar-brand">
-        <Link :href="route('dashboard')" class="logo-link nk-sidebar-logo">
-        <img class="logo-light logo-img" src="logo.png" srcset="logo.png" alt="logo" />
+        <Link :href="route('dashboard')" class="logo-link nk-sidebar-logo">       
+          <img class="logo-light logo-img" :src="getImage('logo.png')" :srcset="getImage('logo.png')" alt="logo"/>
+          <img class="logo-dark logo-img" :src="getImage('logo.png')" :srcset="getImage('logo.png')" alt="logo-dark"/>
         </Link>
       </div>
       <div class="nk-menu-trigger mr-n2">
@@ -116,7 +117,6 @@ export default {
     hideSidebar() {
       let sidebar = document.querySelector('.nk-sidebar')
       sidebar.classList.remove('nk-sidebar-active')
-
     },
   },
   mounted(){
