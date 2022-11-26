@@ -23,7 +23,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <div class="container-fluid top-feature py-5 pt-lg-0" id="quick_services">
             <div class="container py-5 pt-lg-0">
                 <div class="row gx-0 mx-5">
-                    <QuickService title="Quick Services" icon="fas fa-times" />
+                    <QuickService title="Quick Services" icon="fas fa-star text-primary"/>
                     <QuickService title="Dedicated Team" icon="fas fa-users text-primary" />
                     <QuickService title="24/7 Available" icon="fas fa-phone text-primary" />
                 </div>
@@ -37,15 +37,15 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
             <!-- investors cards -->
             <h1 class="py-5" v-if="investorPlans.length > 0">FOR INVESTORS</h1>
             <div class="row container justify-content-between">
-                <div v-for="plan in investorPlans" :key="plan.id" 
+                <div v-for="plan in investorPlans" :key="plan.id"
                     class="solution_cards_box col-md-4" >
-                    <PlanCard v-if="plan.plan_type == 'investor'" 
-                      :title="plan.name" 
-                      :amountReturn="plan.amount_returns" 
-                      :profit="plan.profit" 
-                      :min_price="plan.min_price" 
-                      :max_price="plan.max_price" 
-                      :expire="plan.expire" 
+                    <PlanCard v-if="plan.plan_type == 'investor'"
+                      :title="plan.name"
+                      :amountReturn="plan.amount_returns"
+                      :profit="plan.profit"
+                      :min_price="plan.min_price"
+                      :max_price="plan.max_price"
+                      :expire="plan.expire"
 
                       planType="investor" />
                 </div>
@@ -54,28 +54,28 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 <!-- refferals cards -->
 
                 <h1 class="col-12 my-3 py-5" v-if="referralPlans.length > 0">FOR REFFERALS</h1>
-                
+
                 <div class="solution_cards_box col-md-2">
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 0">
-                    <PlanCard 
-                        title="" 
-                        price="" 
+                    <PlanCard
+                        title=""
+                        price=""
                         :minReffer="referralPlans[0].min_ref"
-                        :maxReffer="referralPlans[0].max_ref" 
-                        :expire="referralPlans[0].expire" 
-                        :commission="referralPlans[0].ref_commission" 
+                        :maxReffer="referralPlans[0].max_ref"
+                        :expire="referralPlans[0].expire"
+                        :commission="referralPlans[0].ref_commission"
                         :levels="referralPlans[0].levels_count"
                         planType="referral" />
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 1">
-                    <PlanCard 
-                        title="" 
-                        price="" 
+                    <PlanCard
+                        title=""
+                        price=""
                         :minReffer="referralPlans[1].min_ref"
-                        :maxReffer="referralPlans[1].max_ref" 
-                        :expire="referralPlans[1].expire" 
-                        :commission="referralPlans[1].ref_commission" 
+                        :maxReffer="referralPlans[1].max_ref"
+                        :expire="referralPlans[1].expire"
+                        :commission="referralPlans[1].ref_commission"
                         :levels="referralPlans[1].levels_count"
                         planType="referral" />
                 </div>
@@ -89,9 +89,9 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
                 <div v-for="plan in highAgentPlans" :key="plan.id" class="solution_cards_box" :class="`${'col-md-' + 12/referralPlans.length}`">
                     <PlanCard v-if="plan.plan_type == 'high_agent'" title=""
-                      :min_price="plan.min_price" 
-                      :max_price="plan.max_price" 
-                      :expire="plan.expire" 
+                      :min_price="plan.min_price"
+                      :max_price="plan.max_price"
+                      :expire="plan.expire"
 
                     :minReffer="plan.min_ref" :maxReffer="plan.max_ref" :amountReturn="plan.amount_returns"
                     :commission="plan.ref_commission + ' Percent'" planType="high_agent" />
@@ -231,10 +231,10 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                     <h1 class="display-5 mb-5">Services That We Offer For You</h1>
                 </div>
                 <div class="row g-4">
-                    <our-services 
-                      v-for="card in servicesCard" :key="card" 
-                      :title="card.title" 
-                      :image="card.image" 
+                    <our-services
+                      v-for="card in servicesCard" :key="card"
+                      :title="card.title"
+                      :image="card.image"
                       :description="card.description"
                     />
                 </div>
@@ -245,7 +245,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <!-- Testimonial Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="row g-5">
+                <div class="row g-5 my-2">
                    <our-clients testimonial="Testimonial" title="What our Clients Say About Us" desec="Our first priority is to satisfy our clients. That is why they say
                             that “Our professionalism and commitment to the work always
                             inspires them”. So, they contact us with related stone mining and

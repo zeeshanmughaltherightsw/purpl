@@ -5,9 +5,9 @@
                 <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                     <i :class="icon"></i>
                 </div>
-                
+
                 <div class="ps-3">
-                    <h4>{{ title }}</h4>
+                    <h4 class="m-2">{{ title }}</h4>
                     <span></span>
                 </div>
             </div>
@@ -18,4 +18,4 @@
 export default {
     props: ['icon', 'title']
 }
-</script> 
+</script>
