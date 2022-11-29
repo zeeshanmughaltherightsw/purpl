@@ -11,7 +11,7 @@
                         <!-- <input type="text" class="form-control" id="default-04" placeholder="Search by name"> -->
                     </div>
                 </li>
-            </template>
+        </template>
         </BreadCrumb>
         <div class="nk-content bg-white">
             <div class="container-fluid">

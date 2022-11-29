@@ -42,7 +42,7 @@ onMounted(() => {
               <div class="form-group">
                 <div class="form-label-group">
                   <label class="form-label" for="default-01"
-                    >Email or Username</label
+                    >Email</label
                   >
                 </div>
                 <div class="form-control-wrap">

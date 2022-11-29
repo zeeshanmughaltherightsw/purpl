@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
 use Inertia\Inertia;
 use App\Models\Gateway;
 use App\Models\Withdrawal;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
 use App\Models\GatewayCurrency;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\DB;
 
 class WithdrawController extends Controller
 {
@@ -63,36 +66,57 @@ class WithdrawController extends Controller
                 'message' => 'Your do not have Sufficient Balance For Withdraw.'
             ], 401);
         }
+        try{
+            DB::beginTransaction();
+            $charge = $method->fixed_charge + ($request->amount * ($method->percentage_charge / 100));
+            $afterCharge = $request->amount - $charge;
+            if($afterCharge < 0){
+                return redirect()->back()->withErrors([
+                    'message' => 'Amount is insufficient for withdraw'
+                ]);
+            }
+            $i = 0; 
+            $inputForm = $request->input_form;
+            foreach($inputForm as $key => $value){
+                foreach($value as $input => $inputValue){
+                    if($inputValue instanceof \Illuminate\Http\UploadedFile){
+                        $filename = uploadImage($inputValue, 'images/withdrawals/');
+                        $inputForm[$i][$input] = asset('storage/images/withdrawals/'. $filename);
+                    }   
+                }
+                $i++;
+            }
+            $finalAmount = $afterCharge * $method->rate;
+            if($finalAmount)
+            $w['method_id'] = $method->method->id; // wallet method ID
+            $w['user_id'] = $user->id;
+            $w['amount'] = $request->amount;
+            $w['currency'] = $method->currency;
+            $w['rate'] = $method->rate;
+            $w['charge'] = $charge;
+            $w['final_amount'] = $finalAmount;
+            $w['after_charge'] = $afterCharge;
+            $w['trx'] = getTrx();
+            $w['withdraw_information'] = json_encode($inputForm);
+            $result = Withdrawal::create($w);
+            $user->profit  -=  $request->amount;
+            $user->update();
 
-        $charge = $method->fixed_charge + ($request->amount * $method->percent_charge / 100);
-        $afterCharge = $request->amount - $charge;
-        $finalAmount = $afterCharge * $method->rate;
-        $w['method_id'] = $method->method->id; // wallet method ID
-        $w['user_id'] = $user->id;
-        $w['amount'] = $request->amount;
-        $w['currency'] = $method->currency;
-        $w['rate'] = $method->rate;
-        $w['charge'] = $charge;
-        $w['final_amount'] = $finalAmount;
-        $w['after_charge'] = $afterCharge;
-        $w['trx'] = getTrx();
-        $w['withdraw_information'] = json_encode($request->input_form);
-        $result = Withdrawal::create($w);
-        $user->profit  -=  $request->amount;
-        $user->update();
-
-
-        $transaction = new Transaction();
-        $transaction->user_id = $user->id;
-        $transaction->amount = $request->amount;
-        $transaction->post_balance = $user->profit;
-        $transaction->charge = $charge;
-        $transaction->trx_type = '-';
-        $transaction->details = $w['final_amount'] . ' ' . $w['currency'] . ' Via ' . $method->method->name;
-        $transaction->trx =  $w['trx'];
-        $transaction->remark = 'deposit';
-        $transaction->save();
-
+            
+            $transaction = new Transaction();
+            $transaction->user_id = $user->id;
+            $transaction->amount = $request->amount;
+            $transaction->post_balance = $user->profit;
+            $transaction->charge = $charge;
+            $transaction->trx_type = '-';
+            $transaction->details = $w['final_amount'] . ' ' . $w['currency'] . ' Via ' . $method->method->name;
+            $transaction->trx =  $w['trx'];
+            $transaction->remark = 'withdraw';
+            $transaction->save();
+            DB::commit();
+        }catch(Exception $e){
+            DB::rollBack();
+        }
         return redirect()->route('withdraw.index');
     }
 

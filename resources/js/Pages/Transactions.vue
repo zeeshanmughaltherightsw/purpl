@@ -40,7 +40,7 @@
                                 </span>
                             </td>
                             <td>
-                                <span class="badge badge-dot" :class="{ 'badge-info' : transaction.trx_type == '-', 'badge-success' : transaction.trx_type !== '-' }">
+                                <span class="badge badge-dot" :class="{ 'badge-danger' : transaction.trx_type == '-', 'badge-success' : transaction.trx_type !== '-' }">
                                     {{ transaction.trx_type == '-' ? 'Debitted' : 'Credited' }}
                                 </span>
                             </td>

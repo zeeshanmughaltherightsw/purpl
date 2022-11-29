@@ -8,13 +8,21 @@
                     <label class="form-label text-capitalize" for="buysell-amount">{{ input.field_name }}</label>
                 </div>
                 <div class="form-control-group">
+                    {{ form.input_form[index][input.field_name] }}
                     <input 
                         :type="input.type" 
                         class="form-control" 
                         id="buysell-amount" 
-                        v-model="form.input_form[index]" 
                         :required="input.validation"
-                        name="bs-amount" 
+                        @input="form.input_form[index][input.field_name] = $event.target.files[0]"
+                        v-if="input.type == 'file'"
+                    />
+                    <input v-else
+                        :type="input.type" 
+                        class="form-control" 
+                        id="buysell-amount" 
+                        v-model="form.input_form[index][input.field_name]" 
+                        :required="input.validation"
                     />
                     <!-- <Error :message="form.input_form[input.field_name.replaceAll(' ', '_')].errors" /> -->
                 </div>
@@ -65,6 +73,7 @@ export default {
     components: { Modal, Error, PrimaryButton },
     methods: {
         submit(){
+            console.log(parseFloat(this.form.amount), parseFloat(this.gateway.single_currency.min_amount))
             if(parseFloat(this.form.amount) < parseFloat(this.gateway.single_currency.min_amount)){
                 NioApp.Toast('Amount can not be less than ' + this.gateway.single_currency.min_amount, 'error')
                 return;
@@ -81,11 +90,12 @@ export default {
                 onSuccess: () => {
                     this.form.reset();
                     NioApp.Toast('Withdraw Request sent!', 'success')
+                    console.log($('#genericModal'))
                     $('#genericModal').modal('hide');
                 },
                 onError: (e) => {
                     console.log(e)
-                    NioApp.Toast(e.message, 'error')
+                    NioApp.Toast(Object.values(e)[0], 'error')
                 }
             })
            
@@ -93,15 +103,17 @@ export default {
     },
     beforeMount(){
         this.emitter.on('withdraw-modal', (args) => {
-            console.log(JSON.parse(args.gateway.input_form))
             this.gateway = args.gateway
             this.form = useForm({
                 amount: 0,
                 id: args.gateway.single_currency.id,
                 input_form: []
             });
+            console.log(JSON.parse(args.gateway.input_form))
             JSON.parse(args.gateway.input_form).forEach((value) => {
-                this.form.input_form.push('');
+                let form = new Object()
+                form[value.field_name] = null
+                this.form.input_form.push(form);
             })
             NioApp.BS.tabfix(null, '#genericModal', 1)
             
