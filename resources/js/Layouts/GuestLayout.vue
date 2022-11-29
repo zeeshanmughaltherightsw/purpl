@@ -6,7 +6,7 @@ import { Link } from '@inertiajs/inertia-vue3';
 <template>
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow" data-content="sidebarMenu">
         <Link :href="route('welcome')" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="/logo.png" style="width: 200px; height: 58px;"/>
+            <img src="storage/logo.png" style="width: 200px; height: 58px;"/>
         </Link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

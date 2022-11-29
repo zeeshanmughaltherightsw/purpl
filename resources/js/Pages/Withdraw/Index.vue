@@ -1,7 +1,7 @@
 <template>
     <Head title="Withdraw"/>
     <AuthenticatedLayout>
-        <BreadCrumb title="Withdraw">
+        <BreadCrumb title="Withdraw Methods">
             <template #plugin>
                 <li>
                     <div class="form-control-wrap">
