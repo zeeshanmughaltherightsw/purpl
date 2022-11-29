@@ -99,7 +99,6 @@ export default {
        }
     },
     mounted(){
-        console.log(this.gateways[0].single_currency.max_amount)
         NioApp.BS.init()
     },
     mixins: [Helpers]

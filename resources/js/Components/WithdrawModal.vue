@@ -73,13 +73,11 @@ export default {
     components: { Modal, Error, PrimaryButton },
     methods: {
         submit(){
-            console.log(parseFloat(this.form.amount), parseFloat(this.gateway.single_currency.min_amount))
             if(parseFloat(this.form.amount) < parseFloat(this.gateway.single_currency.min_amount)){
                 NioApp.Toast('Amount can not be less than ' + this.gateway.single_currency.min_amount, 'error')
                 return;
             }
             else if(parseFloat(this.form.amount) > parseFloat(this.gateway.single_currency.max_amount)){
-                console.log(parseFloat(this.form.amount), parseFloat(this.gateway.single_currency.max_amount));
                 NioApp.Toast('Amount can not be greater than ' + parseFloat(this.gateway.single_currency.max_amount), 'error')
                 return;
             }else if(parseFloat(this.form.amount) > parseFloat(this.$page.props.auth.user.profit)){
@@ -90,7 +88,6 @@ export default {
                 onSuccess: () => {
                     this.form.reset();
                     NioApp.Toast('Withdraw Request sent!', 'success')
-                    console.log($('#genericModal'))
                     $('#genericModal').modal('hide');
                 },
                 onError: (e) => {
@@ -109,7 +106,6 @@ export default {
                 id: args.gateway.single_currency.id,
                 input_form: []
             });
-            console.log(JSON.parse(args.gateway.input_form))
             JSON.parse(args.gateway.input_form).forEach((value) => {
                 let form = new Object()
                 form[value.field_name] = null

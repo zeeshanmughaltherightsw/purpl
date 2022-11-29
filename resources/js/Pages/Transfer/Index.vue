@@ -96,7 +96,6 @@ export default {
                     NioApp.Toast('Balance Transfered Successfully', 'success')
                 },
                 onError: (e) => {
-                    console.log(Object.values(e))
                     NioApp.Toast(Object.values(e)[0], 'error')
                 }
             });
