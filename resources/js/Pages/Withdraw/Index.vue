@@ -27,13 +27,8 @@
                                     </th>
                                     <th class="tb-tnx-info">
                                         <span class="tb-tnx-desc d-none d-sm-inline-block">
-                                            <span>Min Limit</span>
+                                            <span>Limit</span>
                                         </span>
-                                        <span class="tb-tnx-desc d-none d-sm-inline-block">
-                                            <span>Max Limit</span>
-                                        </span>
-                                    </th>
-                                    <th class="tb-tnx-amount is-alt">
                                         <span class="tb-tnx-desc d-none d-sm-inline-block">
                                             <span>Charge</span>
                                         </span>
@@ -53,15 +48,10 @@
                                         </td>
                                         <td class="tb-tnx-info">
                                             <div class="tb-tnx-desc">
-                                                <span class="title text-dark text-capitalize">{{ formatCurrency(gateway.single_currency.min_limit) }}</span>
+                                                <span class="title text-dark text-capitalize">{{ formatCurrency(gateway.single_currency.min_amount) + ' to ' + formatCurrency(gateway.single_currency.max_amount) }}</span>
                                             </div>
                                             <div class="tb-tnx-date">
-                                                <span class="date">{{formatCurrency(gateway.single_currency.max_limit)}}</span>
-                                            </div>
-                                        </td>
-                                        <td class="tb-tnx-amount is-alt">
-                                            <div class="tb-tnx-status">
-                                                <span class="badge badge-dot badge-danger">{{ formatCurrency(gateway.single_currency.charge) }}</span>
+                                                <span class="date">{{ formatCurrency(gateway.single_currency.fixed_charge) + ' + ' + gateway.single_currency.percentage_charge + '%' }}</span>
                                             </div>
                                         </td>
                                         <td class="">
@@ -109,6 +99,7 @@ export default {
        }
     },
     mounted(){
+        console.log(this.gateways[0].single_currency.max_amount)
         NioApp.BS.init()
     },
     mixins: [Helpers]
