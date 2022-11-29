@@ -93,6 +93,12 @@
               <span class="nk-menu-text">Transactions</span>
               </Link>
             </li>
+            <li class="nk-menu-item" :class="{ 'active current-page': route().current('transfer') }">
+              <Link preserve-scroll :href="route('transfer')" class="nk-menu-link">
+              <span class="nk-menu-icon"><em class="icon ni ni-tranx"></em></span>
+              <span class="nk-menu-text">Balance Transfer</span>
+              </Link>
+            </li>
           </ul>
           <!-- .nk-menu -->
         </div>
