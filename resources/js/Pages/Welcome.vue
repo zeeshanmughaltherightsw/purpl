@@ -16,7 +16,8 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                     making investments in cryptocurrency. Join us to enjoy professional
                     assistance for your growing.
                 </p>
-                <a     href="/storage/intro.pdf" class="btn btn-primary sign mr-3 px-4 float-left">Know more</a>
+                <a     href="/storage/intro.pdf" class="btn btn-primary sign mr-3 px-4 float-left" style="@media only screen and (max-width: 390px) {
+                    .button-center {}">Know more</a>
             </div>
         </div>
         <!-- Carousel End -->
@@ -24,7 +25,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <div class="container-fluid top-feature py-5 pt-lg-0" id="quick_services">
             <div class="container py-5 pt-lg-0">
                 <div class="row gx-0 mx-5">
-                    <QuickService title="Quick Services" icon="fas fa-times" />
+                    <QuickService title="Quick Services" icon="fas fa-star text-primary" />
                     <QuickService title="Dedicated Team" icon="fas fa-users text-primary" />
                     <QuickService title="24/7 Available" icon="fas fa-phone text-primary" />
                 </div>

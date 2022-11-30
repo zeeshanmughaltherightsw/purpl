@@ -69,3 +69,13 @@
 }
 
 /* level end */
+
+.mobile-text {
+    text: center;
+  }
+
+  @media (max-device-width: 600px) {
+    .mobile-text {
+      text: center;
+    }
+  }
