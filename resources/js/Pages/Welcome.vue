@@ -33,19 +33,23 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <!-- Top Feature End -->
         <!-- Plans-Starts -->
         <center>
-            <h1 class="display-3 py-5">Our Membership Plans</h1>
+            <h1 class="display-4 py-3">Our Membership Plans</h1>
+
+            <a class="btn btn-primary py-3 px-4" href="">Click Here For More Details</a>
+
+
             <!-- investors cards -->
             <h1 class="py-5" v-if="investorPlans.length > 0">FOR INVESTORS</h1>
             <div class="row container justify-content-between">
-                <div v-for="plan in investorPlans" :key="plan.id" 
+                <div v-for="plan in investorPlans" :key="plan.id"
                     class="solution_cards_box col-md-4" >
-                    <PlanCard v-if="plan.plan_type == 'investor'" 
-                      :title="plan.name" 
-                      :amountReturn="plan.amount_returns" 
-                      :profit="plan.profit" 
-                      :min_price="plan.min_price" 
-                      :max_price="plan.max_price" 
-                      :expire="plan.expire" 
+                    <PlanCard v-if="plan.plan_type == 'investor'"
+                      :title="plan.name"
+                      :amountReturn="plan.amount_returns"
+                      :profit="plan.profit"
+                      :min_price="plan.min_price"
+                      :max_price="plan.max_price"
+                      :expire="plan.expire"
 
                       planType="investor" />
                 </div>
@@ -54,28 +58,28 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                 <!-- refferals cards -->
 
                 <h1 class="col-12 my-3 py-5" v-if="referralPlans.length > 0">FOR REFFERALS</h1>
-                
+
                 <div class="solution_cards_box col-md-2">
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 0">
-                    <PlanCard 
-                        :title="referralPlans[0].name" 
-                        price="" 
+                    <PlanCard
+                        :title="referralPlans[0].name"
+                        price=""
                         :minReffer="referralPlans[0].min_ref"
-                        :maxReffer="referralPlans[0].max_ref" 
-                        :expire="referralPlans[0].expire" 
-                        :commission="referralPlans[0].ref_commission" 
+                        :maxReffer="referralPlans[0].max_ref"
+                        :expire="referralPlans[0].expire"
+                        :commission="referralPlans[0].ref_commission"
                         :levels="referralPlans[0].levels_count"
                         planType="referral" />
                 </div>
                 <div class="solution_cards_box col-md-4" v-if="referralPlans.length > 1">
-                    <PlanCard 
-                        :title="referralPlans[1].name" 
-                        price="" 
+                    <PlanCard
+                        :title="referralPlans[1].name"
+                        price=""
                         :minReffer="referralPlans[1].min_ref"
-                        :maxReffer="referralPlans[1].max_ref" 
-                        :expire="referralPlans[1].expire" 
-                        :commission="referralPlans[1].ref_commission" 
+                        :maxReffer="referralPlans[1].max_ref"
+                        :expire="referralPlans[1].expire"
+                        :commission="referralPlans[1].ref_commission"
                         :levels="referralPlans[1].levels_count"
                         planType="referral" />
                 </div>
@@ -89,9 +93,9 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
                 <div v-for="plan in highAgentPlans" :key="plan.id" class="solution_cards_box" :class="`${'col-md-' + 12/referralPlans.length}`">
                     <PlanCard v-if="plan.plan_type == 'high_agent'" title=""
-                      :min_price="plan.min_price" 
-                      :max_price="plan.max_price" 
-                      :expire="plan.expire" 
+                      :min_price="plan.min_price"
+                      :max_price="plan.max_price"
+                      :expire="plan.expire"
 
                     :minReffer="plan.min_ref" :maxReffer="plan.max_ref" :amountReturn="plan.amount_returns"
                     :commission="plan.ref_commission + ' Percent'" planType="high_agent" />
@@ -104,22 +108,88 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
         <!-- plan End -->
         <div class="main text-center mt-5">
-            <h1 class="reward-heading">REWARDS</h1>
+            <h1 class="reward-heading py-3">REWARDS</h1>
+            <a class="btn btn-primary py-3 px-4" href="">Click Here For More Details</a>
         </div>
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-end">
                     <div class="col-md-3 border-right" v-for="(reward, index) in rewards" :key="index">
-                        <reward-card 
-                            :name="reward.name" 
-                            :investment="reward.total_investment" 
-                            :amount="reward.amount" 
+                        <reward-card
+                            :name="reward.name"
+                            :investment="reward.total_investment"
+                            :amount="reward.amount"
                             :index="index+1"
                         />
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- refferals levels starts -->
+
+        <div style="margin: 20px 50px">
+            <h1 style="margin: 20px 50px" class="text-center">
+              Refferals Commission
+            </h1>
+            <div class="text-center">
+                <a class="btn btn-primary py-2 px-4 my-2" href="">For Details Click Here</a>
+            </div>
+            <h6 class="my-3">Level 1 (Only one time)</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                style="max-width: 100%">
+                <span class="title">5% of investment</span>
+              </div>
+            </div>
+          </div>
+          <div style="margin: 20px 50px">
+            <h6 class="my-3">Level 2 (Monthly)</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                style="max-width: 60%">
+                <span class="title">2% of investment</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin: 20px 50px">
+            <h6 class="my-3">Level 3 to 5 (Monthly)</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                style="max-width: 30%">
+                <span class="title">1% of investment</span>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div style="margin: 20px 50px">
+            <h6 class="my-3">Level 6 to 8 (Monthly)</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                style="max-width: 20%">
+                <span class="title">0.5% of investment</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin: 20px 50px">
+            <h6 class="my-3">Level 9 to 15 (Monthly)</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                style="max-width: 15%">
+                <span class="title">0.25% of investment</span>
+              </div>
+            </div>
+          </div>
+
+        <!-- refferals levels end -->
+
+
+
 
 
         <!-- About Start -->
@@ -249,10 +319,10 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                     <h1 class="display-5 mb-5">Services That We Offer For You</h1>
                 </div>
                 <div class="row g-4">
-                    <our-services 
-                      v-for="card in servicesCard" :key="card" 
-                      :title="card.title" 
-                      :image="card.image" 
+                    <our-services
+                      v-for="card in servicesCard" :key="card"
+                      :title="card.title"
+                      :image="card.image"
                       :description="card.description"
                     />
                 </div>
