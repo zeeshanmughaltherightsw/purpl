@@ -35,36 +35,37 @@
     width: 0;
     animation: progress 0.7s ease-in-out forwards;
     background-color: #6F5EA9;
-    .title {
-      opacity: 0;
-      animation: show 0.35s forwards ease-in-out 0.5s;
-    }
-  }
+}
 
-  .progress{
-    display: flex;
-    height: 1.5rem;
-    overflow: hidden;
-    font-size: 1rem;
-    background-color: #e9ecef;
-    border-radius: 0.25rem;
-  }
+.title {
+  opacity: 0;
+  animation: show 0.35s forwards ease-in-out 0.5s;
+}
 
-  @keyframes progress {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+.progress{
+  display: flex;
+  height: 1.5rem;
+  overflow: hidden;
+  font-size: 1rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
   }
-  @keyframes show  {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    width: 100%;
   }
+}
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* level end */

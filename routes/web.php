@@ -41,15 +41,15 @@ Route::get('/about', function () {
 
 Route::get('/plan-detail', function () {
     return Inertia::render('Plandetail');
-});
+})->name('plan-details');
 
 Route::get('reward-detail', function (){
     return Inertia::render('RewardDetail');
-});
+})->name('reward-details');
 
 Route::get('refferal-commission-detail', function (){
     return Inertia::render('RefferalRules');
-});
+})->name('refferal-commission-detail');
 
 Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');

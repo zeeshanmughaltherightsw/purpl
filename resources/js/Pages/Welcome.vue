@@ -16,6 +16,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                     making investments in cryptocurrency. Join us to enjoy professional
                     assistance for your growing.
                 </p>
+                <a     href="/storage/intro.pdf" class="btn btn-primary sign mr-3 px-4 float-left">Know more</a>
             </div>
         </div>
         <!-- Carousel End -->
@@ -35,7 +36,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <center>
             <h1 class="display-4 py-3">Our Membership Plans</h1>
 
-            <a class="btn btn-primary py-3 px-4" href="">Click Here For More Details</a>
+            <Link class="btn btn-primary py-3 px-4" :href="route('plan-details')">Click Here For More Details</Link>
 
 
             <!-- investors cards -->
@@ -109,7 +110,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <!-- plan End -->
         <div class="main text-center mt-5">
             <h1 class="reward-heading py-3">REWARDS</h1>
-            <a class="btn btn-primary py-3 px-4" href="">Click Here For More Details</a>
+            <Link class="btn btn-primary py-3 px-4" :href="route('reward-details')">Click Here For More Details</Link>
         </div>
         <div class="container-xxl py-5">
             <div class="container">
@@ -134,7 +135,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
               Refferals Commission
             </h1>
             <div class="text-center">
-                <a class="btn btn-primary py-2 px-4 my-2" href="">For Details Click Here</a>
+                <Link class="btn btn-primary py-2 px-4 my-2" :href="route('refferal-commission-detail')">For Details Click Here</Link>
             </div>
             <h6 class="my-3">Level 1 (Only one time)</h6>
             <div class="progress">
