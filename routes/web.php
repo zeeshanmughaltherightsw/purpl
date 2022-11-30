@@ -38,6 +38,18 @@ Route::get('/about', function () {
     return Inertia::render('About');
 })->name('about');
 
+Route::get('/plan-detail', function () {
+    return Inertia::render('Plandetail');
+});
+
+Route::get('reward-detail', function (){
+    return Inertia::render('RewardDetail');
+});
+
+Route::get('refferal-commission-detail', function (){
+    return Inertia::render('RefferalRules');
+});
+
 Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
     Route::get('security-setting', [UserProfileController::class, 'securitySettings'])->name('security-setting');
