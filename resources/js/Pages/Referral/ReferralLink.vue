@@ -15,7 +15,7 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="referral-link">
                     <p>(Your referral link is below click copy and give to the persons who wish to make you their reference)</p>
-                    <p>{{ route('register', $page.props.auth.user.account_no) }}</p>    
+                    <p>{{ route('register', $page.props.auth.user.username) }}</p>    
                 </div>
                 <div class="tab-pane" id="help">
                     <p>Referral Banner is your referral link that you can copy and send to your friends or other people to join the Pr PAL with your sponsorship. By achieving your target you can get monthly bonuses. If you manage your extra referrals as your indirect referrals, still you can get profit and benefit from your indirect referrals.</p>    

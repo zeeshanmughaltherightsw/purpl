@@ -26,7 +26,7 @@ class RegisteredUserController extends Controller
     public function create($referrals = null)
     {
         if ($referrals) {
-            Session::put('ref_account_no', $referrals);
+            Session::put('username', $referrals);
         }
         return Inertia::render('Auth/Register');
     }
@@ -53,9 +53,9 @@ class RegisteredUserController extends Controller
 
 
 
-        $referrals = Session::get('ref_account_no');
+        $referrals = Session::get('username');
         if ($referrals) {
-            $ref = User::select('id')->where('account_no', $referrals)->first();
+            $ref = User::select('id')->where('username', $referrals)->first();
         }
         $user = User::create([
             'name' => $request->name,
