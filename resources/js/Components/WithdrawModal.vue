@@ -8,7 +8,6 @@
                     <label class="form-label text-capitalize" for="buysell-amount">{{ input.field_name }}</label>
                 </div>
                 <div class="form-control-group">
-                    {{ form.input_form[index][input.field_name] }}
                     <input 
                         :type="input.type" 
                         class="form-control" 
