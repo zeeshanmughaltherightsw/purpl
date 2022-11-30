@@ -131,16 +131,12 @@ export default {
                         })
                         .on("transactionHash", function (hash) {
                             this.processing = false
-                            console.log("transactionHash", hash);
                         })
                         .on("receipt", function (receipt) {
                             this.processing = false
-                            console.log(receipt.transactionHash);
                         })
                         .on("confirmation", function (confirmationNumber, receipt) {
                             this.processing = false
-                            console.log(confirmationNumber);
-                            console.log(receipt);
                             this.addDepositPayments(confirmationNumber, receipt);
                         })
                         .on("error", function (error, receipt) {

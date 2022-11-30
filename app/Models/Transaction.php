@@ -19,7 +19,8 @@ class Transaction extends Model
         'from',
         'to',
         'status',
-        'gas_price'
+        'gas_price',
+        'charge',
     ];
 
     

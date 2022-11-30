@@ -11,6 +11,7 @@ use App\Http\Controllers\ReferralController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\UserProfileController;
+use App\Http\Controllers\WithdrawController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,6 +63,9 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::post('save-transactions', [UserProfileController::class, 'saveTransactions'])->name('save-transactions');
     Route::get('transactions', [UserProfileController::class, 'transactions'])->name('transactions');
     Route::get('deposit', [DepositController::class, 'index'])->name('deposit.index');
+    Route::get('transfer', [UserProfileController::class, 'transferBalance'])->name('transfer');
+    Route::post('transfer-store', [UserProfileController::class, 'transferBalanceStore'])->name('transfer.store');
+    Route::resource('withdraw', WithdrawController::class);
     Route::get('membership', [MembershipController::class, 'index'])->name('membership.index');
 });
 

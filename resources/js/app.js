@@ -3,8 +3,9 @@ import '../css/app.css';
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
+import mitt from 'mitt';
 
-const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Stonearn';
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
@@ -13,6 +14,7 @@ createInertiaApp({
         const appVue = createApp({ render: () => h(app, props) })
             .use(plugin)
             .mixin({ methods: { route } });
+            appVue.config.globalProperties.emitter = mitt()
             appVue.mount(el);
         return appVue;
     },

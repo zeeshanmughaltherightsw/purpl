@@ -578,24 +578,28 @@
   }; // BootStrap Specific Tab Open
 
 
-  NioApp.BS.tabfix = function (elm) {
-    var tab = elm ? elm : '[data-toggle="modal"]';
-    $(tab).on('click', function () {
-      var _this = $(this),
-          target = _this.data('target'),
-          target_href = _this.attr('href'),
-          tg_tab = _this.data('tab-target');
+  NioApp.BS.tabfix = function (elm=null, target=null, is_manual=0) {
+    if(is_manual == 1){
+      target = $(target)
+      target.modal('show');
+    }else{
+      var tab = elm ? elm : '[data-toggle="modal"]';
+      $(tab).on('click', function () {
+        var _this = $(this),
+            target = target ? target : _this.data('target'),
+            target_href = _this.attr('href'),
+            tg_tab = _this.data('tab-target');
 
-      var modal = target ? $body.find(target) : $body.find(target_href);
-
-      if (tg_tab && tg_tab !== '#' && modal) {
-        modal.find('[href="' + tg_tab + '"]').tab('show');
-      } else if (modal) {
-        var tabdef = modal.find('.nk-nav.nav-tabs');
-        var link = $(tabdef[0]).find('[data-toggle="tab"]');
-        $(link[0]).tab('show');
-      }
-    });
+        var modal = target ? $body.find(target) : $body.find(target_href);
+        if (tg_tab && tg_tab !== '#' && modal) {
+          modal.find('[href="' + tg_tab + '"]').tab('show');
+        } else if (modal) {
+          var tabdef = modal.find('.nk-nav.nav-tabs');
+          var link = $(tabdef[0]).find('[data-toggle="tab"]');
+          $(link[0]).tab('show');
+        }
+      });
+    }
   }; // Dark Mode Switch @since v2.0
 
 
@@ -922,7 +926,7 @@
     // NioApp.coms.docReady.push(NioApp.ColorTXT);
     // NioApp.coms.docReady.push(NioApp.Copied);
     // NioApp.coms.docReady.push(NioApp.Ani.init);
-    NioApp.coms.docReady.push(NioApp.TGL.init);
+    // NioApp.coms.docReady.push(NioApp.TGL.init);
     NioApp.coms.docReady.push(NioApp.BS.init);
     // NioApp.coms.docReady.push(NioApp.Validate.init);
     // NioApp.coms.docReady.push(NioApp.Picker.init);

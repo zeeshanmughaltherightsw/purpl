@@ -2,8 +2,9 @@
   <div class="nk-sidebar nk-sidebar-fixed is-light" data-content="sidebarMenu">
     <div class="nk-sidebar-element nk-sidebar-head">
       <div class="nk-sidebar-brand">
-        <Link :href="route('dashboard')" class="logo-link nk-sidebar-logo">
-        <img class="logo-light logo-img" src="logo.png" srcset="logo.png" alt="logo" />
+        <Link :href="route('dashboard')" class="logo-link nk-sidebar-logo">       
+          <img class="logo-light logo-img" :src="getImage('logo.png')" :srcset="getImage('logo.png')" alt="logo"/>
+          <img class="logo-dark logo-img" :src="getImage('logo.png')" :srcset="getImage('logo.png')" alt="logo-dark"/>
         </Link>
       </div>
       <div class="nk-menu-trigger mr-n2">
@@ -35,7 +36,12 @@
               </ul>
               <div class="user-account-actions">
                 <ul class="g-3">
-                  <li><Link :href="route('deposit.index')" class="btn btn-lg btn-primary"><span>Deposit</span></Link></li>
+                  <li>
+                    <Link :href="route('deposit.index')" class="btn btn-lg btn-primary"><span>Deposit</span></Link>
+                  </li>
+                  <li>
+                    <Link :href="route('withdraw.index')" class="btn btn-lg btn-primary"><span>Withdraw</span></Link>
+                  </li>
                   <!-- <li><a href="#" class="btn btn-lg btn-warning"><span>Withdraw</span></a></li> -->
                 </ul>
               </div>
@@ -87,6 +93,12 @@
               <span class="nk-menu-text">Transactions</span>
               </Link>
             </li>
+            <li class="nk-menu-item" :class="{ 'active current-page': route().current('transfer') }">
+              <Link preserve-scroll :href="route('transfer')" class="nk-menu-link">
+              <span class="nk-menu-icon"><em class="icon ni ni-tranx"></em></span>
+              <span class="nk-menu-text">Balance Transfer</span>
+              </Link>
+            </li>
           </ul>
           <!-- .nk-menu -->
         </div>
@@ -111,7 +123,6 @@ export default {
     hideSidebar() {
       let sidebar = document.querySelector('.nk-sidebar')
       sidebar.classList.remove('nk-sidebar-active')
-
     },
   },
   mounted(){
