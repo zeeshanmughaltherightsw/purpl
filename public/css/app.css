@@ -16282,15 +16282,12 @@ body.dark-mode.ui-shady, body.dark-mode.ui-clean, body.dark-mode.bg-lighter, .du
 
 /* level end */
 
-.mobile-text {
-    text: center;
+@media screen and (max-width: 600px) {
+    .mobile-center
+    {
+        justify-content: center;
   }
-
-  @media (max-device-width: 600px) {
-    .mobile-text {
-      text: center;
-    }
-  }
+}
 
 /********** Template CSS **********/
 

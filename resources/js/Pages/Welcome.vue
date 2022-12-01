@@ -16,8 +16,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                     making investments in cryptocurrency. Join us to enjoy professional
                     assistance for your growing.
                 </p>
-                <a     href="/storage/intro.pdf" class="btn btn-primary sign mr-3 px-4 float-left" style="@media only screen and (max-width: 390px) {
-                    .button-center {}">Know more</a>
+                <a     href="/storage/intro.pdf" class="btn btn-primary sign mr-3 px-4 float-left">Know more</a>
             </div>
         </div>
         <!-- Carousel End -->
@@ -35,7 +34,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <!-- Top Feature End -->
         <!-- Plans-Starts -->
         <center>
-            <h1 class="display-4 py-3">Our Membership Plans</h1>
+            <h1 class="display-5 py-3">Our Membership Plans</h1>
 
             <Link class="btn btn-primary py-3 px-4" :href="route('plan-details')">Click Here For More Details</Link>
 
@@ -110,7 +109,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
         <!-- plan End -->
         <div class="main text-center mt-5">
-            <h1 class="reward-heading py-3">REWARDS</h1>
+            <h1 class="reward-heading display-5 py-3">REWARDS</h1>
             <Link class="btn btn-primary py-3 px-4" :href="route('reward-details')">Click Here For More Details</Link>
         </div>
         <div class="container-xxl py-5">
@@ -132,7 +131,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <!-- refferals levels starts -->
 
         <div style="margin: 20px 50px">
-            <h1 style="margin: 20px 50px" class="text-center">
+            <h1 style="margin: 20px 50px" class="text-center display-5 py-3">
               Refferals Commission
             </h1>
             <div class="text-center">
