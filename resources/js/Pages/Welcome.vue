@@ -16,7 +16,9 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
                     making investments in cryptocurrency. Join us to enjoy professional
                     assistance for your growing.
                 </p>
-                <a     href="/storage/intro.pdf" class="btn btn-primary sign mr-3 px-4 float-left">Know more</a>
+
+                <a     href="/storage/intro.pdf" class="btn btn-primary sign mr-3 px-4 float-left mobile-view">Know more</a>
+
             </div>
         </div>
         <!-- Carousel End -->
