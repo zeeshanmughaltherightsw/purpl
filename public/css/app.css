@@ -16283,10 +16283,16 @@ body.dark-mode.ui-shady, body.dark-mode.ui-clean, body.dark-mode.bg-lighter, .du
 /* level end */
 
 @media screen and (max-width: 600px) {
+<<<<<<< HEAD
     .mobile-view
     {
        float: none !important;
        width: 500px;
+=======
+    .mobile-center
+    {
+        justify-content: center;
+>>>>>>> 1f324b26ec7c9b4373f6220d29333cd90c5fdb9e
   }
 }
 
