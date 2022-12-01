@@ -1,5 +1,5 @@
 <template>
-    <div class="reward-card mt-2">
+<div class="reward-card mt-2">
         <div class="first bg-card text-center reward-card-container">
             <h1 class="display-1 fw-bolder">{{index}}</h1>
             <h4 class="">{{name}}</h4>

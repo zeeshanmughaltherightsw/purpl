@@ -24,7 +24,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <div class="container-fluid top-feature py-5 pt-lg-0" id="quick_services">
             <div class="container py-5 pt-lg-0">
                 <div class="row gx-0 mx-5">
-                    <QuickService title="Quick Services" icon="fas fa-times" />
+                    <QuickService title="Quick Services" icon="fas fa-star text-primary" />
                     <QuickService title="Dedicated Team" icon="fas fa-users text-primary" />
                     <QuickService title="24/7 Available" icon="fas fa-phone text-primary" />
                 </div>
@@ -34,7 +34,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <!-- Top Feature End -->
         <!-- Plans-Starts -->
         <center>
-            <h1 class="display-4 py-3">Our Membership Plans</h1>
+            <h1 class="display-5 py-3">Our Membership Plans</h1>
 
             <Link class="btn btn-primary py-3 px-4" :href="route('plan-details')">Click Here For More Details</Link>
 
@@ -109,7 +109,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
         <!-- plan End -->
         <div class="main text-center mt-5">
-            <h1 class="reward-heading py-3">REWARDS</h1>
+            <h1 class="reward-heading display-5 py-3">REWARDS</h1>
             <Link class="btn btn-primary py-3 px-4" :href="route('reward-details')">Click Here For More Details</Link>
         </div>
         <div class="container-xxl py-5">
@@ -131,7 +131,7 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
         <!-- refferals levels starts -->
 
         <div style="margin: 20px 50px">
-            <h1 style="margin: 20px 50px" class="text-center">
+            <h1 style="margin: 20px 50px" class="text-center display-5 py-3">
               Refferals Commission
             </h1>
             <div class="text-center">

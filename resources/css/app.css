@@ -69,3 +69,10 @@
 }
 
 /* level end */
+
+@media screen and (max-width: 600px) {
+    .mobile-center
+    {
+        justify-content: center;
+  }
+}
