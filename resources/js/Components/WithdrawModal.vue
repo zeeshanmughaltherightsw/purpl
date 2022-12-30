@@ -42,15 +42,15 @@
                 />
                 <div class="form-dropdown">
                     <div class="text">
-                        USDT
+                        {{ curText() }}
                     </div>
                 </div>
                 <Error :message="form.errors.amount" />
             </div>
             <div class="form-group mt-2"><PrimaryButton type="submit" class="btn btn-lg btn-primary">Withdraw</PrimaryButton></div>
             <div class="form-note-group" v-if="gateway"><span class="buysell-min form-note-alt">
-                Minimum: {{ formatCurrency(gateway.single_currency.min_amount) }}  USDT</span>
-                <span class="buysell-rate form-note-alt">1 USDT = 1 USD</span>
+                Minimum: {{ formatCurrency(gateway.single_currency.min_amount) }}  {{ curText() }}</span>
+                <span class="buysell-rate form-note-alt">1 {{ curText() }} = 1 {{ curText() }}</span>
             </div>
         </form>
     </div>

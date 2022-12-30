@@ -9,7 +9,7 @@ export default {
             return moment(dateString).format("Do MMM YYYY h:mm A");
         },
         formatCurrency(currency = 0){
-            return parseInt(currency).toFixed(2)
+            return parseInt(currency).toFixed(2) + " " + this.curText()
         },
         
         getClass(status){
@@ -29,5 +29,17 @@ export default {
             }
             
         },
+
+        curSym(){
+            return localStorage.cur_sym;
+        },
+
+        curText(){
+            return localStorage.cur_text;
+        },
+
+        canReffer(){
+            return localStorage.referral == 'everyone' || (localStorage.referral == 'on_plan' && $page.props.auth.user.plan_id);
+        }
     }
 } 

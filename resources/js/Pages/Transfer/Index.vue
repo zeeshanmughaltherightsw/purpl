@@ -36,14 +36,14 @@
                                 />
                                 <div class="form-dropdown">
                                     <div class="text">
-                                        USDT
+                                        {{ curText() }}
                                     </div>
                                 </div>
                                 <errors :message="form.errors.amount"/>
                             </div>
                             <div class="form-note-group"><span class="buysell-min form-note-alt">
-                                Minimum: 20$ USDT</span>
-                                <span class="buysell-rate form-note-alt">1 USDT = 1 USD</span>
+                                Minimum: 20$ {{ curText() }}</span>
+                                <span class="buysell-rate form-note-alt">1 {{ curText() }} = 1 {{ curText() }}</span>
                             </div>
                         </div>
                         <div class="buysell-field form-action">

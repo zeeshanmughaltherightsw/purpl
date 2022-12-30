@@ -12,6 +12,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\WithdrawController;
+use App\Models\GeneralSetting;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,6 +68,12 @@ Route::middleware(['auth', 'verified'])->group(function(){
     Route::post('transfer-store', [UserProfileController::class, 'transferBalanceStore'])->name('transfer.store');
     Route::resource('withdraw', WithdrawController::class);
     Route::get('membership', [MembershipController::class, 'index'])->name('membership.index');
+    Route::get(
+        'settings',
+        function () {
+            return GeneralSetting::whereIn('group', request()->groups)->get();
+    }   
+    );
 });
 
 

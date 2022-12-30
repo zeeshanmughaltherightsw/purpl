@@ -21,13 +21,13 @@
                             />
                             <div class="form-dropdown">
                                 <div class="text">
-                                    USDT
+                                    {{ curText() }}
                                 </div>
                             </div>
                         </div>
                         <div class="form-note-group"><span class="buysell-min form-note-alt">
-                            Minimum: {{settings.find(o => o.key === 'min_amount').value}} USDT</span>
-                            <span class="buysell-rate form-note-alt">1 USDT = 1 USD</span>
+                            Minimum: {{settings.find(o => o.key === 'min_amount').value}} {{ curText() }}</span>
+                            <span class="buysell-rate form-note-alt">1 {{ curText() }} = 1 {{ curText() }}</span>
                         </div>
                     </div>
                     <div class="buysell-field form-action">
@@ -90,7 +90,7 @@ export default {
             let paymentAddress = this.settings.find(o => o.key === 'payment_address').value
             let testAccount =    this.settings.find(o => o.key === 'test_account').value
             if (this.amount < minAmount) {
-                NioApp.Toast('Amount cannot be less than than ' + minAmount + "USDT", 'error')
+                NioApp.Toast('Amount cannot be less than than ' + minAmount + this.curText(), 'error')
                 this.processing = false;
                 return;
             }

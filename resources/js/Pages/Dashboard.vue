@@ -50,19 +50,19 @@ import DashboardCard from '../Components/DashboardCard.vue';
                     <Alert/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" >
-                    <DashboardCard title="Investment" :content="formatCurrency(users.investment) + ' USDT'"/>
+                    <DashboardCard title="Investment" :content="formatCurrency(users.investment)"/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" >
-                    <DashboardCard title="Profit" :content="formatCurrency(users.profit) + ' USDT'"/>
+                    <DashboardCard title="Profit" :content="formatCurrency(users.profit)"/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" >
-                    <DashboardCard title="Commission" :content="formatCurrency(users.commission) + ' USDT'"/>
+                    <DashboardCard title="Commission" :content="formatCurrency(users.commission)"/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.plan_id">
                     <DashboardCard title="Plan" :content="users.plan.name"/>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12" v-if="users.reward && users.reward_title">
-                    <DashboardCard :title="users.reward_title" :content="formatCurrency(users.reward) + ' USDT'"/>
+                    <DashboardCard :title="users.reward_title" :content="formatCurrency(users.reward)"/>
                 </div>
                 
             </div><!-- .row -->

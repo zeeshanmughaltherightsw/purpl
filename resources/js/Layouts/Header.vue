@@ -117,6 +117,8 @@ const showingNavigationDropdown = ref(false);
 </template>
 <script>
 import moment from 'moment'
+import { useForm } from '@inertiajs/inertia-vue3'
+
 export default {
   methods: {
     showSidebar(){
@@ -131,8 +133,21 @@ export default {
       return  moment().format("Do MMM YYYY hh:mm:ss");
     }
   },
-  mounted(){
+  async mounted(){
     NioApp.ModeSwitch();
+    let form = useForm({
+      'groups' : ['currency_setting']
+    });
+    console.log('asd')
+    await axios.get('settings', {
+      params: {
+        groups: ['currency_setting', 'referrals']
+      }
+    }).then((res) => {
+      localStorage.cur_sym = res.data.find(obj => obj.key == 'cur_sym').value
+      localStorage.cur_text = res.data.find(obj => obj.key == 'cur_text').value
+      localStorage.referral = res.data.find(obj => obj.key == 'referrals').value
+    });
   }
 }
 </script>

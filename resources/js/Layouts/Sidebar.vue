@@ -24,14 +24,14 @@
               <div class="user-account-info between-center">
                 <div class="user-account-main">
                   <h6 class="overline-title-alt">Available Balance</h6>
-                  <div class="user-balance">{{ formatCurrency(balance) }}<small class="currency currency-btc">USDT</small></div>
+                  <div class="user-balance">{{ formatCurrency(balance) }}<small class="currency currency-btc"></small></div>
                 </div><a href="#" class="btn btn-white btn-icon btn-light"><em class="icon ni ni-line-chart"></em></a>
               </div>
               <ul class="user-account-data gy-1">
                 <li>
                   <div class="user-account-label"><span class="sub-text">Withdrawable Amount</span></div>
                   <div class="user-account-value"><span class="sub-text">{{ formatCurrency($page.props.auth.user.profit) }}<span
-                        class="currency currency-btc">USDT</span></span></div>
+                        class="currency currency-btc">{{ curText() }}</span></span></div>
                 </li>
               </ul>
               <div class="user-account-actions">
@@ -68,19 +68,19 @@
               </Link>
             </li>
 
-            <li class="nk-menu-item" :class="{ 'active current-page': route().current('direct-referrals') }">
+            <li v-if="canReffer()" class="nk-menu-item" :class="{ 'active current-page': route().current('direct-referrals') }">
               <Link preserve-scroll :href="route('direct-referrals')" class="nk-menu-link">
               <span class="nk-menu-icon"><em class="icon ni ni-user-round"></em></span>
               <span class="nk-menu-text">Direct Referrals</span>
               </Link>
             </li>
-            <li class="nk-menu-item" :class="{ 'active current-page': route().current('uni-level') }">
+            <li v-if="canReffer()" class="nk-menu-item" :class="{ 'active current-page': route().current('uni-level') }">
               <Link preserve-scroll :href="route('uni-level')" class="nk-menu-link">
               <span class="nk-menu-icon"><em class="icon ni ni-globe"></em></span>
               <span class="nk-menu-text">All Referrals</span>
               </Link>
             </li>
-            <li v-if="$page.props.auth.user.investment > 0" class="nk-menu-item"
+            <li v-if="canReffer()" class="nk-menu-item"
               :class="{ 'active current-page': route().current('referral-link') }">
               <Link preserve-scroll :href="route('referral-link')" class="nk-menu-link">
               <span class="nk-menu-icon"><em class="icon ni ni-link-group"></em></span>

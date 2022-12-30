@@ -45,7 +45,7 @@
                             />
                             <div class="form-dropdown">
                                 <div class="text">
-                                    USDT
+                                    {{ curText() }}
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                         <PrimaryButton class="btn btn-lg btn-block btn-primary" :disabled="processing" @click="deposit">
                             Deposit</PrimaryButton>
                     </div>
-                    <div v-if="amount" class="form-note text-base text-center">Note: {{ formatCurrency(amount * 0.05) }} USDT our service fee included.</div>
+                    <div v-if="amount" class="form-note text-base text-center">Note: {{ formatCurrency(amount * 0.05) }} {{ curText() }} our service fee included.</div>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@ export default {
                 return;
             }
             if (this.amount < this.plan.min_price) {
-                NioApp.Toast('Amount cannot be less than than ' + this.plan.min_price + "USDT", 'error')
+                NioApp.Toast('Amount cannot be less than than ' + this.plan.min_price + this.curText(), 'error')
                 this.processing = false;
                 return;
             }
