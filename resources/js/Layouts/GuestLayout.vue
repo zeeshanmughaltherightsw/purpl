@@ -15,7 +15,7 @@ import { Link } from '@inertiajs/inertia-vue3';
             <Link :href="route('welcome')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('welcome')}">Home</Link>
             <Link :href="route('contact')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('contact')}">Contact us</Link>
             <Link :href="route('about')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('about')}">About us</Link>
-            
+
             <Link as="button" v-if="!$page.props.auth.user" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4"> Sign in</Link>
             <Link as="button" v-if="!$page.props.auth.user" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Sign up</Link>
             <Link as="button" v-if="$page.props.auth.user" :href="route('dashboard')" class="btn btn-primary sign mr-3 px-4">Dashboard</Link>
@@ -29,9 +29,9 @@ import { Link } from '@inertiajs/inertia-vue3';
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+852 53498476</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>22nd floor capital center 151 Gloucester Road, Wanchai, Hong Kong SAR, China</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+85294106897</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Liuw94066@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
