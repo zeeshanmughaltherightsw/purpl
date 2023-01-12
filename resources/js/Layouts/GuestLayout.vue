@@ -16,6 +16,7 @@ import { Link } from '@inertiajs/inertia-vue3';
             <Link :href="route('contact')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('contact')}">Contact us</Link>
             <Link :href="route('about')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('about')}">About us</Link>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             <Link as="button" v-if="!$page.props.auth.user" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4"> Sign in</Link>
             <Link as="button" v-if="!$page.props.auth.user" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Sign up</Link>
@@ -24,6 +25,11 @@ import { Link } from '@inertiajs/inertia-vue3';
             <Link as="button" v-if="!$page.props.auth.user" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4">Login</Link>
             <Link as="button" v-if="!$page.props.auth.user" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Register</Link>
 >>>>>>> e788d0905fcb6ba72b04ab2af7e03bee29535978
+=======
+            
+            <Link as="button" v-if="!$page.props.auth.user" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4">Login</Link>
+            <Link as="button" v-if="!$page.props.auth.user" :href="route('register', 'Pakistan001')" class="btn btn-primary sign mr-3 px-4">Register</Link>
+>>>>>>> 53b890ce9824922b29e447a34e60cdcedd510f3b
             <Link as="button" v-if="$page.props.auth.user" :href="route('dashboard')" class="btn btn-primary sign mr-3 px-4">Dashboard</Link>
         </div>
     </nav>
