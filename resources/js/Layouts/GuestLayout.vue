@@ -27,11 +27,17 @@ import { Link } from '@inertiajs/inertia-vue3';
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
+<<<<<<< HEAD
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>22nd floor capital center 151 Gloucester Road, Wanchai, Hong Kong SAR, China</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+85294106897</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>Liuw94066@gmail.com</p>
+=======
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>22nd Floor, Capital Center, 151 Gloucester Road, Wanchai, Hong Kong SAR, China</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+85294106897</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+>>>>>>> 19812d07aca50c608f3b98a0dcbb579f443a3c2a
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
@@ -43,23 +49,14 @@ import { Link } from '@inertiajs/inertia-vue3';
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Landscaping</a>
-                    <a class="btn btn-link" href="">Pruning plants</a>
-                    <a class="btn btn-link" href="">Urban Gardening</a>
-                    <a class="btn btn-link" href="">Garden Maintenance</a>
+                    <a class="btn btn-link" href="">Jade Mining</a>
+                    <a class="btn btn-link" href="">Jade Export</a>
+                    <a class="btn btn-link" href="">Jewlary Manufecturing</a>
+                    <a class="btn btn-link" href="">International Jade Laboratory</a>
                     <a class="btn btn-link" href="">Green Technology</a>
-                    <a class="btn btn-link" href="/storage/intro.pdf">Download intro</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                    <button class="btn btn-link" @click="forceReload">Remove Cache and refresh</button>
+                    <a class="btn btn-link" href="/storage/intro.pdf">International Jade Laboratory</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>

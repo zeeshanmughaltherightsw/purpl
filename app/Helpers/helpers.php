@@ -4,8 +4,11 @@ use App\Models\Plan;
 use App\Models\PlanLevel;
 use App\Models\GeneralSetting;
 use App\Models\CommissionRecord;
+use Composer\Cache;
 use Illuminate\Support\Facades\Log;
 use Intervention\Image\Facades\Image;
+use Spatie\Ray\Settings\Settings;
+
 function getRealIP()
 {
     $ip = $_SERVER["REMOTE_ADDR"];
@@ -132,10 +135,15 @@ function display_child_nodes($child=null, $spaces=0)
 
 function getSettings($group = null)
 {
-    if($group){
-        return GeneralSetting::where('group', $group)->get();
+    $settings = Cache::get('settings');
+    if(!$settings){
+        $settings = Settings::all();
     }
-    return GeneralSetting::all();
+
+    if($group){
+        return $settings::where('group', $group)->values();
+    }
+    return $settings;
 }
 
 
@@ -178,6 +186,14 @@ function uploadImage($file, $location, $size = null, $old = null, $thumb = null)
         Image::make($file)->resize($thumb[0], $thumb[1])->save($location . '/thumb_' . $filename);
     }
     return $filename;
+}
+
+function currency($currency){
+    $settings = getSettings('currency_setting');
+    $cur_text = $settings->where('key', 'cur_text')->first()->value;
+
+    return number_format(($currency / 100), 2, '.', ',') . ' ' . $cur_text;
+      
 }
 
 ?>
