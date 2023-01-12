@@ -29,9 +29,15 @@ import { Link } from '@inertiajs/inertia-vue3';
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
+<<<<<<< HEAD
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>22nd floor capital center 151 Gloucester Road, Wanchai, Hong Kong SAR, China</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+85294106897</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Liuw94066@gmail.com</p>
+=======
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>22nd Floor, Capital Center, 151 Gloucester Road, Wanchai, Hong Kong SAR, China</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+85294106897</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+>>>>>>> 19812d07aca50c608f3b98a0dcbb579f443a3c2a
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
