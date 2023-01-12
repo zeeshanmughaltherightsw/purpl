@@ -16,8 +16,8 @@ import { Link } from '@inertiajs/inertia-vue3';
             <Link :href="route('contact')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('contact')}">Contact us</Link>
             <Link :href="route('about')" class="nav-item nav-link fw-bold" :class="{ 'active' : route().current('about')}">About us</Link>
             
-            <Link as="button" v-if="!$page.props.auth.user" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4"> Sign in</Link>
-            <Link as="button" v-if="!$page.props.auth.user" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Sign up</Link>
+            <Link as="button" v-if="!$page.props.auth.user" text="Sign in" :href="route('login')" type="button" class="btn btn-primary sign mx-3 px-4">Login</Link>
+            <Link as="button" v-if="!$page.props.auth.user" :href="route('register')" class="btn btn-primary sign mr-3 px-4">Register</Link>
             <Link as="button" v-if="$page.props.auth.user" :href="route('dashboard')" class="btn btn-primary sign mr-3 px-4">Dashboard</Link>
         </div>
     </nav>
