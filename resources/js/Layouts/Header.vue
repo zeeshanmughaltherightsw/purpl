@@ -138,7 +138,6 @@ export default {
     let form = useForm({
       'groups' : ['currency_setting']
     });
-    console.log('asd')
     await axios.get('settings', {
       params: {
         groups: ['currency_setting', 'referrals']
