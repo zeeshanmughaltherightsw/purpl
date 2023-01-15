@@ -15,6 +15,7 @@
                         class="close"
                         data-bs-dismiss="modal"
                         aria-label="Close"
+                        @click="close"
                         ><em class="icon ni ni-cross"></em
                     ></a>
                 </div>
@@ -31,9 +32,14 @@
 <script>
     export default{ 
         props: ['title'],
-        
+        methods: {
+            close(){
+                JQuery.noConflict();
+                $("#genericModal").modal('hide');
+            }
+        },
         mounted(){
-            NioApp.BS.init()
+            // NioApp.BS.init()
         },
     }
 </script>

@@ -4,10 +4,9 @@ use App\Models\Plan;
 use App\Models\PlanLevel;
 use App\Models\GeneralSetting;
 use App\Models\CommissionRecord;
-use Composer\Cache;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Cache;
 use Intervention\Image\Facades\Image;
-use Spatie\Ray\Settings\Settings;
 
 function getRealIP()
 {
@@ -137,11 +136,11 @@ function getSettings($group = null)
 {
     $settings = Cache::get('settings');
     if(!$settings){
-        $settings = Settings::all();
+        $settings = GeneralSetting::all();
     }
 
     if($group){
-        return $settings::where('group', $group)->values();
+        return $settings->where('group', $group)->values();
     }
     return $settings;
 }

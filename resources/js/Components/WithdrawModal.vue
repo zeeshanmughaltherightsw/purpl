@@ -2,7 +2,6 @@
 <Modal class="zoom">
     <div class="buysell-field form-group">
         <form @submit.prevent="submit" v-if="form">
-
             <div v-for="(input, index) in JSON.parse(gateway.input_form)" :key="index">
                 <div class="form-label-group" >
                     <label class="form-label text-capitalize" for="buysell-amount">{{ input.field_name }}</label>
@@ -95,7 +94,7 @@ export default {
                 }
             })
            
-        }
+        },
     },
     beforeMount(){
         this.emitter.on('withdraw-modal', (args) => {
