@@ -8,7 +8,6 @@
                         <div class="form-icon form-icon-right">
                             <em class="icon ni ni-search"></em>
                         </div>
-                        <!-- <input type="text" class="form-control" id="default-04" placeholder="Search by name"> -->
                     </div>
                 </li>
             </template>
@@ -28,12 +27,12 @@
                                             <span>Joined at</span>
                                         </span>
                                     </th>
-                                    <th class="tb-tnx-amount is-alt">
+                                    <th class="tb-tnx-status is-alt">
                                         <span class="tb-tnx-desc d-none d-sm-inline-block">
                                             <span>Verified</span>
                                         </span>
                                     </th>
-                                    <th class="tb-tnx-amount is-alt">
+                                    <th class="tb-tnx-status is-alt">
                                         <span class="tb-tnx-desc d-none d-sm-inline-block">
                                             <span>Status</span>
                                         </span>
@@ -49,12 +48,12 @@
                                                 <span class="date">{{formatDate(referral.created_at)}}</span>
                                             </div>
                                         </td>
-                                        <td class="tb-tnx-amount is-alt">
+                                        <td class="tb-tnx-status ">
                                             <div class="tb-tnx-status">
                                                 <span class="badge badge-dot badge-danger">{{ referral.email_verified_at ? 'Success' : "Not Verified" }}</span>
                                             </div>
                                         </td>
-                                        <td class="tb-tnx-amount is-alt">
+                                        <td class="tb-tnx-status ">
                                             <div class="tb-tnx-status">
                                                 <span class="badge badge-dot badge-success">{{ referral.status ? 'Active' : 'Inactive' }}</span>
                                             </div>

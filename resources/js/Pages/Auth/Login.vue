@@ -86,7 +86,7 @@ onMounted(() => {
                   :class="{ 'opacity-25': form.processing }"
                   :disabled="form.processing"
                 >
-                  Sign in
+                  Login
                 </PrimaryButton>
               </div>
             </form>
